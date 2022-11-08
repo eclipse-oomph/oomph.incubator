@@ -11,6 +11,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tycho-version>2.7.5</tycho-version>
     <jetty-version>10.0.12</jetty-version>
+    <gpg-keyname>2E8E9CF8</gpg-keyname>
     <eclipse.repo>https://download.eclipse.org/releases/2022-09</eclipse.repo>
     <justj.tools.repo>https://download.eclipse.org/justj/tools/updates/nightly/latest</justj.tools.repo>
     <org.eclipse.storage.user>genie.oomph</org.eclipse.storage.user>
@@ -78,6 +79,7 @@
           <followStrictOnly>true</followStrictOnly>
         </configuration>
       </plugin>
+
       <plugin>
         <groupId>org.eclipse.tycho.extras</groupId>
         <artifactId>tycho-eclipserun-plugin</artifactId>
@@ -144,5 +146,39 @@
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>gpg-sign</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.eclipse.tycho</groupId>
+            <artifactId>tycho-gpg-plugin</artifactId>
+            <version>${tycho.version}</version>
+            <configuration>
+              <keyname>${gpg-keyname}</keyname>
+              <skipIfJarsigned>true</skipIfJarsigned>
+              <gpgArguments>
+                <arg>--pinentry-mode</arg>
+                <arg>loopback</arg>
+              </gpgArguments>
+            </configuration>
+            <executions>
+              <execution>
+                <phase>process-resources</phase>
+                <goals>
+                  <goal>sign-p2-artifacts</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 
 </project>
