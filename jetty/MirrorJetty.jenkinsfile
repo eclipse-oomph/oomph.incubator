@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'migration' }
+  agent any
 
    options {
     buildDiscarder(logRotator(numToKeepStr: '10'))
@@ -98,12 +98,24 @@ pipeline {
       steps {
         sshagent(['projects-storage.eclipse.org-bot-ssh']) {
           dir('jetty') {
-            sh '''
-              if [[ $PROMOTE == false ]]; then
-                promotion_argument='-Dorg.eclipse.justj.p2.manager.args='
-              fi
-              mvn  --no-transfer-progress $promotion_argument -Dorg.eclipse.justj.p2.manager.build.url=$JOB_URL -Djetty-version=$JETTY_VERSION -Dorg.eclipse.justj.p2.manager.relative=$PUBLISH_LOCATION -Dbuild.type=$BUILD_TYPE clean verify
-              '''
+            withCredentials([string(credentialsId: 'gpg-passphrase', variable: 'KEYRING_PASSPHRASE')]) {
+              sh '''
+                if [[ $PROMOTE == false ]]; then
+                  promotion_argument='-Dorg.eclipse.justj.p2.manager.args='
+                fi
+                mvn \
+                  --no-transfer-progress \
+                  $promotion_argument \
+                  -Pgpg-sign \
+                  -Dgpg.passphrase="${KEYRING_PASSPHRASE}" \
+                  -Dorg.eclipse.justj.p2.manager.build.url=$JOB_URL \
+                  -Djetty-version=$JETTY_VERSION \
+                  -Dorg.eclipse.justj.p2.manager.relative=$PUBLISH_LOCATION \
+                  -Dbuild.type=$BUILD_TYPE \
+                  clean \
+                  verify
+                '''
+            }
           }
         }
       }
