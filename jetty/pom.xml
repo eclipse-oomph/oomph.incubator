@@ -158,7 +158,7 @@
           <plugin>
             <groupId>org.eclipse.tycho</groupId>
             <artifactId>tycho-gpg-plugin</artifactId>
-            <version>${tycho.version}</version>
+            <version>${tycho-version}</version>
             <configuration>
               <keyname>${gpg-keyname}</keyname>
               <skipIfJarsigned>true</skipIfJarsigned>
