@@ -73,7 +73,7 @@ pipeline {
                 [$class: 'CloneOption', shallow: true],
                 [$class: 'SparseCheckoutPaths', sparseCheckoutPaths:[[$class:'SparseCheckoutPath', path:'jetty/']]]
               ],
-              userRemoteConfigs: [[url: 'https://git.eclipse.org/c/oomph/org.eclipse.oomph.incubator.git' ]] 
+              userRemoteConfigs: [[url: 'https://git.eclipse.org/r/oomph/org.eclipse.oomph.incubator.git' ]] 
             ]
           )
 
