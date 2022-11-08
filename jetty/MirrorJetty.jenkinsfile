@@ -1,0 +1,127 @@
+pipeline {
+  agent { label 'migration' }
+
+   options {
+    buildDiscarder(logRotator(numToKeepStr: '10'))
+    disableConcurrentBuilds()
+    skipDefaultCheckout true
+  }
+
+  tools {
+    maven 'apache-maven-latest'
+    jdk 'openjdk-jdk11-latest'
+  }
+
+  environment {
+    PUBLISH_LOCATION = 'jetty'
+  }
+
+  parameters {
+    choice(
+      name: 'BUILD_TYPE',
+      choices: ['nightly', 'milestone', 'release'],
+      description: '''
+        Choose the type of build.
+        Note that a release build will not promote the build, but rather will promote the most recent milestone build.
+        '''
+    )
+
+    choice(
+      name: 'JETTY_VERSION',
+      choices: ['10.0.12', '11.0.12'],
+      description: '''
+        Choose the <a href="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-p2">Jetty version</a> to build.
+        '''
+    )
+
+    booleanParam(
+      name: 'PROMOTE',
+      defaultValue: false,
+      description: 'Whether to promote the build to the download server.'
+    )
+  }
+
+  stages {
+    stage('Display Parameters') {
+      steps {
+        echo "BUILD_TYPE=${params.BUILD_TYPE}"
+        echo "PROMOTE=${params.PROMOTE}"
+        echo "JETTY_VERSION=${params.JETTY_VERSION}"
+        script {
+          env.PROMOTE = params.PROMOTE
+          env.BUILD_TYPE = params.BUILD_TYPE
+          env.JETTY_VERSION = params.JETTY_VERSION
+        }
+      }
+    }
+
+    stage('Git Checkout') {
+      steps {
+        script {
+          /*
+            https://qxf2.com/blog/jenkins-sparse-checkout/
+            https://plugins.jenkins.io/git/ 
+          */
+          def gitVariables = checkout(
+            poll: false,
+            scm: [
+              $class: 'GitSCM',
+              branches: [[name: '*/master']],
+              doGenerateSubmoduleConfigurations: false,
+              submoduleCfg: [],
+              extensions: [
+                [$class: 'CloneOption', shallow: true],
+                [$class: 'SparseCheckoutPaths', sparseCheckoutPaths:[[$class:'SparseCheckoutPath', path:'jetty/']]]
+              ],
+              userRemoteConfigs: [[url: 'https://git.eclipse.org/c/oomph/org.eclipse.oomph.incubator.git' ]] 
+            ]
+          )
+
+          echo "$gitVariables"
+          env.GIT_COMMIT = gitVariables.GIT_COMMIT
+        }
+      }
+    }
+
+    stage('Build Jetty Updates') {
+      steps {
+        sshagent(['projects-storage.eclipse.org-bot-ssh']) {
+          dir('jetty') {
+            sh '''
+              if [[ $PROMOTE == false ]]; then
+                promotion_argument='-Dorg.eclipse.justj.p2.manager.args='
+              fi
+              mvn  --no-transfer-progress $promotion_argument -Dorg.eclipse.justj.p2.manager.build.url=$JOB_URL -Djetty-version=$JETTY_VERSION -Dorg.eclipse.justj.p2.manager.relative=$PUBLISH_LOCATION -Dbuild.type=$BUILD_TYPE clean verify
+              '''
+          }
+        }
+      }
+    }
+
+    stage('Archive Results') {
+      steps {
+        archiveArtifacts '**'
+      }
+    }
+  }
+
+  post {
+    failure {
+      mail to: 'ed.merks@gmail.com',
+      subject: "[Oomph CI] Build Failure ${currentBuild.fullDisplayName}",
+      mimeType: 'text/html',
+      body: "Project: ${env.JOB_NAME}<br/>Build Number: ${env.BUILD_NUMBER}<br/>Build URL: ${env.BUILD_URL}<br/>Console: ${env.BUILD_URL}/console"
+    }
+
+    fixed {
+      mail to: 'ed.merks@gmail.com',
+      subject: "[Oomph CI] Back to normal ${currentBuild.fullDisplayName}",
+      mimeType: 'text/html',
+      body: "Project: ${env.JOB_NAME}<br/>Build Number: ${env.BUILD_NUMBER}<br/>Build URL: ${env.BUILD_URL}<br/>Console: ${env.BUILD_URL}/console"
+    }
+
+    cleanup {
+      deleteDir()
+    }
+  }
+}

@@ -11,8 +11,7 @@
     xmlns:setup.targlets="http://www.eclipse.org/oomph/setup/targlets/1.0"
     xmlns:setup.workingsets="http://www.eclipse.org/oomph/setup/workingsets/1.0"
     xmlns:workbench="http://www.eclipse.org/oomph/setup/workbench/1.0"
-    xmlns:workingsets="http://www.eclipse.org/oomph/workingsets/1.0"
-    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/git/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Git.ecore http://www.eclipse.org/oomph/setup/jdt/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/JDT.ecore http://www.eclipse.org/oomph/predicates/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Predicates.ecore http://www.eclipse.org/oomph/setup/targlets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupTarglets.ecore http://www.eclipse.org/oomph/setup/workingsets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupWorkingSets.ecore http://www.eclipse.org/oomph/setup/workbench/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Workbench.ecore http://www.eclipse.org/oomph/workingsets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/WorkingSets.ecore"
+    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/git/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Git.ecore http://www.eclipse.org/oomph/setup/jdt/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/JDT.ecore http://www.eclipse.org/oomph/predicates/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Predicates.ecore http://www.eclipse.org/oomph/setup/targlets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupTarglets.ecore http://www.eclipse.org/oomph/setup/workingsets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupWorkingSets.ecore http://www.eclipse.org/oomph/setup/workbench/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Workbench.ecore"
     name="oomph.incubator"
     label="Oomph Incubator">
   <annotation
@@ -127,8 +126,8 @@
   </setupTask>
   <setupTask
       xsi:type="setup:EclipseIniTask"
-      option="-Doomph.incubator.redirection.setups"
-      value="=http://git.eclipse.org/c/oomph/org.eclipse.oomphincubator.git/OomphIncubator.setup->${git.clone.oomph.incubator.location|uri}/OomphIncubator.setup"
+      option="-Doomph.redirection.incubation.setup"
+      value="=https://git.eclipse.org/c/oomph/org.eclipse.oomph.incubator.git/plain/OomphIncubator.setup->${git.clone.oomph.incubator.location|uri}/OomphIncubator.setup"
       vm="true">
     <description>Redirect to the development version of the releng setup model.</description>
   </setupTask>
@@ -291,143 +290,15 @@
     </setupTask>
     <setupTask
         xsi:type="setup.workingsets:WorkingSetTask"
-        id="workingsets.oomph"
-        disabled="true">
+        id="workingsets.oomph.incubator">
       <workingSet
-          name="Oomph Setup">
+          name="Oomph Incubator Root">
         <predicate
             xsi:type="predicates:AndPredicate">
           <operand
-              xsi:type="predicates:NamePredicate"
-              pattern="org\.eclipse\.oomph\.setup.*"/>
-          <operand
-              xsi:type="workingsets:ExclusionPredicate"
-              excludedWorkingSet="//'workingsets.oomph'/@workingSets[name='Oomph%20Setup%20Extensions']"/>
+              xsi:type="predicates:RepositoryPredicate"
+              project="org.eclipse.oomph.incubator"/>
         </predicate>
-      </workingSet>
-      <workingSet
-          name="Oomph Setup Extensions">
-        <predicate
-            xsi:type="predicates:AndPredicate">
-          <operand
-              xsi:type="predicates:NamePredicate"
-              pattern="org\.eclipse\.oomph\.setup.*"/>
-          <operand
-              xsi:type="predicates:FilePredicate"
-              filePattern="build.properties"
-              contentPattern="oomph\.setup\.extension=true"/>
-        </predicate>
-      </workingSet>
-      <workingSet
-          name="Oomph Setup Models">
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="setups.*"/>
-      </workingSet>
-      <workingSet
-          name="Oomph Targlets">
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.targlets.*"/>
-      </workingSet>
-      <workingSet
-          name="Oomph P2 Management">
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.p2.*"/>
-      </workingSet>
-      <workingSet
-          name="Oomph Project Configuration">
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.projectconfig.*"/>
-      </workingSet>
-      <workingSet
-          name="Oomph Version Management">
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.version.*"/>
-      </workingSet>
-      <workingSet
-          name="Oomph Dynamic Working Sets">
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.workingsets.*"/>
-      </workingSet>
-      <workingSet
-          name="Oomph Preferences Management">
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.preferences.*"/>
-      </workingSet>
-      <workingSet
-          name="Oomph Utilities">
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.util.*"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.ui.*"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.base.*"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.jreinfo.*"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.predicates.*"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.resources.*"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.tests.*"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.junit"/>
-      </workingSet>
-      <workingSet
-          name="Oomph Tools">
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.gitbash.*"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.launches.*"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.manifests.*"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.projectcopy.*"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.ostools.*"/>
-      </workingSet>
-      <workingSet
-          name="Oomph Releng">
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.simrel\.build"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.all-feature"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.license-feature"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.extractor.*"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.parent"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.site"/>
-        <predicate
-            xsi:type="predicates:NamePredicate"
-            pattern="org\.eclipse\.oomph\.releng.*"/>
       </workingSet>
     </setupTask>
   </stream>
