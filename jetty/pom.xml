@@ -192,10 +192,12 @@
             <configuration>
               <keyname>${gpg-keyname}</keyname>
               <skipIfJarsigned>true</skipIfJarsigned>
+              <!--
               <gpgArguments>
-                <arg>--pinentry-mode</arg>
+                <arg>- -pinentry-mode</arg>
                 <arg>loopback</arg>
               </gpgArguments>
+              -->
             </configuration>
             <executions>
               <execution>
