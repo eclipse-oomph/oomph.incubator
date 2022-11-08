@@ -161,6 +161,18 @@
             </gpgArguments>
           </configuration>
         </plugin>
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>tycho-gpg-plugin</artifactId>
+          <version>${tycho-version}</version>
+          <configuration>
+            <!-- This is necessary for gpg to not try to use the pinentry programs -->
+            <gpgArguments>
+              <arg>--pinentry-mode</arg>
+              <arg>loopback</arg>
+            </gpgArguments>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>
@@ -180,6 +192,10 @@
             <configuration>
               <keyname>${gpg-keyname}</keyname>
               <skipIfJarsigned>true</skipIfJarsigned>
+              <gpgArguments>
+                <arg>--pinentry-mode</arg>
+                <arg>loopback</arg>
+              </gpgArguments>
             </configuration>
             <executions>
               <execution>
