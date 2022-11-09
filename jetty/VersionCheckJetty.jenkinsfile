@@ -1,0 +1,61 @@
+pipeline {
+  agent any
+
+   options {
+    buildDiscarder(logRotator(numToKeepStr: '5'))
+    disableConcurrentBuilds()
+    skipDefaultCheckout true
+  }
+
+  environment {
+   EXPECTED_LAST_MODIFIED = '20220915173823'
+  }
+
+  triggers {
+    cron('@midnight')
+  }
+
+  stages {
+    stage('Jetty Version Check') {
+      steps {
+        sh '''
+          LAST_MODIFIED=$(curl -s https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-p2/maven-metadata.xml | tee metadata | grep lastUpdate | sed 's#\\s*<lastUpdated>\\(.*\\)</lastUpdated>#\\1#g')
+          if [[ $LAST_MODIFIED != $EXPECTED_LAST_MODIFIED ]]; then
+            echo "Expected last modified $EXPECTED_LAST_MODIFIED != Actual last modified $LAST_MODIFIED"
+            echo 'New versions available:'
+            grep '<version>' metadata | sed 's#\\s*<version>\\(.*\\)</version>#\\1#g'
+            exit 1
+          else
+            echo "No new versions expected"
+          fi
+          '''
+      }
+    }
+
+    stage('Archive Results') {
+      steps {
+        archiveArtifacts '**'
+      }
+    }
+  }
+
+  post {
+    failure {
+      mail to: 'ed.merks@gmail.com',
+      subject: "[Oomph CI] New Jetty Versions available ${currentBuild.fullDisplayName}",
+      mimeType: 'text/html',
+      body: "Project: ${env.JOB_NAME}<br/>Build Number: ${env.BUILD_NUMBER}<br/>Build URL: ${env.BUILD_URL}<br/>Console: ${env.BUILD_URL}/console"
+    }
+
+    fixed {
+      mail to: 'ed.merks@gmail.com',
+      subject: "[Oomph CI] Back to normal ${currentBuild.fullDisplayName}",
+      mimeType: 'text/html',
+      body: "Project: ${env.JOB_NAME}<br/>Build Number: ${env.BUILD_NUMBER}<br/>Build URL: ${env.BUILD_URL}<br/>Console: ${env.BUILD_URL}/console"
+    }
+
+    cleanup {
+      deleteDir()
+    }
+  }
+}
