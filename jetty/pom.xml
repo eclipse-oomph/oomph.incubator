@@ -134,7 +134,7 @@
                 -promote ${project.build.directory}/repository
                 -timestamp ${build.timestamp}
                 -type ${build.type}
-                -breadcrumb "Jetty https://www.eclipse.org/Jetty"
+                -breadcrumb "Jetty https://www.eclipse.org/jetty"
                 -favicon https://raw.githubusercontent.com/eclipse-jetty/eclipse-jetty.github.io/master/favicon.ico
                 -title-image https://www.eclipse.org/jetty/common/images/jetty-logo.svg
                 -body-image https://raw.githubusercontent.com/eclipse-jetty/eclipse-jetty.github.io/master/favicon.ico
