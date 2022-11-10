@@ -31,7 +31,7 @@ SPDX-License-Identifier: EPL-2.0
     <eclipse.repo>https://download.eclipse.org/releases/2022-09</eclipse.repo>
     <justj.tools.repo>https://download.eclipse.org/justj/tools/updates/nightly/latest</justj.tools.repo>
     <org.eclipse.storage.user>genie.oomph</org.eclipse.storage.user>
-    <org.eclipse.justj.p2.manager.args>-remote ${org.eclipse.storage.user}@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/justj</org.eclipse.justj.p2.manager.args>
+    <org.eclipse.justj.p2.manager.args>-remote ${org.eclipse.storage.user}@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/oomph</org.eclipse.justj.p2.manager.args>
     <org.eclipse.justj.p2.manager.extra.args></org.eclipse.justj.p2.manager.extra.args>
     <org.eclipse.justj.p2.manager.relative>simrel-extras-test</org.eclipse.justj.p2.manager.relative>
     <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
@@ -91,8 +91,8 @@ SPDX-License-Identifier: EPL-2.0
                 -root ${project.build.directory}/simrel-extras-sync
                 -relative ${org.eclipse.justj.p2.manager.relative}
                 -version-iu org.eclipse.justj.
-                -commit https://git.eclipse.org/c/justj/justj.git/commit/?id=${git.commit}
-                -target-url https://download.eclipse.org/justj
+                -commit https://git.eclipse.org/c/oomph/org.eclipse.oomph.incubator.git/commit/?id=${git.commit}
+                -target-url https://download.eclipse.org/oomph
                 -promote ${project.basedir}/../../org.eclipse.oomph.simrel.extra.site/target/repository
                 -timestamp ${build.timestamp}
                 -type ${build.type}
