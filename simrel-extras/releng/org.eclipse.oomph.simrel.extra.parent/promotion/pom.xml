@@ -97,6 +97,7 @@ SPDX-License-Identifier: EPL-2.0
                 -timestamp ${build.timestamp}
                 -type ${build.type}
                 -breadcrumb "Orbit https://download.eclipse.org/tools/orbit/downloads"
+                -mapping simrel-extras->SimRel-Extras
                 ${org.eclipse.justj.p2.manager.extra.args}
               </appArgLine>
             </configuration>
