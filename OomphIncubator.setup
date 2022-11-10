@@ -11,7 +11,8 @@
     xmlns:setup.targlets="http://www.eclipse.org/oomph/setup/targlets/1.0"
     xmlns:setup.workingsets="http://www.eclipse.org/oomph/setup/workingsets/1.0"
     xmlns:workbench="http://www.eclipse.org/oomph/setup/workbench/1.0"
-    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/git/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Git.ecore http://www.eclipse.org/oomph/setup/jdt/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/JDT.ecore http://www.eclipse.org/oomph/predicates/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Predicates.ecore http://www.eclipse.org/oomph/setup/targlets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupTarglets.ecore http://www.eclipse.org/oomph/setup/workingsets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupWorkingSets.ecore http://www.eclipse.org/oomph/setup/workbench/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Workbench.ecore"
+    xmlns:workingsets="http://www.eclipse.org/oomph/workingsets/1.0"
+    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/git/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Git.ecore http://www.eclipse.org/oomph/setup/jdt/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/JDT.ecore http://www.eclipse.org/oomph/predicates/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Predicates.ecore http://www.eclipse.org/oomph/setup/targlets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupTarglets.ecore http://www.eclipse.org/oomph/setup/workingsets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupWorkingSets.ecore http://www.eclipse.org/oomph/setup/workbench/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Workbench.ecore http://www.eclipse.org/oomph/workingsets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/WorkingSets.ecore"
     name="oomph.incubator"
     label="Oomph Incubator">
   <annotation
@@ -270,21 +271,18 @@
         <requirement
             name="*"/>
         <sourceLocator
-            rootFolder="${git.clone.oomph.incubator.location}">
-          <predicate
-              xsi:type="predicates:NotPredicate">
-            <operand
-                xsi:type="predicates:FilePredicate"
-                filePattern="prototype.txt"/>
-          </predicate>
-        </sourceLocator>
+            rootFolder="${git.clone.oomph.incubator.location}"
+            locateNestedProjects="true"/>
         <repositoryList>
+          <annotation
+              source="WARNING!">
+            <detail
+                key="description">
+              <value>Update  /org.eclipse.oomph.simrel.extra.parent/pom.xml with any URLs used here.</value>
+            </detail>
+          </annotation>
           <repository
-              url="https://download.eclipse.org/egit/updates-stable-nightly"/>
-          <repository
-              url="https://download.eclipse.org/tools/orbit/downloads/latest-R"/>
-          <repository
-              url="https://download.eclipse.org/modeling/emf/emf/builds/milestone/latest"/>
+              url="https://download.eclipse.org/tools/orbit/downloads/drops/S20221109014815/repository"/>
         </repositoryList>
       </targlet>
     </setupTask>
@@ -298,6 +296,21 @@
           <operand
               xsi:type="predicates:RepositoryPredicate"
               project="org.eclipse.oomph.incubator"/>
+          <operand
+              xsi:type="workingsets:ExclusionPredicate"
+              excludedWorkingSet="//'workingsets.oomph.incubator'/@workingSets[name='Oomph%20Incubator%20SimRel%20Extra']"/>
+        </predicate>
+      </workingSet>
+      <workingSet
+          name="Oomph Incubator SimRel Extra">
+        <predicate
+            xsi:type="predicates:AndPredicate">
+          <operand
+              xsi:type="predicates:RepositoryPredicate"
+              project="org.eclipse.oomph.incubator"/>
+          <operand
+              xsi:type="predicates:NamePredicate"
+              pattern=".*simrel.extra.*"/>
         </predicate>
       </workingSet>
     </setupTask>
