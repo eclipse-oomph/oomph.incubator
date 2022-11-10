@@ -88,7 +88,7 @@ SPDX-License-Identifier: EPL-2.0
                 -retain 5
                 -label "Orbit Extras for SimRel"
                 -build-url ${org.eclipse.justj.p2.manager.build.url}
-                -root ${project.build.directory}/justj-sync
+                -root ${project.build.directory}/simrel-extras-sync
                 -relative ${org.eclipse.justj.p2.manager.relative}
                 -version-iu org.eclipse.justj.
                 -commit https://git.eclipse.org/c/justj/justj.git/commit/?id=${git.commit}
