@@ -12,7 +12,7 @@ SPDX-License-Identifier: EPL-2.0
 <feature
       id="org.eclipse.oomph.simrel.extra"
       label="%featureName"
-      version="1.0.0.qualifier"
+      version="1.0.1.qualifier"
       provider-name="%providerName"
       license-feature="org.eclipse.license"
       license-feature-version="0.0.0">
@@ -33,7 +33,7 @@ SPDX-License-Identifier: EPL-2.0
          id="com.ibm.icu"
          download-size="0"
          install-size="0"
-         version="67.1.0.qualifier"
+         version="72.1.0.qualifier"
          unpack="false"/>
 
 </feature>

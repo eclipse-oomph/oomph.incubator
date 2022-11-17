@@ -24,6 +24,6 @@ SPDX-License-Identifier: EPL-2.0
 
   <groupId>org.eclipse.oomph.simrel.extra.features</groupId>
   <artifactId>org.eclipse.oomph.simrel.extra</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>eclipse-feature</packaging>
 </project>
