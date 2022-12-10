@@ -8,7 +8,7 @@ pipeline {
   }
 
   environment {
-   EXPECTED_LAST_MODIFIED = '20220915173823'
+   EXPECTED_LAST_MODIFIED = '20221209200454'
   }
 
   triggers {
