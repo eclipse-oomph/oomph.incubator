@@ -33,7 +33,7 @@ SPDX-License-Identifier: EPL-2.0
          id="com.ibm.icu"
          download-size="0"
          install-size="0"
-         version="72.1.0.qualifier"
+         version="72.1.0.v20221115-2007"
          unpack="false"/>
 
 </feature>

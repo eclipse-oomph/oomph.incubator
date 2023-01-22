@@ -10,12 +10,12 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1668068134121</id>
+			<id>1674393847791</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-projectRelativePath-matches-true-true-simrel-extras/(features|releng)/.*</arguments>
+				<arguments>1.0-projectRelativePath-matches-true-true-simrel-extras/(features|releng)/.*/.*|maven/org.eclipse.oomph.maven.generator/.*</arguments>
 			</matcher>
 		</filter>
 	</filteredResources>

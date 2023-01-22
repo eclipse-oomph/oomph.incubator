@@ -188,6 +188,12 @@
     <description>The location used to specify JAVA_HOME in the External Tools Configurations.</description>
   </setupTask>
   <setupTask
+      xsi:type="setup:StringSubstitutionTask"
+      name="maven.build.java.home.17"
+      value="${jre.location-17}">
+    <description>The location used to specify JAVA_HOME in the External Tools Configurations.</description>
+  </setupTask>
+  <setupTask
       xsi:type="setup:VariableTask"
       filter="(osgi.os=win32)"
       type="FILE"
@@ -270,6 +276,9 @@
           includeAllPlatforms="true">
         <requirement
             name="*"/>
+        <requirement
+            name="com.ibm.icu"
+            versionRange="[72.1.0.v20221115-2007,72.1.0.v20221115-2007]"/>
         <sourceLocator
             rootFolder="${git.clone.oomph.incubator.location}"
             locateNestedProjects="true"/>
@@ -282,7 +291,7 @@
             </detail>
           </annotation>
           <repository
-              url="https://download.eclipse.org/tools/orbit/downloads/drops/S20221109014815/repository"/>
+              url="https://download.eclipse.org/tools/orbit/downloads/drops/I20221116150045/repository"/>
         </repositoryList>
       </targlet>
     </setupTask>
@@ -299,6 +308,16 @@
           <operand
               xsi:type="workingsets:ExclusionPredicate"
               excludedWorkingSet="//'workingsets.oomph.incubator'/@workingSets[name='Oomph%20Incubator%20SimRel%20Extra']"/>
+        </predicate>
+      </workingSet>
+      <workingSet
+          name="Oomph Incubator Maven">
+        <predicate
+            xsi:type="predicates:AndPredicate">
+          <operand
+              xsi:type="predicates:RepositoryPredicate"
+              project="org.eclipse.oomph.incubator"
+              relativePathPattern="maven/.*"/>
         </predicate>
       </workingSet>
       <workingSet

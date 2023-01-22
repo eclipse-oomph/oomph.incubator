@@ -22,4 +22,7 @@
 			</matcher>
 		</filter>
 	</filteredResources>
+	<natures>
+		<nature>org.eclipse.pde.FeatureNature</nature>
+	</natures>
 </projectDescription>
