@@ -20,8 +20,10 @@
 				<artifactId>tycho-p2-repository-plugin</artifactId>
 				<version>${tycho-version}</version>
 				<configuration>
-					<repositoryName>Oomph Maven</repositoryName>
+					<repositoryName>Oomph SimRel Maven</repositoryName>
 					<includeAllDependencies>true</includeAllDependencies>
+					<skipArchive>true</skipArchive>
+					<xzCompress>false</xzCompress>
 				</configuration>
 			</plugin>
 		</plugins>
