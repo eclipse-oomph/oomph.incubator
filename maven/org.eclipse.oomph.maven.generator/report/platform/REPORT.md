@@ -4,6 +4,8 @@
  - [net.java.dev.jna](https://repo1.maven.org/maven2/net/java/dev/jna/)
     - [jna](https://repo1.maven.org/maven2/net/java/dev/jna/jna/) **[5.12.1](https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.12.1)** < [5.13.0](https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.13.0/)
     - [jna-platform](https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/) **[5.12.1](https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.12.1)** < [5.13.0](https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.13.0/)
+ - [org.apache.felix](https://repo1.maven.org/maven2/org/apache/felix/)
+    - [org.apache.felix.scr](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.scr/) **[2.2.4](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.scr/2.2.4)** < [2.2.6](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.scr/2.2.6/)
  - [org.assertj](https://repo1.maven.org/maven2/org/assertj/)
     - [assertj-core](https://repo1.maven.org/maven2/org/assertj/assertj-core/) **[3.24.1](https://repo1.maven.org/maven2/org/assertj/assertj-core/3.24.1)** < [3.24.2](https://repo1.maven.org/maven2/org/assertj/assertj-core/3.24.2/)
 
