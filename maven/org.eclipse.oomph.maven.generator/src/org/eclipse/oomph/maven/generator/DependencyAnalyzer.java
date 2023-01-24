@@ -102,7 +102,7 @@ public class DependencyAnalyzer {
 
 			var mavenTargetContent = contentHandler.getContent(mavenTarget.toUri());
 
-			var reducedMavenTarget = mavenTargetContent.replaceAll("(?s)(<dependencies>).*(\r?\n[\t ]+</dependencies>)",
+			var reducedMavenTarget = mavenTargetContent.replaceAll("(?s)(<dependencies>).*?(\r?\n[\t ]+</dependencies>)",
 					"$1$2");
 
 			var allUpdateVersions = analyzer.getAllUpdateVersions(dependencies);
@@ -187,7 +187,7 @@ public class DependencyAnalyzer {
 				} else if (addMissing) {
 					var matcher2 = Pattern.compile("(\r?\n)(\\s+)</dependencies>").matcher(content);
 					if (!matcher2.find()) {
-						throw new IllegalStateException("THe content must contain <dependencies>");
+						throw new IllegalStateException("The content must contain <dependencies>");
 					}
 
 					var linefeed = matcher2.group(1);
