@@ -281,7 +281,7 @@ public class DependencyAnalyzer {
 			var report = reportRoot.resolve(name);
 			Files.createDirectories(report);
 
-			Files.writeString(report.resolve("orignal.target"), content);
+			Files.writeString(report.resolve("original.target"), content);
 
 			var targetDependencies = analyzer.getTargetDependencies(uri);
 			var targetDependencyVersions = analyzer.getAllUpdateVersions(targetDependencies);
