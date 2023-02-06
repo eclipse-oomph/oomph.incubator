@@ -1,14 +1,9 @@
 # Target Platform: [platform](https://raw.githubusercontent.com/eclipse-platform/eclipse.platform.releng.aggregator/master/eclipse.platform.releng.prereqs.sdk/eclipse-sdk-prereqs.target)
 
 ## Minor Updates
- - [com.fasterxml.jackson.core](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/)
-    - [jackson-annotations](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/) **[2.14.1](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.14.1)** < [2.14.2](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.14.2/)
-    - [jackson-core](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/) **[2.14.1](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.14.1)** < [2.14.2](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.14.2/)
-    - [jackson-databind](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/) **[2.14.1](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.14.1)** < [2.14.2](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.14.2/)
- - [org.apache.felix](https://repo1.maven.org/maven2/org/apache/felix/)
-    - [org.apache.felix.scr](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.scr/) **[2.2.4](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.scr/2.2.4)** < [2.2.6](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.scr/2.2.6/)
- - [org.assertj](https://repo1.maven.org/maven2/org/assertj/)
-    - [assertj-core](https://repo1.maven.org/maven2/org/assertj/assertj-core/) **[3.24.1](https://repo1.maven.org/maven2/org/assertj/assertj-core/3.24.1)** < [3.24.2](https://repo1.maven.org/maven2/org/assertj/assertj-core/3.24.2/)
+ - [net.bytebuddy](https://repo1.maven.org/maven2/net/bytebuddy/)
+    - [byte-buddy](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/) **[1.12.22](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.12.22)** < [1.12.23](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.12.23/)
+    - [byte-buddy-agent](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/) **[1.12.22](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.22)** < [1.12.23](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.23/)
 
 ## Major Updates
  - [jakarta.el](https://repo1.maven.org/maven2/jakarta/el/)
@@ -38,9 +33,9 @@
     - [biz.aQute.bnd.util](https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bnd.util/) **[6.4.0](https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bnd.util/6.4.0)**
     - [biz.aQute.bndlib](https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/) **[6.4.0](https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/6.4.0)**
  - [com.fasterxml.jackson.core](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/)
-    - [jackson-annotations](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/) **[2.14.1](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.14.1)**
-    - [jackson-core](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/) **[2.14.1](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.14.1)**
-    - [jackson-databind](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/) **[2.14.1](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.14.1)**
+    - [jackson-annotations](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/) **[2.14.2](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.14.2)**
+    - [jackson-core](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/) **[2.14.2](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.14.2)**
+    - [jackson-databind](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/) **[2.14.2](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.14.2)**
  - [com.google.code.gson](https://repo1.maven.org/maven2/com/google/code/gson/)
     - [gson](https://repo1.maven.org/maven2/com/google/code/gson/gson/) **[2.10.1](https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1)**
  - [com.ibm.icu](https://repo1.maven.org/maven2/com/ibm/icu/)
@@ -73,13 +68,13 @@
     - [org.apache.felix.gogo.command](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.command/) **[1.1.2](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.command/1.1.2)**
     - [org.apache.felix.gogo.runtime](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.runtime/) **[1.1.6](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.runtime/1.1.6)**
     - [org.apache.felix.gogo.shell](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.shell/) **[1.1.4](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.shell/1.1.4)**
-    - [org.apache.felix.scr](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.scr/) **[2.2.4](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.scr/2.2.4)**
+    - [org.apache.felix.scr](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.scr/) **[2.2.6](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.scr/2.2.6)**
  - [org.apache.sshd](https://repo1.maven.org/maven2/org/apache/sshd/)
     - [sshd-osgi](https://repo1.maven.org/maven2/org/apache/sshd/sshd-osgi/) **[2.9.2](https://repo1.maven.org/maven2/org/apache/sshd/sshd-osgi/2.9.2)**
  - [org.apiguardian](https://repo1.maven.org/maven2/org/apiguardian/)
     - [apiguardian-api](https://repo1.maven.org/maven2/org/apiguardian/apiguardian-api/) **[1.1.2](https://repo1.maven.org/maven2/org/apiguardian/apiguardian-api/1.1.2)**
  - [org.assertj](https://repo1.maven.org/maven2/org/assertj/)
-    - [assertj-core](https://repo1.maven.org/maven2/org/assertj/assertj-core/) **[3.24.1](https://repo1.maven.org/maven2/org/assertj/assertj-core/3.24.1)**
+    - [assertj-core](https://repo1.maven.org/maven2/org/assertj/assertj-core/) **[3.24.2](https://repo1.maven.org/maven2/org/assertj/assertj-core/3.24.2)**
  - [org.bouncycastle](https://repo1.maven.org/maven2/org/bouncycastle/)
     - [bcpg-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/) **[1.72.2](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.72.2)**
     - [bcprov-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/) **[1.72](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.72)**
@@ -114,7 +109,7 @@
  - [org.junit.vintage](https://repo1.maven.org/maven2/org/junit/vintage/)
     - [junit-vintage-engine](https://repo1.maven.org/maven2/org/junit/vintage/junit-vintage-engine/) **[5.9.2](https://repo1.maven.org/maven2/org/junit/vintage/junit-vintage-engine/5.9.2)**
  - [org.mockito](https://repo1.maven.org/maven2/org/mockito/)
-    - [mockito-core](https://repo1.maven.org/maven2/org/mockito/mockito-core/) **[5.0.0](https://repo1.maven.org/maven2/org/mockito/mockito-core/5.0.0)**
+    - [mockito-core](https://repo1.maven.org/maven2/org/mockito/mockito-core/) **[5.1.1](https://repo1.maven.org/maven2/org/mockito/mockito-core/5.1.1)**
  - [org.objenesis](https://repo1.maven.org/maven2/org/objenesis/)
     - [objenesis](https://repo1.maven.org/maven2/org/objenesis/objenesis/) **[3.3](https://repo1.maven.org/maven2/org/objenesis/objenesis/3.3)**
  - [org.opentest4j](https://repo1.maven.org/maven2/org/opentest4j/)

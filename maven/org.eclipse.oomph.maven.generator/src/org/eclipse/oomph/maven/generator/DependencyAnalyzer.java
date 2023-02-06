@@ -716,7 +716,7 @@ public class DependencyAnalyzer {
 				var builder = factory.newDocumentBuilder();
 				return builder.parse(new InputSource(new StringReader(content)));
 			} catch (ParserConfigurationException | SAXException e) {
-				throw new IOException(e);
+				throw new IOException(uri + " : " + e.getMessage(), e);
 			}
 		}
 	}

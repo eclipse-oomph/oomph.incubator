@@ -52,8 +52,8 @@
  - [javax.servlet.jsp](https://repo1.maven.org/maven2/javax/servlet/jsp/)
     - [javax.servlet.jsp-api](https://repo1.maven.org/maven2/javax/servlet/jsp/javax.servlet.jsp-api/) **[2.3.3](https://repo1.maven.org/maven2/javax/servlet/jsp/javax.servlet.jsp-api/2.3.3)**
  - [net.bytebuddy](https://repo1.maven.org/maven2/net/bytebuddy/)
-    - [byte-buddy](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/) **[1.12.22](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.12.22)**
-    - [byte-buddy-agent](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/) **[1.12.22](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.22)**
+    - [byte-buddy](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/) **[1.12.23](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.12.23)**
+    - [byte-buddy-agent](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/) **[1.12.23](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.23)**
  - [net.java.dev.jna](https://repo1.maven.org/maven2/net/java/dev/jna/)
     - [jna](https://repo1.maven.org/maven2/net/java/dev/jna/jna/) **[5.13.0](https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.13.0)**
     - [jna-platform](https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/) **[5.13.0](https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.13.0)**
@@ -96,7 +96,7 @@
  - [org.junit.vintage](https://repo1.maven.org/maven2/org/junit/vintage/)
     - [junit-vintage-engine](https://repo1.maven.org/maven2/org/junit/vintage/junit-vintage-engine/) **[5.9.2](https://repo1.maven.org/maven2/org/junit/vintage/junit-vintage-engine/5.9.2)**
  - [org.mockito](https://repo1.maven.org/maven2/org/mockito/)
-    - [mockito-core](https://repo1.maven.org/maven2/org/mockito/mockito-core/) **[5.0.0](https://repo1.maven.org/maven2/org/mockito/mockito-core/5.0.0)**
+    - [mockito-core](https://repo1.maven.org/maven2/org/mockito/mockito-core/) **[5.1.1](https://repo1.maven.org/maven2/org/mockito/mockito-core/5.1.1)**
  - [org.objenesis](https://repo1.maven.org/maven2/org/objenesis/)
     - [objenesis](https://repo1.maven.org/maven2/org/objenesis/objenesis/) **[3.3](https://repo1.maven.org/maven2/org/objenesis/objenesis/3.3)**
  - [org.opentest4j](https://repo1.maven.org/maven2/org/opentest4j/)
