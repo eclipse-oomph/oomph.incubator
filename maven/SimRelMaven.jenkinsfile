@@ -96,6 +96,8 @@ pipeline {
                   -Dgpg.passphrase="${KEYRING_PASSPHRASE}" \
                   -Dorg.eclipse.justj.p2.manager.build.url=$JOB_URL \
                   -Dorg.eclipse.justj.p2.manager.relative=$PUBLISH_LOCATION \
+                  -Dgit.commit=$GIT_COMMIT \
+                  -Dbuild.id=$BUILD_NUMBER \
                   -Dbuild.type=$BUILD_TYPE \
                   -Ddash.projectId=tools.oomph \
                   -Ddash.fail=true \
