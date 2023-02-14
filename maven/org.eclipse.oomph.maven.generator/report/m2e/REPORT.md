@@ -3,6 +3,8 @@
 ## Minor Updates
  - [ch.qos.logback](https://repo1.maven.org/maven2/ch/qos/logback/)
     - [logback-classic](https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/) **[1.2.11](https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.11)** < [1.4.5](https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.4.5/)
+ - [commons-cli](https://repo1.maven.org/maven2/commons-cli/)
+    - [commons-cli](https://repo1.maven.org/maven2/commons-cli/commons-cli/) **[1.4](https://repo1.maven.org/maven2/commons-cli/commons-cli/1.4)** < [1.5.0](https://repo1.maven.org/maven2/commons-cli/commons-cli/1.5.0/)
 
 ## Major Updates
  - [org.slf4j](https://repo1.maven.org/maven2/org/slf4j/)
@@ -22,6 +24,8 @@
  - [com.google.guava](https://repo1.maven.org/maven2/com/google/guava/)
     - [failureaccess](https://repo1.maven.org/maven2/com/google/guava/failureaccess/) **[1.0.1](https://repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1)**
     - [guava](https://repo1.maven.org/maven2/com/google/guava/guava/) **[31.1-jre](https://repo1.maven.org/maven2/com/google/guava/guava/31.1-jre)**
+ - [commons-cli](https://repo1.maven.org/maven2/commons-cli/)
+    - [commons-cli](https://repo1.maven.org/maven2/commons-cli/commons-cli/) **[1.4](https://repo1.maven.org/maven2/commons-cli/commons-cli/1.4)**
  - [io.takari.m2e.workspace](https://repo1.maven.org/maven2/io/takari/m2e/workspace/)
     - [org.eclipse.m2e.workspace.cli](https://repo1.maven.org/maven2/io/takari/m2e/workspace/org.eclipse.m2e.workspace.cli/) **[0.3.1](https://repo1.maven.org/maven2/io/takari/m2e/workspace/org.eclipse.m2e.workspace.cli/0.3.1)**
  - [org.osgi](https://repo1.maven.org/maven2/org/osgi/)

@@ -33,10 +33,12 @@
     - [icu4j](https://repo1.maven.org/maven2/com/ibm/icu/icu4j/) **[72.1](https://repo1.maven.org/maven2/com/ibm/icu/icu4j/72.1)**
  - [commons-beanutils](https://repo1.maven.org/maven2/commons-beanutils/)
     - [commons-beanutils](https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/) **[1.9.4](https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.4)**
+ - [commons-cli](https://repo1.maven.org/maven2/commons-cli/)
+    - [commons-cli](https://repo1.maven.org/maven2/commons-cli/commons-cli/) **[1.5.0](https://repo1.maven.org/maven2/commons-cli/commons-cli/1.5.0)**
  - [commons-collections](https://repo1.maven.org/maven2/commons-collections/)
     - [commons-collections](https://repo1.maven.org/maven2/commons-collections/commons-collections/) **[3.2.2](https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2)**
  - [commons-fileupload](https://repo1.maven.org/maven2/commons-fileupload/)
-    - [commons-fileupload](https://repo1.maven.org/maven2/commons-fileupload/commons-fileupload/) **[1.4](https://repo1.maven.org/maven2/commons-fileupload/commons-fileupload/1.4)**
+    - [commons-fileupload](https://repo1.maven.org/maven2/commons-fileupload/commons-fileupload/) **[1.5](https://repo1.maven.org/maven2/commons-fileupload/commons-fileupload/1.5)**
  - [commons-io](https://repo1.maven.org/maven2/commons-io/)
     - [commons-io](https://repo1.maven.org/maven2/commons-io/commons-io/) **[2.11.0](https://repo1.maven.org/maven2/commons-io/commons-io/2.11.0)**
  - [commons-lang](https://repo1.maven.org/maven2/commons-lang/)
@@ -52,8 +54,8 @@
  - [javax.servlet.jsp](https://repo1.maven.org/maven2/javax/servlet/jsp/)
     - [javax.servlet.jsp-api](https://repo1.maven.org/maven2/javax/servlet/jsp/javax.servlet.jsp-api/) **[2.3.3](https://repo1.maven.org/maven2/javax/servlet/jsp/javax.servlet.jsp-api/2.3.3)**
  - [net.bytebuddy](https://repo1.maven.org/maven2/net/bytebuddy/)
-    - [byte-buddy](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/) **[1.12.23](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.12.23)**
-    - [byte-buddy-agent](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/) **[1.12.23](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.23)**
+    - [byte-buddy](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/) **[1.13.0](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.13.0)**
+    - [byte-buddy-agent](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/) **[1.13.0](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.13.0)**
  - [net.java.dev.jna](https://repo1.maven.org/maven2/net/java/dev/jna/)
     - [jna](https://repo1.maven.org/maven2/net/java/dev/jna/jna/) **[5.13.0](https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.13.0)**
     - [jna-platform](https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/) **[5.13.0](https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.13.0)**
