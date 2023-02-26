@@ -101,6 +101,7 @@ pipeline {
                   -Dbuild.type=$BUILD_TYPE \
                   -Ddash.projectId=tools.oomph \
                   -Ddash.fail=true \
+                  -Ddash.iplab.token=${github-api-token} \
                   clean \
                   verify
                 '''
