@@ -80,14 +80,14 @@ pipeline {
       }
     }
 
-    stage('Build SimRel Maven') {
+
+              sh '''    stage('Build SimRel Maven') {
       steps {
         sshagent(['projects-storage.eclipse.org-bot-ssh']) {
           dir('maven') {
             withCredentials([
                 string(credentialsId: 'gpg-passphrase', variable: 'KEYRING_PASSPHRASE'), 
-                string(credentialsId: 'github-api-token', variable: 'GITHUB_API_TOKEN') ]) {
-              sh '''
+                string(credentialsId: 'gitlab-api-token', variable: 'GITLAB_API_TOKEN') ]) {
                 if [[ $PROMOTE == false ]]; then
                   promotion_argument='-Dorg.eclipse.justj.p2.manager.args='
                 fi
@@ -103,7 +103,7 @@ pipeline {
                   -Dbuild.type=$BUILD_TYPE \
                   -Ddash.projectId=tools.oomph \
                   -Ddash.fail=true \
-                  -Ddash.iplab.token=$GITHUB_API_TOKEN \
+                  -Ddash.iplab.token=$GITLAB_API_TOKEN \
                   clean \
                   verify
                 '''
