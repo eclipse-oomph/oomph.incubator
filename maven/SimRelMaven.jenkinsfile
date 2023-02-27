@@ -80,14 +80,14 @@ pipeline {
       }
     }
 
-
-              sh '''    stage('Build SimRel Maven') {
+    stage('Build SimRel Maven') {
       steps {
         sshagent(['projects-storage.eclipse.org-bot-ssh']) {
           dir('maven') {
             withCredentials([
                 string(credentialsId: 'gpg-passphrase', variable: 'KEYRING_PASSPHRASE'), 
                 string(credentialsId: 'gitlab-api-token', variable: 'GITLAB_API_TOKEN') ]) {
+              sh '''
                 if [[ $PROMOTE == false ]]; then
                   promotion_argument='-Dorg.eclipse.justj.p2.manager.args='
                 fi
