@@ -11,6 +11,8 @@
     - [org.apache.felix.http.servlet-api](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.http.servlet-api/) **[1.2.0](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.http.servlet-api/1.2.0)** < [2.1.0](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.http.servlet-api/2.1.0/)
  - [org.slf4j](https://repo1.maven.org/maven2/org/slf4j/)
     - [slf4j-nop](https://repo1.maven.org/maven2/org/slf4j/slf4j-nop/) **[1.7.36](https://repo1.maven.org/maven2/org/slf4j/slf4j-nop/1.7.36)** < [2.0.6](https://repo1.maven.org/maven2/org/slf4j/slf4j-nop/2.0.6/)
+ - [org.yaml](https://repo1.maven.org/maven2/org/yaml/)
+    - [snakeyaml](https://repo1.maven.org/maven2/org/yaml/snakeyaml/) **[1.33](https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.33)** < [2.0](https://repo1.maven.org/maven2/org/yaml/snakeyaml/2.0/)
 
 ## Content
  - [biz.aQute.bnd](https://repo1.maven.org/maven2/biz/aQute/bnd/)
