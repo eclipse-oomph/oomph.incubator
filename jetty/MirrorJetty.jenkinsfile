@@ -28,7 +28,7 @@ pipeline {
 
     choice(
       name: 'JETTY_VERSION',
-      choices: ['10.0.13', '11.0.13'],
+      choices: ['10.0.14', '11.0.14'],
       description: '''
         Choose the <a href="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-p2">Jetty version</a> to build.
         '''
