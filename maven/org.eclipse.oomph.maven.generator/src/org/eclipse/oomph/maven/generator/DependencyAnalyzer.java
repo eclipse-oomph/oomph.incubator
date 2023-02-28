@@ -493,7 +493,7 @@ public class DependencyAnalyzer {
 		}
 
 		public Version nextMajor() {
-			return new Version(major + 1, 0, 0, null);
+			return new Version(major + 1, 0, -1, null);
 		}
 
 		@Override
