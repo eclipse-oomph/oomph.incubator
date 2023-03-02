@@ -30,6 +30,8 @@
     - [commons-cli](https://repo1.maven.org/maven2/commons-cli/commons-cli/) **[1.4](https://repo1.maven.org/maven2/commons-cli/commons-cli/1.4)**
  - [io.takari.m2e.workspace](https://repo1.maven.org/maven2/io/takari/m2e/workspace/)
     - [org.eclipse.m2e.workspace.cli](https://repo1.maven.org/maven2/io/takari/m2e/workspace/org.eclipse.m2e.workspace.cli/) **[0.3.1](https://repo1.maven.org/maven2/io/takari/m2e/workspace/org.eclipse.m2e.workspace.cli/0.3.1)**
+ - [org.mockito](https://repo1.maven.org/maven2/org/mockito/)
+    - [mockito-core](https://repo1.maven.org/maven2/org/mockito/mockito-core/) **[5.1.1](https://repo1.maven.org/maven2/org/mockito/mockito-core/5.1.1)**
  - [org.osgi](https://repo1.maven.org/maven2/org/osgi/)
     - [org.osgi.service.repository](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.repository/) **[1.1.0](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.repository/1.1.0)**
  - [org.slf4j](https://repo1.maven.org/maven2/org/slf4j/)

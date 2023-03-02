@@ -3,10 +3,16 @@
 ## Major Updates
  - [jakarta.el](https://repo1.maven.org/maven2/jakarta/el/)
     - [jakarta.el-api](https://repo1.maven.org/maven2/jakarta/el/jakarta.el-api/) **[3.0.3](https://repo1.maven.org/maven2/jakarta/el/jakarta.el-api/3.0.3)** < [5.0.1](https://repo1.maven.org/maven2/jakarta/el/jakarta.el-api/5.0.1/)
+ - [jakarta.enterprise](https://repo1.maven.org/maven2/jakarta/enterprise/)
+    - [jakarta.enterprise.cdi-api](https://repo1.maven.org/maven2/jakarta/enterprise/jakarta.enterprise.cdi-api/) **[2.0.2](https://repo1.maven.org/maven2/jakarta/enterprise/jakarta.enterprise.cdi-api/2.0.2)** < [4.0.1](https://repo1.maven.org/maven2/jakarta/enterprise/jakarta.enterprise.cdi-api/4.0.1/)
  - [jakarta.inject](https://repo1.maven.org/maven2/jakarta/inject/)
     - [jakarta.inject-api](https://repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/) **[1.0.5](https://repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/1.0.5)** < [2.0.1](https://repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/)
+ - [jakarta.interceptor](https://repo1.maven.org/maven2/jakarta/interceptor/)
+    - [jakarta.interceptor-api](https://repo1.maven.org/maven2/jakarta/interceptor/jakarta.interceptor-api/) **[1.2.5](https://repo1.maven.org/maven2/jakarta/interceptor/jakarta.interceptor-api/1.2.5)** < [2.1.0](https://repo1.maven.org/maven2/jakarta/interceptor/jakarta.interceptor-api/2.1.0/)
  - [jakarta.servlet](https://repo1.maven.org/maven2/jakarta/servlet/)
     - [jakarta.servlet-api](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/) **[4.0.4](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/4.0.4)** < [6.0.0](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/6.0.0/)
+ - [jakarta.transaction](https://repo1.maven.org/maven2/jakarta/transaction/)
+    - [jakarta.transaction-api](https://repo1.maven.org/maven2/jakarta/transaction/jakarta.transaction-api/) **[1.3.3](https://repo1.maven.org/maven2/jakarta/transaction/jakarta.transaction-api/1.3.3)** < [2.0.1](https://repo1.maven.org/maven2/jakarta/transaction/jakarta.transaction-api/2.0.1/)
  - [org.apache.felix](https://repo1.maven.org/maven2/org/apache/felix/)
     - [org.apache.felix.http.servlet-api](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.http.servlet-api/) **[1.2.0](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.http.servlet-api/1.2.0)** < [2.1.0](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.http.servlet-api/2.1.0/)
  - [org.slf4j](https://repo1.maven.org/maven2/org/slf4j/)
@@ -49,10 +55,16 @@
     - [commons-logging](https://repo1.maven.org/maven2/commons-logging/commons-logging/) **[1.2](https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2)**
  - [jakarta.el](https://repo1.maven.org/maven2/jakarta/el/)
     - [jakarta.el-api](https://repo1.maven.org/maven2/jakarta/el/jakarta.el-api/) **[3.0.3](https://repo1.maven.org/maven2/jakarta/el/jakarta.el-api/3.0.3)**
+ - [jakarta.enterprise](https://repo1.maven.org/maven2/jakarta/enterprise/)
+    - [jakarta.enterprise.cdi-api](https://repo1.maven.org/maven2/jakarta/enterprise/jakarta.enterprise.cdi-api/) **[2.0.2](https://repo1.maven.org/maven2/jakarta/enterprise/jakarta.enterprise.cdi-api/2.0.2)**
  - [jakarta.inject](https://repo1.maven.org/maven2/jakarta/inject/)
     - [jakarta.inject-api](https://repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/) **[1.0.5](https://repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/1.0.5)**
+ - [jakarta.interceptor](https://repo1.maven.org/maven2/jakarta/interceptor/)
+    - [jakarta.interceptor-api](https://repo1.maven.org/maven2/jakarta/interceptor/jakarta.interceptor-api/) **[1.2.5](https://repo1.maven.org/maven2/jakarta/interceptor/jakarta.interceptor-api/1.2.5)**
  - [jakarta.servlet](https://repo1.maven.org/maven2/jakarta/servlet/)
     - [jakarta.servlet-api](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/) **[4.0.4](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/4.0.4)**
+ - [jakarta.transaction](https://repo1.maven.org/maven2/jakarta/transaction/)
+    - [jakarta.transaction-api](https://repo1.maven.org/maven2/jakarta/transaction/jakarta.transaction-api/) **[1.3.3](https://repo1.maven.org/maven2/jakarta/transaction/jakarta.transaction-api/1.3.3)**
  - [javax.servlet.jsp](https://repo1.maven.org/maven2/javax/servlet/jsp/)
     - [javax.servlet.jsp-api](https://repo1.maven.org/maven2/javax/servlet/jsp/javax.servlet.jsp-api/) **[2.3.3](https://repo1.maven.org/maven2/javax/servlet/jsp/javax.servlet.jsp-api/2.3.3)**
  - [net.bytebuddy](https://repo1.maven.org/maven2/net/bytebuddy/)
@@ -63,6 +75,8 @@
     - [jna-platform](https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/) **[5.13.0](https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.13.0)**
  - [org.apache.aries.spifly](https://repo1.maven.org/maven2/org/apache/aries/spifly/)
     - [org.apache.aries.spifly.dynamic.bundle](https://repo1.maven.org/maven2/org/apache/aries/spifly/org.apache.aries.spifly.dynamic.bundle/) **[1.3.6](https://repo1.maven.org/maven2/org/apache/aries/spifly/org.apache.aries.spifly.dynamic.bundle/1.3.6)**
+ - [org.apache.commons](https://repo1.maven.org/maven2/org/apache/commons/)
+    - [commons-compress](https://repo1.maven.org/maven2/org/apache/commons/commons-compress/) **[1.22](https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.22)**
  - [org.apache.felix](https://repo1.maven.org/maven2/org/apache/felix/)
     - [org.apache.felix.gogo.command](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.command/) **[1.1.2](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.command/1.1.2)**
     - [org.apache.felix.gogo.runtime](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.runtime/) **[1.1.6](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.runtime/1.1.6)**
