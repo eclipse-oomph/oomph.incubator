@@ -102,8 +102,8 @@ public class DependencyAnalyzer {
 
 			var mavenTargetContent = contentHandler.getContent(mavenTarget.toUri());
 
-			var reducedMavenTarget = mavenTargetContent.replaceAll("(?s)(<dependencies>).*?(\r?\n[\t ]+</dependencies>)",
-					"$1$2");
+			var reducedMavenTarget = mavenTargetContent
+					.replaceAll("(?s)(<dependencies>).*?(\r?\n[\t ]+</dependencies>)", "$1$2");
 
 			var allUpdateVersions = analyzer.getAllUpdateVersions(dependencies);
 			allUpdateVersions.entrySet().removeIf(it -> {
@@ -417,7 +417,7 @@ public class DependencyAnalyzer {
 
 			for (var availableVersion : availableVersions) {
 				if (!ignorePatterns.stream().anyMatch(it -> dependency.create(availableVersion).matches(it))) {
-					if (availableVersion.qualifier == null) {
+					if (isIncludedQualifier(availableVersion.qualifier)) {
 						if (availableVersion.compareTo(nextMajor) < 0
 								&& availableVersion.compareTo(nextAvailableVersion) > 0) {
 							nextAvailableVersion = availableVersion;
@@ -450,6 +450,17 @@ public class DependencyAnalyzer {
 			var versions = evaluate(mavenMetadataXML, "/metadata/versioning/versions/version");
 			return versions.stream().map(Element::getTextContent).filter(Version::isValid).map(Version::create)
 					.collect(Collectors.toList());
+		}
+
+		private boolean isIncludedQualifier(String qualifier) {
+			if (qualifier == null) {
+				return true;
+			}
+			String lowerCaseQualifier = qualifier.toLowerCase();
+			if ("-ga".equals(lowerCaseQualifier)) {
+				return true;
+			}
+			return false;
 		}
 	}
 
