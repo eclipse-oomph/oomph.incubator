@@ -539,6 +539,24 @@ United States, other countries, or both.</license>
         </dependency>
         <dependency>
           <groupId>org.osgi</groupId>
+          <artifactId>org.osgi.dto</artifactId>
+          <version>1.1.1</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.osgi</groupId>
+          <artifactId>org.osgi.framework</artifactId>
+          <version>1.10.0</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.osgi</groupId>
+          <artifactId>org.osgi.resource</artifactId>
+          <version>1.0.1</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.osgi</groupId>
           <artifactId>org.osgi.service.cm</artifactId>
           <version>1.6.1</version>
           <type>jar</type>
@@ -583,6 +601,12 @@ United States, other countries, or both.</license>
           <groupId>org.osgi</groupId>
           <artifactId>org.osgi.service.http.whiteboard</artifactId>
           <version>1.1.1</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.osgi</groupId>
+          <artifactId>org.osgi.service.log</artifactId>
+          <version>1.5.0</version>
           <type>jar</type>
         </dependency>
         <dependency>
@@ -671,6 +695,12 @@ United States, other countries, or both.</license>
         </dependency>
         <dependency>
           <groupId>org.osgi</groupId>
+          <artifactId>org.osgi.util.tracker</artifactId>
+          <version>1.5.4</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.osgi</groupId>
           <artifactId>org.osgi.util.xml</artifactId>
           <version>1.0.2</version>
           <type>jar</type>
@@ -750,10 +780,6 @@ United States, other countries, or both.</license>
       </dependencies>
     </location>
 
-    <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.eclipse.org/eclipse/updates/4.26"/>
-      <unit id="org.eclipse.osgi" version="0.0.0"/>
-    </location>
     <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="https://download.eclipse.org/tools/orbit/downloads/latest-I"/>
       <unit id="org.jdom2" version="0.0.0"/>

@@ -124,6 +124,9 @@
  - [org.osgi](https://repo1.maven.org/maven2/org/osgi/)
     - [org.osgi.annotation.bundle](https://repo1.maven.org/maven2/org/osgi/org.osgi.annotation.bundle/) **[2.0.0](https://repo1.maven.org/maven2/org/osgi/org.osgi.annotation.bundle/2.0.0)**
     - [org.osgi.annotation.versioning](https://repo1.maven.org/maven2/org/osgi/org.osgi.annotation.versioning/) **[1.1.2](https://repo1.maven.org/maven2/org/osgi/org.osgi.annotation.versioning/1.1.2)**
+    - [org.osgi.dto](https://repo1.maven.org/maven2/org/osgi/org.osgi.dto/) **[1.1.1](https://repo1.maven.org/maven2/org/osgi/org.osgi.dto/1.1.1)**
+    - [org.osgi.framework](https://repo1.maven.org/maven2/org/osgi/org.osgi.framework/) **[1.10.0](https://repo1.maven.org/maven2/org/osgi/org.osgi.framework/1.10.0)**
+    - [org.osgi.resource](https://repo1.maven.org/maven2/org/osgi/org.osgi.resource/) **[1.0.1](https://repo1.maven.org/maven2/org/osgi/org.osgi.resource/1.0.1)**
     - [org.osgi.service.cm](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.cm/) **[1.6.1](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.cm/1.6.1)**
     - [org.osgi.service.component](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.component/) **[1.5.1](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.component/1.5.1)**
     - [org.osgi.service.component.annotations](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.component.annotations/) **[1.5.1](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.component.annotations/1.5.1)**
@@ -132,6 +135,7 @@
     - [org.osgi.service.event](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.event/) **[1.4.1](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.event/1.4.1)**
     - [org.osgi.service.http](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.http/) **[1.2.2](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.http/1.2.2)**
     - [org.osgi.service.http.whiteboard](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.http.whiteboard/) **[1.1.1](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.http.whiteboard/1.1.1)**
+    - [org.osgi.service.log](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.log/) **[1.5.0](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.log/1.5.0)**
     - [org.osgi.service.log.stream](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.log.stream/) **[1.0.0](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.log.stream/1.0.0)**
     - [org.osgi.service.metatype](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.metatype/) **[1.4.1](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.metatype/1.4.1)**
     - [org.osgi.service.metatype.annotations](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.metatype.annotations/) **[1.4.1](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.metatype.annotations/1.4.1)**
@@ -146,6 +150,7 @@
     - [org.osgi.util.position](https://repo1.maven.org/maven2/org/osgi/org.osgi.util.position/) **[1.0.1](https://repo1.maven.org/maven2/org/osgi/org.osgi.util.position/1.0.1)**
     - [org.osgi.util.promise](https://repo1.maven.org/maven2/org/osgi/org.osgi.util.promise/) **[1.3.0](https://repo1.maven.org/maven2/org/osgi/org.osgi.util.promise/1.3.0)**
     - [org.osgi.util.pushstream](https://repo1.maven.org/maven2/org/osgi/org.osgi.util.pushstream/) **[1.1.0](https://repo1.maven.org/maven2/org/osgi/org.osgi.util.pushstream/1.1.0)**
+    - [org.osgi.util.tracker](https://repo1.maven.org/maven2/org/osgi/org.osgi.util.tracker/) **[1.5.4](https://repo1.maven.org/maven2/org/osgi/org.osgi.util.tracker/1.5.4)**
     - [org.osgi.util.xml](https://repo1.maven.org/maven2/org/osgi/org.osgi.util.xml/) **[1.0.2](https://repo1.maven.org/maven2/org/osgi/org.osgi.util.xml/1.0.2)**
  - [org.ow2.asm](https://repo1.maven.org/maven2/org/ow2/asm/)
     - [asm](https://repo1.maven.org/maven2/org/ow2/asm/asm/) **[9.4](https://repo1.maven.org/maven2/org/ow2/asm/asm/9.4)**
