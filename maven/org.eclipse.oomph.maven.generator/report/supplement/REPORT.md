@@ -6,7 +6,7 @@
 
 ## Content
  - [ch.qos.logback](https://repo1.maven.org/maven2/ch/qos/logback/)
-    - [logback-core](https://repo1.maven.org/maven2/ch/qos/logback/logback-core/) **[1.4.5](https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.5)**
+    - [logback-core](https://repo1.maven.org/maven2/ch/qos/logback/logback-core/) **[1.4.6](https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.6)**
  - [commons-collections](https://repo1.maven.org/maven2/commons-collections/)
     - [commons-collections](https://repo1.maven.org/maven2/commons-collections/commons-collections/) **[3.2.2](https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2)**
  - [org.apache.aries.spifly](https://repo1.maven.org/maven2/org/apache/aries/spifly/)

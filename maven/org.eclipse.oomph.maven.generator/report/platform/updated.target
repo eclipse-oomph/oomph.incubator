@@ -334,13 +334,13 @@
 			  <dependency>
 				  <groupId>net.bytebuddy</groupId>
 				  <artifactId>byte-buddy-agent</artifactId>
-				  <version>1.14.0</version>
+				  <version>1.14.2</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
 				  <groupId>net.bytebuddy</groupId>
 				  <artifactId>byte-buddy</artifactId>
-				  <version>1.14.0</version>
+				  <version>1.14.2</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
@@ -352,7 +352,7 @@
 			  <dependency>
 				  <groupId>org.mockito</groupId>
 				  <artifactId>mockito-core</artifactId>
-				  <version>5.1.1</version>
+				  <version>5.2.0</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
@@ -568,6 +568,16 @@
 			  <dependency>
 				  <groupId>biz.aQute.bnd</groupId>
 				  <artifactId>biz.aQute.bnd.annotation</artifactId>
+				  <version>6.4.0</version>
+  			  </dependency>
+  			  <dependency>
+				  <groupId>biz.aQute.bnd</groupId>
+				  <artifactId>biz.aQute.repository</artifactId>
+				  <version>6.4.0</version>
+  			  </dependency>
+  			  <dependency>
+				  <groupId>biz.aQute.bnd</groupId>
+				  <artifactId>biz.aQute.bnd.embedded-repo</artifactId>
 				  <version>6.4.0</version>
   			  </dependency>
 		  </dependencies>
