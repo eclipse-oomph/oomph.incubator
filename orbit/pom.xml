@@ -9,7 +9,7 @@
   <packaging>pom</packaging>
 
   <properties>
-    <tycho-version>2.7.5</tycho-version>
+    <tycho-version>4.0.0-SNAPSHOT</tycho-version>
     <download.eclipse.org>https://download.eclipse.org</download.eclipse.org>
     <eclipse.repo>${download.eclipse.org}/releases/2023-03</eclipse.repo>
     <eclipse.repo.url>${download.eclipse.org}/eclipse/updates/4.27/R-4.27-202303020300</eclipse.repo.url>
@@ -125,14 +125,12 @@
               <skipIfJarsignedAndAnchored>true</skipIfJarsignedAndAnchored>
               <pgpKeyBehavior>skip</pgpKeyBehavior>
               <forceSignature>
-                <bundle>org.antlr.runtime</bundle>
               </forceSignature>
-              <repository>
-                ${project.build.directory}/repository/final</repository>
+              <repository>${project.build.directory}/repository/final</repository>
             </configuration>
             <executions>
               <execution>
-                <phase>verify</phase>
+                <phase>prepare-package</phase>
                 <goals>
                   <goal>sign-p2-artifacts</goal>
                 </goals>
