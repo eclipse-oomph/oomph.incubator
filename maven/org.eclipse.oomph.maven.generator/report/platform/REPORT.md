@@ -6,6 +6,8 @@
     - [byte-buddy-agent](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/) **[1.14.0](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.14.0)** < [1.14.2](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.14.2/)
  - [org.mockito](https://repo1.maven.org/maven2/org/mockito/)
     - [mockito-core](https://repo1.maven.org/maven2/org/mockito/mockito-core/) **[5.1.1](https://repo1.maven.org/maven2/org/mockito/mockito-core/5.1.1)** < [5.2.0](https://repo1.maven.org/maven2/org/mockito/mockito-core/5.2.0/)
+ - [org.slf4j](https://repo1.maven.org/maven2/org/slf4j/)
+    - [slf4j-api](https://repo1.maven.org/maven2/org/slf4j/slf4j-api/) **[2.0.6](https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.6)** < [2.0.7](https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.7/)
 
 ## Major Updates
  - [jakarta.el](https://repo1.maven.org/maven2/jakarta/el/)
@@ -24,7 +26,8 @@
     - [jetty-util](https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/) **[10.0.14](https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/10.0.14)** < [11.0.14](https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/11.0.14/)
     - [jetty-util-ajax](https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util-ajax/) **[10.0.14](https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util-ajax/10.0.14)** < [11.0.14](https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util-ajax/11.0.14/)
  - [org.slf4j](https://repo1.maven.org/maven2/org/slf4j/)
-    - [slf4j-nop](https://repo1.maven.org/maven2/org/slf4j/slf4j-nop/) **[1.7.36](https://repo1.maven.org/maven2/org/slf4j/slf4j-nop/1.7.36)** < [2.0.6](https://repo1.maven.org/maven2/org/slf4j/slf4j-nop/2.0.6/)
+    - [slf4j-api](https://repo1.maven.org/maven2/org/slf4j/slf4j-api/) **[1.7.36](https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36)** < [2.0.7](https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.7/)
+    - [slf4j-nop](https://repo1.maven.org/maven2/org/slf4j/slf4j-nop/) **[1.7.36](https://repo1.maven.org/maven2/org/slf4j/slf4j-nop/1.7.36)** < [2.0.7](https://repo1.maven.org/maven2/org/slf4j/slf4j-nop/2.0.7/)
  - [org.yaml](https://repo1.maven.org/maven2/org/yaml/)
     - [snakeyaml](https://repo1.maven.org/maven2/org/yaml/snakeyaml/) **[1.33](https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.33)** < [2.0](https://repo1.maven.org/maven2/org/yaml/snakeyaml/2.0/)
 
