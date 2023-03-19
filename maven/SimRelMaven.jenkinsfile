@@ -112,6 +112,38 @@ pipeline {
         }
       }
     }
+ 
+     stage('Start Repository Analysis') {
+      when {
+        expression {
+          params.PROMOTE
+        }
+      }
+      steps {
+        sshagent(['projects-storage.eclipse.org-bot-ssh']) {
+          script {
+            def repositories = sh(returnStdout: true, script: '''
+                ssh genie.oomph@projects-storage.eclipse.org '
+                  cd /home/data/httpd/download.eclipse.org/oomph/
+                  for i in $(find '${PUBLISH_LOCATION}' -name content.xml.xz); do [ ! -d $(dirname $i)/archive ] && echo $(dirname $i); done
+                  exit 0
+                '
+            ''')
+
+            for (String repository : repositories.split("\\s")) {
+              echo "repository: '${repository}'"
+              build job: 'repository-analyzer-any',
+              parameters: [
+                  booleanParam(name: 'PROMOTE', value: true),
+                  booleanParam(name: 'TEST', value: false),
+                  string(name: 'RELATIVE_LOCATION', value: "${repository}")
+              ],
+              wait: false
+            }
+          }
+        }
+      }
+    }
 
     stage('Archive Results') {
       steps {
