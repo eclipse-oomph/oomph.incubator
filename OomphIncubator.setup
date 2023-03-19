@@ -38,9 +38,17 @@
     <repository
         url="https://download.eclipse.org/egit/updates-stable-nightly"/>
     <repository
-        url="https://download.eclipse.org/technology/swtbot/snapshots"/>
-    <repository
         url="${oomph.update.url}"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
+      label="CBI p2 Aggregator">
+    <requirement
+        name="org.eclipse.cbi.p2repo.aggregator.editor.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.cbi.p2repo.aggregator.analyzer.editor.feature.feature.group"/>
+    <repository
+        url="https://download.eclipse.org/cbi/updates/p2-aggregator/tools/nightly/latest"/>
   </setupTask>
   <setupTask
       xsi:type="setup:CompoundTask"
@@ -307,7 +315,7 @@
               project="org.eclipse.oomph.incubator"/>
           <operand
               xsi:type="workingsets:ExclusionPredicate"
-              excludedWorkingSet="//'workingsets.oomph.incubator'/@workingSets[name='Oomph%20Incubator%20SimRel%20Extra']"/>
+              excludedWorkingSet="//'workingsets.oomph.incubator'/@workingSets[name='Oomph%20Incubator%20SimRel%20Extra'] //'workingsets.oomph.incubator'/@workingSets[name='Oomph%20Incubator%20Maven']"/>
         </predicate>
       </workingSet>
       <workingSet
