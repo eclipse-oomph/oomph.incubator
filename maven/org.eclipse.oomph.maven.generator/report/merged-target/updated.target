@@ -360,7 +360,7 @@ United States, other countries, or both.</license>
         <dependency>
           <groupId>org.apache.commons</groupId>
           <artifactId>commons-compress</artifactId>
-          <version>1.22</version>
+          <version>1.23.0</version>
           <type>jar</type>
         </dependency>
         <dependency>
