@@ -1,12 +1,6 @@
 # Target Platform: [platform](https://raw.githubusercontent.com/eclipse-platform/eclipse.platform.releng.aggregator/master/eclipse.platform.releng.prereqs.sdk/eclipse-sdk-prereqs.target)
 
 ## Minor Updates
- - [org.ow2.asm](https://repo1.maven.org/maven2/org/ow2/asm/)
-    - [asm](https://repo1.maven.org/maven2/org/ow2/asm/asm/) **[9.4](https://repo1.maven.org/maven2/org/ow2/asm/asm/9.4)** < [9.5](https://repo1.maven.org/maven2/org/ow2/asm/asm/9.5/)
-    - [asm-analysis](https://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/) **[9.4](https://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/9.4)** < [9.5](https://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/9.5/)
-    - [asm-commons](https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/) **[9.4](https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/9.4)** < [9.5](https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/9.5/)
-    - [asm-tree](https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/) **[9.4](https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/9.4)** < [9.5](https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/9.5/)
-    - [asm-util](https://repo1.maven.org/maven2/org/ow2/asm/asm-util/) **[9.4](https://repo1.maven.org/maven2/org/ow2/asm/asm-util/9.4)** < [9.5](https://repo1.maven.org/maven2/org/ow2/asm/asm-util/9.5/)
  - [org.slf4j](https://repo1.maven.org/maven2/org/slf4j/)
     - [slf4j-api](https://repo1.maven.org/maven2/org/slf4j/slf4j-api/) **[2.0.6](https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.6)** < [2.0.7](https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.7/)
 
@@ -153,11 +147,11 @@
     - [org.osgi.util.pushstream](https://repo1.maven.org/maven2/org/osgi/org.osgi.util.pushstream/) **[1.1.0](https://repo1.maven.org/maven2/org/osgi/org.osgi.util.pushstream/1.1.0)**
     - [org.osgi.util.xml](https://repo1.maven.org/maven2/org/osgi/org.osgi.util.xml/) **[1.0.2](https://repo1.maven.org/maven2/org/osgi/org.osgi.util.xml/1.0.2)**
  - [org.ow2.asm](https://repo1.maven.org/maven2/org/ow2/asm/)
-    - [asm](https://repo1.maven.org/maven2/org/ow2/asm/asm/) **[9.4](https://repo1.maven.org/maven2/org/ow2/asm/asm/9.4)**
-    - [asm-analysis](https://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/) **[9.4](https://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/9.4)**
-    - [asm-commons](https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/) **[9.4](https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/9.4)**
-    - [asm-tree](https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/) **[9.4](https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/9.4)**
-    - [asm-util](https://repo1.maven.org/maven2/org/ow2/asm/asm-util/) **[9.4](https://repo1.maven.org/maven2/org/ow2/asm/asm-util/9.4)**
+    - [asm](https://repo1.maven.org/maven2/org/ow2/asm/asm/) **[9.5](https://repo1.maven.org/maven2/org/ow2/asm/asm/9.5)**
+    - [asm-analysis](https://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/) **[9.5](https://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/9.5)**
+    - [asm-commons](https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/) **[9.5](https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/9.5)**
+    - [asm-tree](https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/) **[9.5](https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/9.5)**
+    - [asm-util](https://repo1.maven.org/maven2/org/ow2/asm/asm-util/) **[9.5](https://repo1.maven.org/maven2/org/ow2/asm/asm-util/9.5)**
  - [org.ow2.sat4j](https://repo1.maven.org/maven2/org/ow2/sat4j/)
     - [org.ow2.sat4j.core](https://repo1.maven.org/maven2/org/ow2/sat4j/org.ow2.sat4j.core/) **[2.3.6](https://repo1.maven.org/maven2/org/ow2/sat4j/org.ow2.sat4j.core/2.3.6)**
     - [org.ow2.sat4j.pb](https://repo1.maven.org/maven2/org/ow2/sat4j/org.ow2.sat4j.pb/) **[2.3.6](https://repo1.maven.org/maven2/org/ow2/sat4j/org.ow2.sat4j.pb/2.3.6)**
