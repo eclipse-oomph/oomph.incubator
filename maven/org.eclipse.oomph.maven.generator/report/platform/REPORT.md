@@ -1,6 +1,9 @@
 # Target Platform: [platform](https://raw.githubusercontent.com/eclipse-platform/eclipse.platform.releng.aggregator/master/eclipse.platform.releng.prereqs.sdk/eclipse-sdk-prereqs.target)
 
 ## Minor Updates
+ - [net.bytebuddy](https://repo1.maven.org/maven2/net/bytebuddy/)
+    - [byte-buddy](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/) **[1.14.2](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.14.2)** < [1.14.3](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.14.3/)
+    - [byte-buddy-agent](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/) **[1.14.2](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.14.2)** < [1.14.3](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.14.3/)
  - [org.slf4j](https://repo1.maven.org/maven2/org/slf4j/)
     - [slf4j-api](https://repo1.maven.org/maven2/org/slf4j/slf4j-api/) **[2.0.6](https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.6)** < [2.0.7](https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.7/)
 
