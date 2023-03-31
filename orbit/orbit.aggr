@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" label="Platform" buildRoot="target/aggregation">
   <validationSets label="orbit">
-    <contributions label="orbit">
+    <contributions label="oomph">
       <repositories location="https://download.eclipse.org/oomph/simrel-maven/nightly/latest"/>
+    </contributions>
+    <contributions label="orbit">
       <repositories location="https://download.eclipse.org/tools/orbit/downloads/latest-R"/>
+    </contributions>
+    <contributions label="orbit-legacy">
       <repositories location="https://download.eclipse.org/tools/orbit/downloads/drops/R20201118194144/repository">
         <bundles name="org.apache.commons.httpclient"/>
       </repositories>
