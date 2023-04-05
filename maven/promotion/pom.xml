@@ -86,6 +86,7 @@ SPDX-License-Identifier: EPL-2.0
                 -type ${build.type}
                 -breadcrumb "Oomph https://projects.eclipse.org/projects/tools.oomph"
                 -mapping simrel-maven->SimRel-Maven
+                -simrel-alias
                 ${org.eclipse.justj.p2.manager.extra.args}
               </appArgLine>
             </configuration>

@@ -218,6 +218,7 @@
                     -breadcrumb "Oomph
                     https://projects.eclipse.org/projects/tools.oomph"
                     -mapping orbit->Orbit
+                    -simrel-alias
                     ${org.eclipse.justj.p2.manager.extra.args}
                   </appArgLine>
                 </configuration>
