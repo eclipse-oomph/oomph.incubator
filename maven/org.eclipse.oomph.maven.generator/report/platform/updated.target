@@ -44,9 +44,9 @@
       <unit id="javax.inject.source" version="1.0.0.v20220405-0441"/>
 
       <!-- This is the "normal" Orbit repository. During development on Bug 568936 this repo is the EBR (git)
-           sourced bundles of Orbit from 2022-03. This is the sub-p2-repo of the 2022-03 recommended build.
+           sourced bundles of Orbit from 2022-06. This is the sub-p2-repo of the 2022-06 recommended build.
            This is the repo that is expected to be updated on milestones based on Orbit deliveries. -->
-      <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20230302014618/repository/"/>
+      <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/S20230403203110/repository/"/>
     </location>
     <location includeAllPlatforms="true" includeMode="slicer" type="InstallableUnit">
 
@@ -81,8 +81,8 @@
 
     <location includeAllPlatforms="true" includeMode="slicer" type="InstallableUnit">
        <!-- Check version in "<EMF>/features" directory -->
-      <unit id="org.eclipse.emf.common.feature.group" version="2.29.0.v20230223-0922"/>
-      <unit id="org.eclipse.emf.common.source.feature.group" version="2.29.0.v20230223-0922"/>
+      <unit id="org.eclipse.emf.common.feature.group" version="2.29.0.v20230315-1321"/>
+      <unit id="org.eclipse.emf.common.source.feature.group" version="2.29.0.v20230315-1321"/>
       <unit id="org.eclipse.emf.ecore.feature.group" version="2.31.0.v20230226-0921"/>
       <unit id="org.eclipse.emf.ecore.source.feature.group" version="2.31.0.v20230226-0921"/>
        <!-- For org.eclipse.ui.tools, and PDE's spy dependencies as of Eclipse 4.22 -->
@@ -93,7 +93,7 @@
       <unit id="org.eclipse.emf.databinding.source.feature.group" version="1.10.0.v20230211-1150"/>
       <unit id="org.eclipse.emf.databinding.edit.feature.group" version="1.10.0.v20230211-1150"/>
       <unit id="org.eclipse.emf.databinding.edit.source.feature.group" version="1.10.0.v20230211-1150"/>
-      <repository location="https://download.eclipse.org/modeling/emf/emf/builds/release/2.33.0/"/>
+      <repository location="https://download.eclipse.org/modeling/emf/emf/builds/milestone/S202304040709/"/>
     </location>
 
     <location includeAllPlatforms="true" includeMode="slicer" type="InstallableUnit">
@@ -334,13 +334,13 @@
 			  <dependency>
 				  <groupId>net.bytebuddy</groupId>
 				  <artifactId>byte-buddy-agent</artifactId>
-				  <version>1.14.3</version>
+				  <version>1.14.4</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
 				  <groupId>net.bytebuddy</groupId>
 				  <artifactId>byte-buddy</artifactId>
-				  <version>1.14.3</version>
+				  <version>1.14.4</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
