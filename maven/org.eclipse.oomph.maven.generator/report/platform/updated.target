@@ -225,12 +225,12 @@
 				<dependency>
 					<groupId>org.bouncycastle</groupId>
 					<artifactId>bcpg-jdk18on</artifactId>
-					<version>1.72.2</version>
+					<version>1.73</version>
 				</dependency>
 				<dependency>
 					<groupId>org.bouncycastle</groupId>
 					<artifactId>bcprov-jdk18on</artifactId>
-					<version>1.72</version>
+					<version>1.73</version>
 				</dependency>
 				<dependency>
 					<groupId>commons-io</groupId>
@@ -282,49 +282,49 @@
 			  <dependency>
 				  <groupId>org.eclipse.jetty</groupId>
 				  <artifactId>jetty-http</artifactId>
-				  <version>10.0.14</version>
+				  <version>10.0.15</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
 				  <groupId>org.eclipse.jetty</groupId>
 				  <artifactId>jetty-io</artifactId>
-				  <version>10.0.14</version>
+				  <version>10.0.15</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
 				  <groupId>org.eclipse.jetty</groupId>
 				  <artifactId>jetty-security</artifactId>
-				  <version>10.0.14</version>
+				  <version>10.0.15</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
 				  <groupId>org.eclipse.jetty</groupId>
 				  <artifactId>jetty-server</artifactId>
-				  <version>10.0.14</version>
+				  <version>10.0.15</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
 				  <groupId>org.eclipse.jetty</groupId>
 				  <artifactId>jetty-servlet</artifactId>
-				  <version>10.0.14</version>
+				  <version>10.0.15</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
 				  <groupId>org.eclipse.jetty</groupId>
 				  <artifactId>apache-jsp</artifactId>
-				  <version>10.0.14</version>
+				  <version>10.0.15</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
 				  <groupId>org.eclipse.jetty</groupId>
 				  <artifactId>jetty-util-ajax</artifactId>
-				  <version>10.0.14</version>
+				  <version>10.0.15</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
 				  <groupId>org.eclipse.jetty</groupId>
 				  <artifactId>jetty-util</artifactId>
-				  <version>10.0.14</version>
+				  <version>10.0.15</version>
 				  <type>jar</type>
 			  </dependency>
 		  </dependencies>
@@ -352,7 +352,7 @@
 			  <dependency>
 				  <groupId>org.mockito</groupId>
 				  <artifactId>mockito-core</artifactId>
-				  <version>5.2.0</version>
+				  <version>5.3.0</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>

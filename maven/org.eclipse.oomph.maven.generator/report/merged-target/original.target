@@ -414,13 +414,13 @@ United States, other countries, or both.</license>
         <dependency>
           <groupId>org.bouncycastle</groupId>
           <artifactId>bcpg-jdk18on</artifactId>
-          <version>1.72.2</version>
+          <version>1.73</version>
           <type>jar</type>
         </dependency>
         <dependency>
           <groupId>org.bouncycastle</groupId>
           <artifactId>bcprov-jdk18on</artifactId>
-          <version>1.72</version>
+          <version>1.73</version>
           <type>jar</type>
         </dependency>
         <dependency>
@@ -522,7 +522,7 @@ United States, other countries, or both.</license>
         <dependency>
           <groupId>org.mockito</groupId>
           <artifactId>mockito-core</artifactId>
-          <version>5.2.0</version>
+          <version>5.3.0</version>
           <type>jar</type>
         </dependency>
         <dependency>
@@ -797,6 +797,7 @@ United States, other countries, or both.</license>
       <unit id="org.jdom2" version="0.0.0"/>
       <unit id="org.junit" version="0.0.0"/>
       <unit id="org.hamcrest.core" version="0.0.0"/>
+      <unit id="org.aopalliance" version="0.0.0"/>
       <!--
       <unit id="org.apache.commons.collections" version="0.0.0"/>
       -->

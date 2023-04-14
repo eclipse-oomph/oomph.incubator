@@ -1,6 +1,8 @@
 # Target Platform: [merged-target](file:///D:/Users/merks/oomph-incubator-1.0/git/org.eclipse.oomph.incubator/maven/tp/Maven.target)
 
 ## Major Updates
+ - [com.ibm.icu](https://repo1.maven.org/maven2/com/ibm/icu/)
+    - [icu4j](https://repo1.maven.org/maven2/com/ibm/icu/icu4j/) **[72.1](https://repo1.maven.org/maven2/com/ibm/icu/icu4j/72.1)** < [73.1](https://repo1.maven.org/maven2/com/ibm/icu/icu4j/73.1/)
  - [jakarta.el](https://repo1.maven.org/maven2/jakarta/el/)
     - [jakarta.el-api](https://repo1.maven.org/maven2/jakarta/el/jakarta.el-api/) **[3.0.3](https://repo1.maven.org/maven2/jakarta/el/jakarta.el-api/3.0.3)** < [5.0.1](https://repo1.maven.org/maven2/jakarta/el/jakarta.el-api/5.0.1/)
  - [jakarta.enterprise](https://repo1.maven.org/maven2/jakarta/enterprise/)
@@ -92,8 +94,8 @@
  - [org.assertj](https://repo1.maven.org/maven2/org/assertj/)
     - [assertj-core](https://repo1.maven.org/maven2/org/assertj/assertj-core/) **[3.24.2](https://repo1.maven.org/maven2/org/assertj/assertj-core/3.24.2)**
  - [org.bouncycastle](https://repo1.maven.org/maven2/org/bouncycastle/)
-    - [bcpg-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/) **[1.72.2](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.72.2)**
-    - [bcprov-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/) **[1.72](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.72)**
+    - [bcpg-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.73)**
+    - [bcprov-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.73)**
  - [org.glassfish](https://repo1.maven.org/maven2/org/glassfish/)
     - [javax.el](https://repo1.maven.org/maven2/org/glassfish/javax.el/) **[3.0.0](https://repo1.maven.org/maven2/org/glassfish/javax.el/3.0.0)**
  - [org.glassfish.web](https://repo1.maven.org/maven2/org/glassfish/web/)
@@ -118,7 +120,7 @@
  - [org.junit.vintage](https://repo1.maven.org/maven2/org/junit/vintage/)
     - [junit-vintage-engine](https://repo1.maven.org/maven2/org/junit/vintage/junit-vintage-engine/) **[5.9.2](https://repo1.maven.org/maven2/org/junit/vintage/junit-vintage-engine/5.9.2)**
  - [org.mockito](https://repo1.maven.org/maven2/org/mockito/)
-    - [mockito-core](https://repo1.maven.org/maven2/org/mockito/mockito-core/) **[5.2.0](https://repo1.maven.org/maven2/org/mockito/mockito-core/5.2.0)**
+    - [mockito-core](https://repo1.maven.org/maven2/org/mockito/mockito-core/) **[5.3.0](https://repo1.maven.org/maven2/org/mockito/mockito-core/5.3.0)**
  - [org.objenesis](https://repo1.maven.org/maven2/org/objenesis/)
     - [objenesis](https://repo1.maven.org/maven2/org/objenesis/objenesis/) **[3.3](https://repo1.maven.org/maven2/org/objenesis/objenesis/3.3)**
  - [org.opentest4j](https://repo1.maven.org/maven2/org/opentest4j/)
