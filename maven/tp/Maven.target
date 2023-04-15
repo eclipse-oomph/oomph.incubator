@@ -526,6 +526,12 @@ United States, other countries, or both.</license>
           <type>jar</type>
         </dependency>
         <dependency>
+          <groupId>org.mvel</groupId>
+          <artifactId>mvel2</artifactId>
+          <version>2.4.15.Final</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
           <groupId>org.objenesis</groupId>
           <artifactId>objenesis</artifactId>
           <version>3.3</version>

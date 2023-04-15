@@ -10,3 +10,5 @@
     - [commons-logging](https://repo1.maven.org/maven2/commons-logging/commons-logging/) **[1.2](https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2)**
  - [org.apache.commons](https://repo1.maven.org/maven2/org/apache/commons/)
     - [commons-digester3](https://repo1.maven.org/maven2/org/apache/commons/commons-digester3/) **[3.2](https://repo1.maven.org/maven2/org/apache/commons/commons-digester3/3.2)**
+ - [org.mvel](https://repo1.maven.org/maven2/org/mvel/)
+    - [mvel2](https://repo1.maven.org/maven2/org/mvel/mvel2/) **[2.4.15.Final](https://repo1.maven.org/maven2/org/mvel/mvel2/2.4.15.Final)**
