@@ -115,7 +115,7 @@ public class DependencyAnalyzer {
 			dependencyUpdates.putAll(allUpdateVersions);
 
 			var newMavenContent = replace(reducedMavenTarget, dependencyUpdates, true, true);
-			Files.writeString(mavenTarget, newMavenContent);
+			writeString(mavenTarget, newMavenContent);
 
 			reporter.generateReport(contentHandler, analyzer, "merged-target", mavenTarget.toUri());
 		}
@@ -238,6 +238,18 @@ public class DependencyAnalyzer {
 		return s1.compareTo(s2);
 	}
 
+	private static Pattern NL_PATTERN = Pattern.compile("\r?\n");
+
+	private static void writeString(Path path, String string) throws IOException {
+		if (Files.isRegularFile(path)) {
+			Matcher matcher = NL_PATTERN.matcher(Files.readString(path));
+			if (matcher.find()) {
+				string = NL_PATTERN.matcher(string).replaceAll(matcher.group());
+			}
+		}
+		Files.writeString(path, string);
+	}
+
 	static final XPathFactory XPATH_FACTORY = XPathFactory.newInstance();
 
 	private static List<Element> evaluate(Document document, String expression) {
@@ -281,12 +293,12 @@ public class DependencyAnalyzer {
 			var report = reportRoot.resolve(name);
 			Files.createDirectories(report);
 
-			Files.writeString(report.resolve("original.target"), content);
+			writeString(report.resolve("original.target"), content);
 
 			var targetDependencies = analyzer.getTargetDependencies(uri);
 			var targetDependencyVersions = analyzer.getAllUpdateVersions(targetDependencies);
 			var newContent = replace(content, targetDependencyVersions, true, false);
-			Files.writeString(report.resolve("updated.target"), newContent);
+			writeString(report.resolve("updated.target"), newContent);
 
 			try (var out = new PrintStream(Files.newOutputStream(report.resolve("REPORT.md")), false,
 					StandardCharsets.UTF_8)) {
@@ -711,7 +723,7 @@ public class DependencyAnalyzer {
 			try {
 				var content = basicGetContent(uri);
 				Files.createDirectories(path.getParent());
-				Files.writeString(path, content);
+				writeString(path, content);
 				return content;
 			} catch (InterruptedException e) {
 				throw new IOException(e);
