@@ -28,14 +28,7 @@
         <dependency>
           <groupId>ch.qos.logback</groupId>
           <artifactId>logback-core</artifactId>
-          <version>1.4.6</version>
-          <type>jar</type>
-        </dependency>
-
-        <dependency>
-          <groupId>commons-collections</groupId>
-          <artifactId>commons-collections</artifactId>
-          <version>3.2.2</version>
+          <version>1.4.7</version>
           <type>jar</type>
         </dependency>
 

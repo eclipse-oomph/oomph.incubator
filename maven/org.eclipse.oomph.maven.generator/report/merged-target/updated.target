@@ -198,25 +198,25 @@ United States, other countries, or both.</license>
         <dependency>
           <groupId>ch.qos.logback</groupId>
           <artifactId>logback-core</artifactId>
-          <version>1.4.6</version>
+          <version>1.4.7</version>
           <type>jar</type>
         </dependency>
         <dependency>
           <groupId>com.fasterxml.jackson.core</groupId>
           <artifactId>jackson-annotations</artifactId>
-          <version>2.14.2</version>
+          <version>2.15.0</version>
           <type>jar</type>
         </dependency>
         <dependency>
           <groupId>com.fasterxml.jackson.core</groupId>
           <artifactId>jackson-core</artifactId>
-          <version>2.14.2</version>
+          <version>2.15.0</version>
           <type>jar</type>
         </dependency>
         <dependency>
           <groupId>com.fasterxml.jackson.core</groupId>
           <artifactId>jackson-databind</artifactId>
-          <version>2.14.2</version>
+          <version>2.15.0</version>
           <type>jar</type>
         </dependency>
         <dependency>
@@ -522,7 +522,7 @@ United States, other countries, or both.</license>
         <dependency>
           <groupId>org.mockito</groupId>
           <artifactId>mockito-core</artifactId>
-          <version>5.3.0</version>
+          <version>5.3.1</version>
           <type>jar</type>
         </dependency>
         <dependency>

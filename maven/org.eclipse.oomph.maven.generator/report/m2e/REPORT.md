@@ -3,6 +3,8 @@
 ## Minor Updates
  - [ch.qos.logback](https://repo1.maven.org/maven2/ch/qos/logback/)
     - [logback-classic](https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/) **[1.2.12](https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.12)** < [1.4.6](https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.4.6/)
+ - [org.mockito](https://repo1.maven.org/maven2/org/mockito/)
+    - [mockito-core](https://repo1.maven.org/maven2/org/mockito/mockito-core/) **[5.3.0](https://repo1.maven.org/maven2/org/mockito/mockito-core/5.3.0)** < [5.3.1](https://repo1.maven.org/maven2/org/mockito/mockito-core/5.3.1/)
 
 ## Major Updates
  - [org.slf4j](https://repo1.maven.org/maven2/org/slf4j/)

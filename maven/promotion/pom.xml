@@ -22,7 +22,7 @@ SPDX-License-Identifier: EPL-2.0
     <relativePath>..</relativePath>
   </parent>
 
-  <groupId>org.eclipse.oomph.simrel.extra</groupId>
+  <groupId>org.eclipse.oomph.maven</groupId>
   <artifactId>org.eclipse.oomph.maven.promote</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>

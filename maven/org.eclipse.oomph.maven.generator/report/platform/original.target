@@ -117,18 +117,18 @@
     </location>
 
     <location includeAllPlatforms="true" includeMode="slicer" type="InstallableUnit">
-      <repository location="https://download.eclipse.org/reddeer/releases/4.4.0/"/>
-      <unit id="org.eclipse.reddeer.workbench" version="4.4.0.v20221129-1611"/>
-      <unit id="org.eclipse.reddeer.jface" version="4.4.0.v20221129-1611"/>
-      <unit id="org.eclipse.reddeer.swt" version="4.4.0.v20221129-1611"/>
-      <unit id="org.eclipse.reddeer.uiforms" version="4.4.0.v20221129-1611"/>
-      <unit id="org.eclipse.reddeer.eclipse" version="4.4.0.v20221129-1611"/>
-      <unit id="org.eclipse.reddeer.core" version="4.4.0.v20221129-1611"/>
-      <unit id="org.eclipse.reddeer.common" version="4.4.0.v20221129-1611"/>
-      <unit id="org.eclipse.reddeer.junit" version="4.4.0.v20221129-1611"/>
-      <unit id="org.eclipse.reddeer.junit.extension" version="4.4.0.v20221129-1611"/>
-      <unit id="org.eclipse.reddeer.workbench.core" version="4.4.0.v20221129-1611"/>
-      <unit id="org.eclipse.reddeer.direct" version="4.4.0.v20221129-1611"/>
+      <repository location="https://download.eclipse.org/reddeer/releases/4.5.0/"/>
+      <unit id="org.eclipse.reddeer.workbench" version="0.0.0"/>
+      <unit id="org.eclipse.reddeer.jface" version="0.0.0"/>
+      <unit id="org.eclipse.reddeer.swt" version="0.0.0"/>
+      <unit id="org.eclipse.reddeer.uiforms" version="0.0.0"/>
+      <unit id="org.eclipse.reddeer.eclipse" version="0.0.0"/>
+      <unit id="org.eclipse.reddeer.core" version="0.0.0"/>
+      <unit id="org.eclipse.reddeer.common" version="0.0.0"/>
+      <unit id="org.eclipse.reddeer.junit" version="0.0.0"/>
+      <unit id="org.eclipse.reddeer.junit.extension" version="0.0.0"/>
+      <unit id="org.eclipse.reddeer.workbench.core" version="0.0.0"/>
+      <unit id="org.eclipse.reddeer.direct" version="0.0.0"/>
     </location>
 
     <!-- uncomment 'eclipse_home' location, with text editor, for use in Eclipse IDE
@@ -352,7 +352,7 @@
 			  <dependency>
 				  <groupId>org.mockito</groupId>
 				  <artifactId>mockito-core</artifactId>
-				  <version>5.3.0</version>
+				  <version>5.3.1</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
@@ -587,19 +587,19 @@
 			  <dependency>
 				  <groupId>com.fasterxml.jackson.core</groupId>
 				  <artifactId>jackson-annotations</artifactId>
-				  <version>2.14.2</version>
+				  <version>2.15.0</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
 				  <groupId>com.fasterxml.jackson.core</groupId>
 				  <artifactId>jackson-core</artifactId>
-				  <version>2.14.2</version>
+				  <version>2.15.0</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
 				  <groupId>com.fasterxml.jackson.core</groupId>
 				  <artifactId>jackson-databind</artifactId>
-				  <version>2.14.2</version>
+				  <version>2.15.0</version>
 				  <type>jar</type>
 			  </dependency>
 		  </dependencies>

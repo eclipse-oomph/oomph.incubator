@@ -5,9 +5,9 @@
     xmlns:analyzer="https://www.eclipse.org/cbi/p2repo/2021/aggregator/analyzer"
     aggregation="orbit.aggr#/">
   <contribution
-      contribution="orbit.aggr#//@validationSets[label='orbit']/@contributions[label='oomph']"/>
-  <contribution
       contribution="orbit.aggr#//@validationSets[label='orbit']/@contributions[label='orbit']"/>
   <contribution
       contribution="orbit.aggr#//@validationSets[label='orbit']/@contributions[label='orbit-legacy']"/>
+  <contribution
+      contribution="orbit.aggr#//@validationSets[label='orbit']/@contributions[label='oomph-maven']"/>
 </analyzer:Analysis>
