@@ -11,6 +11,10 @@
     - [org.apache.aries.spifly.dynamic.bundle](https://repo1.maven.org/maven2/org/apache/aries/spifly/org.apache.aries.spifly.dynamic.bundle/) **[1.3.6](https://repo1.maven.org/maven2/org/apache/aries/spifly/org.apache.aries.spifly.dynamic.bundle/1.3.6)**
  - [org.apache.felix](https://repo1.maven.org/maven2/org/apache/felix/)
     - [org.apache.felix.http.servlet-api](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.http.servlet-api/) **[1.2.0](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.http.servlet-api/1.2.0)**
+ - [org.jacoco](https://repo1.maven.org/maven2/org/jacoco/)
+    - [org.jacoco.agent](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.agent/) **[0.8.9](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.agent/0.8.9)**
+    - [org.jacoco.core](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.core/) **[0.8.9](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.core/0.8.9)**
+    - [org.jacoco.report](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.report/) **[0.8.9](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.report/0.8.9)**
  - [org.osgi](https://repo1.maven.org/maven2/org/osgi/)
     - [org.osgi.dto](https://repo1.maven.org/maven2/org/osgi/org.osgi.dto/) **[1.1.1](https://repo1.maven.org/maven2/org/osgi/org.osgi.dto/1.1.1)**
     - [org.osgi.framework](https://repo1.maven.org/maven2/org/osgi/org.osgi.framework/) **[1.10.0](https://repo1.maven.org/maven2/org/osgi/org.osgi.framework/1.10.0)**

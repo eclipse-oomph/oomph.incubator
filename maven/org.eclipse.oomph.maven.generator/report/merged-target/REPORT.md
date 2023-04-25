@@ -98,6 +98,10 @@
     - [javax.el](https://repo1.maven.org/maven2/org/glassfish/javax.el/) **[3.0.0](https://repo1.maven.org/maven2/org/glassfish/javax.el/3.0.0)**
  - [org.glassfish.web](https://repo1.maven.org/maven2/org/glassfish/web/)
     - [javax.servlet.jsp](https://repo1.maven.org/maven2/org/glassfish/web/javax.servlet.jsp/) **[2.3.4](https://repo1.maven.org/maven2/org/glassfish/web/javax.servlet.jsp/2.3.4)**
+ - [org.jacoco](https://repo1.maven.org/maven2/org/jacoco/)
+    - [org.jacoco.agent](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.agent/) **[0.8.9](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.agent/0.8.9)**
+    - [org.jacoco.core](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.core/) **[0.8.9](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.core/0.8.9)**
+    - [org.jacoco.report](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.report/) **[0.8.9](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.report/0.8.9)**
  - [org.javassist](https://repo1.maven.org/maven2/org/javassist/)
     - [javassist](https://repo1.maven.org/maven2/org/javassist/javassist/) **[3.29.2-GA](https://repo1.maven.org/maven2/org/javassist/javassist/3.29.2-GA)**
  - [org.jsoup](https://repo1.maven.org/maven2/org/jsoup/)

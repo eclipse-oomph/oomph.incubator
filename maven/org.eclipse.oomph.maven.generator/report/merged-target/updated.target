@@ -436,6 +436,24 @@ United States, other countries, or both.</license>
           <type>jar</type>
         </dependency>
         <dependency>
+          <groupId>org.jacoco</groupId>
+          <artifactId>org.jacoco.agent</artifactId>
+          <version>0.8.9</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.jacoco</groupId>
+          <artifactId>org.jacoco.core</artifactId>
+          <version>0.8.9</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.jacoco</groupId>
+          <artifactId>org.jacoco.report</artifactId>
+          <version>0.8.9</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
           <groupId>org.javassist</groupId>
           <artifactId>javassist</artifactId>
           <version>3.29.2-GA</version>
