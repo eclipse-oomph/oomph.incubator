@@ -1,8 +1,17 @@
 # Target Platform: [supplement](file:///D:/Users/merks/oomph-incubator-1.0/git/org.eclipse.oomph.incubator/maven/tp/other/MavenSupplement.target)
 
+## Minor Updates
+ - [org.jacoco](https://repo1.maven.org/maven2/org/jacoco/)
+    - [org.jacoco.agent](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.agent/) **[0.8.9](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.agent/0.8.9)** < [0.8.10](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.agent/0.8.10/)
+    - [org.jacoco.core](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.core/) **[0.8.9](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.core/0.8.9)** < [0.8.10](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.core/0.8.10/)
+    - [org.jacoco.report](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.report/) **[0.8.9](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.report/0.8.9)** < [0.8.10](https://repo1.maven.org/maven2/org/jacoco/org.jacoco.report/0.8.10/)
+
 ## Major Updates
  - [org.apache.felix](https://repo1.maven.org/maven2/org/apache/felix/)
     - [org.apache.felix.http.servlet-api](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.http.servlet-api/) **[1.2.0](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.http.servlet-api/1.2.0)** < [2.1.0](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.http.servlet-api/2.1.0/)
+
+## Updates Applied
+[updated.target](updated.target)
 
 ## Content
  - [ch.qos.logback](https://repo1.maven.org/maven2/ch/qos/logback/)
