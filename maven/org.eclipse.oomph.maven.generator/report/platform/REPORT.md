@@ -98,7 +98,7 @@
  - [org.glassfish.web](https://repo1.maven.org/maven2/org/glassfish/web/)
     - [javax.servlet.jsp](https://repo1.maven.org/maven2/org/glassfish/web/javax.servlet.jsp/) **[2.3.4](https://repo1.maven.org/maven2/org/glassfish/web/javax.servlet.jsp/2.3.4)**
  - [org.jsoup](https://repo1.maven.org/maven2/org/jsoup/)
-    - [jsoup](https://repo1.maven.org/maven2/org/jsoup/jsoup/) **[1.15.4](https://repo1.maven.org/maven2/org/jsoup/jsoup/1.15.4)**
+    - [jsoup](https://repo1.maven.org/maven2/org/jsoup/jsoup/) **[1.16.1](https://repo1.maven.org/maven2/org/jsoup/jsoup/1.16.1)**
  - [org.junit.jupiter](https://repo1.maven.org/maven2/org/junit/jupiter/)
     - [junit-jupiter-api](https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-api/) **[5.9.3](https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-api/5.9.3)**
     - [junit-jupiter-engine](https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-engine/) **[5.9.3](https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.9.3)**
