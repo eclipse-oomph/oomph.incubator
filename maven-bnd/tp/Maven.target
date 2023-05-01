@@ -3,7 +3,7 @@
 <target name="MavenBNDSupplement" sequenceNumber="1">
   <locations>
     <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="generate" type="Maven">
-      <feature id="org.eclipse.oomph.maven.bnd.all" label="Oomph Maven BND All" version="4.28.0.qualifier" provider-name="Eclipse Oomph Project">
+      <feature id="org.eclipse.oomph.maven.bnd.all" label="Oomph Maven BND All" version="4.28.0" provider-name="Eclipse Oomph Project">
         <description>
 This feature's dependencies are pulled direction from Maven central.
         </description>
