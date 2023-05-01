@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.eclipse.oomph.maven-bnd</groupId>
+  <artifactId>org.eclipse.oomph.maven-bnd.parent</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <tycho-version>4.0.0-SNAPSHOT</tycho-version>
+    <gpg-keyname>2E8E9CF8</gpg-keyname>
+    <eclipse.repo>https://download.eclipse.org/releases/2022-12</eclipse.repo>
+    <justj.tools.repo>https://download.eclipse.org/justj/tools/updates/nightly/latest</justj.tools.repo>
+    <org.eclipse.storage.user>genie.oomph</org.eclipse.storage.user>
+    <org.eclipse.justj.p2.manager.args>-remote ${org.eclipse.storage.user}@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/oomph</org.eclipse.justj.p2.manager.args>
+    <org.eclipse.justj.p2.manager.extra.args></org.eclipse.justj.p2.manager.extra.args>
+    <org.eclipse.justj.p2.manager.relative>simrel-maven-bnd</org.eclipse.justj.p2.manager.relative>
+    <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
+    <org.eclipse.justj.p2.manager.build.url>http://www.example.com/</org.eclipse.justj.p2.manager.build.url>
+    <build.type>nightly</build.type>
+  </properties>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>tycho-snapshots</id>
+      <url>https://repo.eclipse.org/content/repositories/tycho-snapshots</url>
+    </pluginRepository>
+
+    <pluginRepository>
+      <id>eclipse-maven-releases</id>
+      <url>https://repo.eclipse.org/content/repositories/releases</url>
+    </pluginRepository>
+
+    <pluginRepository>
+      <id>eclipse-cbi-releases</id>
+      <url>https://repo.eclipse.org/content/repositories/cbi-releases</url>
+    </pluginRepository>
+
+	<pluginRepository>
+      <id>dash-licenses-snapshots</id>
+      <url>https://repo.eclipse.org/content/repositories/dash-licenses-snapshots/</url>
+        <snapshots>
+          <enabled>true</enabled>
+        </snapshots>
+      </pluginRepository>
+  </pluginRepositories>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.dash</groupId>
+        <artifactId>license-tool-plugin</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <executions>
+          <execution>
+            <id>license-check</id>
+            <goals>
+              <goal>license-check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <extensions>true</extensions>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-p2-publisher-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>target-platform-configuration</artifactId>
+        <version>${tycho-version}</version>
+        <configuration>
+          <target>
+            <artifact>
+              <groupId>org.eclipse.oomph.maven-bnd</groupId>
+              <artifactId>org.eclipse.oomph.maven-bnd.tp</artifactId>
+              <version>1.0.0-SNAPSHOT</version>
+              <classifier>Maven</classifier>
+            </artifact>
+          </target>
+          <executionEnvironment>JavaSE-17</executionEnvironment>
+          <environments>
+            <environment>
+              <os>win32</os>
+              <ws>win32</ws>
+              <arch>x86_64</arch>
+            </environment>
+            <environment>
+              <os>macosx</os>
+              <ws>cocoa</ws>
+              <arch>x86_64</arch>
+            </environment>
+            <environment>
+              <os>macosx</os>
+              <ws>cocoa</ws>
+              <arch>aarch64</arch>
+            </environment>
+            <environment>
+              <os>linux</os>
+              <ws>gtk</ws>
+              <arch>x86_64</arch>
+            </environment>
+            <environment>
+              <os>linux</os>
+              <ws>gtk</ws>
+              <arch>aarch64</arch>
+            </environment>
+          </environments>
+        </configuration>
+      </plugin>
+
+      <!--
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-p2-publisher-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.eclipse.tycho.extras</groupId>
+        <artifactId>tycho-eclipserun-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <configuration>
+          <executionEnvironment>JavaSE-11</executionEnvironment>
+          <dependencies>
+            <dependency>
+              <artifactId>org.eclipse.justj.p2</artifactId>
+              <type>eclipse-plugin</type>
+            </dependency>
+            <dependency>
+              <artifactId>org.apache.felix.scr</artifactId>
+              <type>eclipse-plugin</type>
+            </dependency>
+          </dependencies>
+          <repositories>
+            <repository>
+              <id>eclipse.repo</id>
+              <layout>p2</layout>
+              <url>${eclipse.repo}</url>
+            </repository>
+            <repository>
+              <id>justj.tools.repo</id>
+              <layout>p2</layout>
+              <url>${justj.tools.repo}</url>
+            </repository>
+          </repositories>
+        </configuration>
+        <executions>
+          <execution>
+            <id>promote</id>
+            <goals>
+              <goal>eclipse-run</goal>
+            </goals>
+            <phase>package</phase>
+            <configuration>
+              <argLine></argLine>
+              <appArgLine>
+                -consoleLog
+                -application org.eclipse.justj.p2.manager
+                -data @None
+                -nosplash
+                ${org.eclipse.justj.p2.manager.args}
+                -retain 5
+                -label "Jetty Updates"
+                -build-url ${org.eclipse.justj.p2.manager.build.url}
+                -root ${project.build.directory}/jetty-sync
+                -relative ${org.eclipse.justj.p2.manager.relative}
+                -version-iu org.eclipse.jetty.
+                -target-url https://download.eclipse.org/oomph
+                -promote ${project.build.directory}/repository
+                -timestamp ${build.timestamp}
+                -type ${build.type}
+                -breadcrumb "Jetty https://www.eclipse.org/Jetty"
+                -favicon https://raw.githubusercontent.com/eclipse-jetty/eclipse-jetty.github.io/master/favicon.ico
+                -title-image https://www.eclipse.org/jetty/common/images/jetty-logo.svg
+                -body-image https://raw.githubusercontent.com/eclipse-jetty/eclipse-jetty.github.io/master/favicon.ico
+                ${org.eclipse.justj.p2.manager.extra.args}
+              </appArgLine>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      -->
+    </plugins>
+  </build>
+
+  <modules>
+    <module>tp</module>
+    <module>site</module>
+    <module>promotion</module>
+  </modules>
+
+  <profiles>
+    <profile>
+      <id>promote</id>
+      <activation>
+        <property>
+          <name>promote</name>
+          <value>!false</value>
+        </property>
+      </activation>
+      <modules>
+        <module>promotion</module>
+      </modules>
+    </profile>
+  </profiles>
+
+</project>
