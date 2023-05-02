@@ -86,7 +86,7 @@
               <groupId>org.eclipse.oomph.maven-bnd</groupId>
               <artifactId>org.eclipse.oomph.maven-bnd.tp</artifactId>
               <version>1.0.0-SNAPSHOT</version>
-              <classifier>Maven</classifier>
+              <classifier>MavenBND</classifier>
             </artifact>
           </target>
           <executionEnvironment>JavaSE-17</executionEnvironment>
@@ -119,82 +119,6 @@
           </environments>
         </configuration>
       </plugin>
-
-      <!--
-      <plugin>
-        <groupId>org.eclipse.tycho</groupId>
-        <artifactId>tycho-p2-publisher-plugin</artifactId>
-        <version>${tycho-version}</version>
-        <configuration>
-          <skip>true</skip>
-        </configuration>
-      </plugin>
-
-      <plugin>
-        <groupId>org.eclipse.tycho.extras</groupId>
-        <artifactId>tycho-eclipserun-plugin</artifactId>
-        <version>${tycho-version}</version>
-        <configuration>
-          <executionEnvironment>JavaSE-11</executionEnvironment>
-          <dependencies>
-            <dependency>
-              <artifactId>org.eclipse.justj.p2</artifactId>
-              <type>eclipse-plugin</type>
-            </dependency>
-            <dependency>
-              <artifactId>org.apache.felix.scr</artifactId>
-              <type>eclipse-plugin</type>
-            </dependency>
-          </dependencies>
-          <repositories>
-            <repository>
-              <id>eclipse.repo</id>
-              <layout>p2</layout>
-              <url>${eclipse.repo}</url>
-            </repository>
-            <repository>
-              <id>justj.tools.repo</id>
-              <layout>p2</layout>
-              <url>${justj.tools.repo}</url>
-            </repository>
-          </repositories>
-        </configuration>
-        <executions>
-          <execution>
-            <id>promote</id>
-            <goals>
-              <goal>eclipse-run</goal>
-            </goals>
-            <phase>package</phase>
-            <configuration>
-              <argLine></argLine>
-              <appArgLine>
-                -consoleLog
-                -application org.eclipse.justj.p2.manager
-                -data @None
-                -nosplash
-                ${org.eclipse.justj.p2.manager.args}
-                -retain 5
-                -label "Jetty Updates"
-                -build-url ${org.eclipse.justj.p2.manager.build.url}
-                -root ${project.build.directory}/jetty-sync
-                -relative ${org.eclipse.justj.p2.manager.relative}
-                -version-iu org.eclipse.jetty.
-                -target-url https://download.eclipse.org/oomph
-                -promote ${project.build.directory}/repository
-                -timestamp ${build.timestamp}
-                -type ${build.type}
-                -breadcrumb "Jetty https://www.eclipse.org/Jetty"
-                -favicon https://raw.githubusercontent.com/eclipse-jetty/eclipse-jetty.github.io/master/favicon.ico
-                -title-image https://www.eclipse.org/jetty/common/images/jetty-logo.svg
-                -body-image https://raw.githubusercontent.com/eclipse-jetty/eclipse-jetty.github.io/master/favicon.ico
-                ${org.eclipse.justj.p2.manager.extra.args}
-              </appArgLine>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      -->
     </plugins>
   </build>
 
