@@ -46,7 +46,9 @@
 							<skipIfJarsigned>true</skipIfJarsigned>
 							<forceSignature>
 								<bundle>bcpg</bundle>
+								<bundle>bcpkix</bundle>
 								<bundle>bcprov</bundle>
+								<bundle>bcutil</bundle>
 							</forceSignature>
 						</configuration>
 						<executions>
