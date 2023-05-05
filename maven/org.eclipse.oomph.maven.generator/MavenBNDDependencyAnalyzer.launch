@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <booleanAttribute key="org.eclipse.debug.core.ATTR_FORCE_SYSTEM_CONSOLE_ENCODING" value="false"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/org.eclipse.oomph.maven.generator/src/org/eclipse/oomph/maven/generator/DependencyAnalyzer.java"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_SHOW_CODEDETAILS_IN_EXCEPTION_MESSAGES" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.eclipse.oomph.maven.generator.DependencyAnalyzer"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="org.eclipse.maven.generator"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-targets&#13;&#10;maven-bnd=local:${resource_loc:/org.eclipse.oomph.incubator/maven-bnd/tp/MavenBND.target}&#13;&#10;-exclude&#13;&#10;-ignore&#13;&#10;-report&#13;&#10;${project_loc:/org.eclipse.oomph.maven.generator}/report-bnd&#13;&#10;-cache&#13;&#10;${project_loc:/org.eclipse.oomph.maven.generator}/cache&#13;&#10;-merge&#13;&#10;${resource_loc:/org.eclipse.oomph.incubator/maven-bnd/tp/MavenBND.target}"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="org.eclipse.oomph.maven.generator"/>
+</launchConfiguration>
