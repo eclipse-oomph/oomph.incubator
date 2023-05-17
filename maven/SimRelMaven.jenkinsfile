@@ -103,6 +103,7 @@ pipeline {
                   -Dbuild.type=$BUILD_TYPE \
                   -Ddash.projectId=tools.oomph \
                   -Ddash.fail=true \
+                  -Dtycho.target.eager=true \
                   -Ddash.iplab.token=$GITLAB_API_TOKEN \
                   clean \
                   verify
