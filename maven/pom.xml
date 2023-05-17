@@ -21,6 +21,7 @@
     <org.eclipse.justj.p2.manager.build.url>http://www.example.com/</org.eclipse.justj.p2.manager.build.url>
     <build.type>nightly</build.type>
     <org.eclipse.dash.version>0.0.1-SNAPSHOT</org.eclipse.dash.version>
+    <tycho.target.eager>true</tycho.target.eager>
   </properties>
 
   <pluginRepositories>
