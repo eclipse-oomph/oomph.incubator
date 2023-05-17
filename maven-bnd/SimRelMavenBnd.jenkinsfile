@@ -145,15 +145,12 @@ pipeline {
         }
       }
     }
-
-    stage('Archive Results') {
-      steps {
-        archiveArtifacts 'maven-bnd/**'
-      }
-    }
   }
 
   post {
+    always{
+      archiveArtifacts 'maven-bnd/**'
+    }
     failure {
       mail to: 'ed.merks@gmail.com',
       subject: "[Oomph CI] Build Failure ${currentBuild.fullDisplayName}",

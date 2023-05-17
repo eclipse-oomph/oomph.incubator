@@ -83,15 +83,12 @@ pipeline {
         }
       }
     }
-
-    stage('Archive Results') {
-      steps {
-        archiveArtifacts 'simrel-extras/**'
-      }
-    }
   }
 
   post {
+    always {
+      archiveArtifacts 'simrel-extras/**'
+    }
     failure {
       mail to: 'ed.merks@gmail.com',
       subject: "[Oomph CI] Build Failure ${currentBuild.fullDisplayName}",
