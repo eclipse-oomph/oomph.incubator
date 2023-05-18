@@ -1,13 +1,5 @@
 # Target Platform: [platform](https://raw.githubusercontent.com/eclipse-platform/eclipse.platform.releng.aggregator/master/eclipse.platform.releng.prereqs.sdk/eclipse-sdk-prereqs.target)
 
-## Minor Updates
- - [com.fasterxml.jackson.core](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/)
-    - [jackson-annotations](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/) **[2.15.0](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.0)** < [2.15.1](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.1/)
-    - [jackson-core](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/) **[2.15.0](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.0)** < [2.15.1](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.1/)
-    - [jackson-databind](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/) **[2.15.0](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.0)** < [2.15.1](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.1/)
- - [commons-io](https://repo1.maven.org/maven2/commons-io/)
-    - [commons-io](https://repo1.maven.org/maven2/commons-io/commons-io/) **[2.11.0](https://repo1.maven.org/maven2/commons-io/commons-io/2.11.0)** < [2.12.0](https://repo1.maven.org/maven2/commons-io/commons-io/2.12.0/)
-
 ## Major Updates
  - [jakarta.annotation](https://repo1.maven.org/maven2/jakarta/annotation/)
     - [jakarta.annotation-api](https://repo1.maven.org/maven2/jakarta/annotation/jakarta.annotation-api/) **[1.3.5](https://repo1.maven.org/maven2/jakarta/annotation/jakarta.annotation-api/1.3.5)** < [2.1.1](https://repo1.maven.org/maven2/jakarta/annotation/jakarta.annotation-api/2.1.1/)
@@ -29,9 +21,6 @@
  - [org.yaml](https://repo1.maven.org/maven2/org/yaml/)
     - [snakeyaml](https://repo1.maven.org/maven2/org/yaml/snakeyaml/) **[1.33](https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.33)** < [2.0](https://repo1.maven.org/maven2/org/yaml/snakeyaml/2.0/)
 
-## Updates Applied
-[updated.target](updated.target)
-
 ## Content
  - [biz.aQute.bnd](https://repo1.maven.org/maven2/biz/aQute/bnd/)
     - [biz.aQute.bnd.annotation](https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bnd.annotation/) **[6.4.0](https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bnd.annotation/6.4.0)**
@@ -40,9 +29,9 @@
     - [biz.aQute.bndlib](https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/) **[6.4.0](https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/6.4.0)**
     - [biz.aQute.repository](https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.repository/) **[6.4.0](https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.repository/6.4.0)**
  - [com.fasterxml.jackson.core](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/)
-    - [jackson-annotations](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/) **[2.15.0](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.0)**
-    - [jackson-core](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/) **[2.15.0](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.0)**
-    - [jackson-databind](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/) **[2.15.0](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.0)**
+    - [jackson-annotations](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/) **[2.15.1](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.1)**
+    - [jackson-core](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/) **[2.15.1](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.1)**
+    - [jackson-databind](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/) **[2.15.1](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.1)**
  - [com.google.code.gson](https://repo1.maven.org/maven2/com/google/code/gson/)
     - [gson](https://repo1.maven.org/maven2/com/google/code/gson/gson/) **[2.10.1](https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1)**
  - [com.ibm.icu](https://repo1.maven.org/maven2/com/ibm/icu/)
@@ -54,7 +43,7 @@
  - [commons-fileupload](https://repo1.maven.org/maven2/commons-fileupload/)
     - [commons-fileupload](https://repo1.maven.org/maven2/commons-fileupload/commons-fileupload/) **[1.5](https://repo1.maven.org/maven2/commons-fileupload/commons-fileupload/1.5)**
  - [commons-io](https://repo1.maven.org/maven2/commons-io/)
-    - [commons-io](https://repo1.maven.org/maven2/commons-io/commons-io/) **[2.11.0](https://repo1.maven.org/maven2/commons-io/commons-io/2.11.0)**
+    - [commons-io](https://repo1.maven.org/maven2/commons-io/commons-io/) **[2.12.0](https://repo1.maven.org/maven2/commons-io/commons-io/2.12.0)**
  - [commons-jxpath](https://repo1.maven.org/maven2/commons-jxpath/)
     - [commons-jxpath](https://repo1.maven.org/maven2/commons-jxpath/commons-jxpath/) **[1.3](https://repo1.maven.org/maven2/commons-jxpath/commons-jxpath/1.3)**
  - [commons-lang](https://repo1.maven.org/maven2/commons-lang/)

@@ -95,6 +95,7 @@
     - [org.apache.felix.scr](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.scr/) **[2.2.6](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.scr/2.2.6)**
  - [org.apache.sshd](https://repo1.maven.org/maven2/org/apache/sshd/)
     - [sshd-osgi](https://repo1.maven.org/maven2/org/apache/sshd/sshd-osgi/) **[2.10.0](https://repo1.maven.org/maven2/org/apache/sshd/sshd-osgi/2.10.0)**
+    - [sshd-sftp](https://repo1.maven.org/maven2/org/apache/sshd/sshd-sftp/) **[2.10.0](https://repo1.maven.org/maven2/org/apache/sshd/sshd-sftp/2.10.0)**
  - [org.apiguardian](https://repo1.maven.org/maven2/org/apiguardian/)
     - [apiguardian-api](https://repo1.maven.org/maven2/org/apiguardian/apiguardian-api/) **[1.1.2](https://repo1.maven.org/maven2/org/apiguardian/apiguardian-api/1.1.2)**
  - [org.assertj](https://repo1.maven.org/maven2/org/assertj/)

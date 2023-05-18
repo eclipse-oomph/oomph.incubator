@@ -24,6 +24,9 @@
     - [jakarta.servlet-api](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/) **[4.0.4](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/4.0.4)**
  - [org.apache.commons](https://repo1.maven.org/maven2/org/apache/commons/)
     - [commons-compress](https://repo1.maven.org/maven2/org/apache/commons/commons-compress/) **[1.23.0](https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.23.0)**
+ - [org.apache.sshd](https://repo1.maven.org/maven2/org/apache/sshd/)
+    - [sshd-osgi](https://repo1.maven.org/maven2/org/apache/sshd/sshd-osgi/) **[2.10.0](https://repo1.maven.org/maven2/org/apache/sshd/sshd-osgi/2.10.0)**
+    - [sshd-sftp](https://repo1.maven.org/maven2/org/apache/sshd/sshd-sftp/) **[2.10.0](https://repo1.maven.org/maven2/org/apache/sshd/sshd-sftp/2.10.0)**
  - [org.assertj](https://repo1.maven.org/maven2/org/assertj/)
     - [assertj-core](https://repo1.maven.org/maven2/org/assertj/assertj-core/) **[3.24.2](https://repo1.maven.org/maven2/org/assertj/assertj-core/3.24.2)**
  - [org.bouncycastle](https://repo1.maven.org/maven2/org/bouncycastle/)
