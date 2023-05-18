@@ -31,6 +31,12 @@ pipeline {
       defaultValue: false,
       description: 'Whether to promote the build to the download server.'
     )
+
+    booleanParam(
+      name: 'DASH_STRICT',
+      defaultValue: true,
+      description: 'Whether to fail the build if there are <a href="https://gitlab.eclipse.org/eclipsefdn/emo-team/iplab/-/issues/>dash license reviews</a> required.'
+    )
   }
 
   stages {
@@ -89,7 +95,7 @@ pipeline {
                   -Dbuild.id=$BUILD_NUMBER \
                   -Dbuild.type=$BUILD_TYPE \
                   -Ddash.projectId=tools.oomph \
-                  -Ddash.fail=true \
+                  -Ddash.fail=$DASH_STRICT \
                   -Dtycho.target.eager=true \
                   -Ddash.iplab.token=$GITLAB_API_TOKEN \
                   clean \
