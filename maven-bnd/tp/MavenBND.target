@@ -62,13 +62,13 @@ SPDX-License-Identifier: EPL-2.0
         </dependency>
       </dependencies>
       <instructions>
-<!-- SHA1 ecf27462f8dcbde9863aa6f8ce759e00b061b8df -->
+<!-- SHA1 6ae0526a30bb45734e4a3ec84084da8ed1e039a2 -->
 <![CDATA[
 Bundle-Name:            Bundle ${mvnGroupId} : ${mvnArtifactId}
 version:                ${versionmask;===;${version_cleanup;${mvnVersion}}}
 Bundle-SymbolicName:    ${mvnGroupId}.${replacestring;${mvnArtifactId};lucene-}
-Bundle-Version:         ${version}.v20230518-0524
-Eclipse-Wrapped-Bundle: ${mvnGroupId}.${mvnArtifactId}:${version}
+Bundle-Version:         ${version}.v20230518-0538
+Eclipse-Wrapped-Bundle: ${mvnGroupId}:${mvnArtifactId}:${version}
 Import-Package:         *
 Export-Package:         *;version="${version}";-noimport:=true
 -noextraheaders:        true

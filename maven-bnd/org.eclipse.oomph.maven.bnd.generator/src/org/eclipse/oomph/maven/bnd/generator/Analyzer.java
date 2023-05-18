@@ -201,7 +201,7 @@ public class Analyzer {
 
 			// Replace the SHA1 digest with the new digest.
 			//
-			location = replace(location, instructionsMatcher, "instructions", digest);
+			location = replace(location, instructionsMatcher, "sha", digest);
 
 			// Replace the feature's qualifier with the new current qualifier.
 			Matcher featureVersionQualifierMatcher = FEATURE_VERSION_QUALIFIER_PATTERN.matcher(location);
