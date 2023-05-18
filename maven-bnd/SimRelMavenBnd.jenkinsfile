@@ -69,24 +69,11 @@ pipeline {
       }
     }
 
-    stage('Initialize PGP') {
-      steps {
-        withCredentials([file(credentialsId: 'secret-subkeys.asc', variable: 'KEYRING')]) {
-         sh '''
-           gpg --batch --import "${KEYRING}"
-           for fpr in $(gpg --list-keys --with-colons  | awk -F: \'/fpr:/ {print $10}\' | sort -u); do echo -e "5\ny\n" |  gpg --batch --command-fd 0 --expert --edit-key ${fpr} trust; done
-           '''
-        }
-      }
-    }
-
     stage('Build SimRel Maven BND') {
       steps {
         sshagent(['projects-storage.eclipse.org-bot-ssh']) {
           dir('maven-bnd') {
-            withCredentials([
-                string(credentialsId: 'gpg-passphrase', variable: 'KEYRING_PASSPHRASE'), 
-                string(credentialsId: 'gitlab-api-token', variable: 'GITLAB_API_TOKEN') ]) {
+            withCredentials([string(credentialsId: 'gitlab-api-token', variable: 'GITLAB_API_TOKEN')]) {
               sh '''
                 if [[ $PROMOTE == false ]]; then
                   promotion_argument='-Dorg.eclipse.justj.p2.manager.args='
@@ -94,7 +81,7 @@ pipeline {
                 mvn \
                   --no-transfer-progress \
                   $promotion_argument \
-                  -Pgpg-sign \
+                  -Psign \
                   -Dgpg.passphrase="${KEYRING_PASSPHRASE}" \
                   -Dorg.eclipse.justj.p2.manager.build.url=$JOB_URL \
                   -Dorg.eclipse.justj.p2.manager.relative=$PUBLISH_LOCATION \
@@ -114,7 +101,7 @@ pipeline {
       }
     }
  
-     stage('Start Repository Analysis') {
+    stage('Start Repository Analysis') {
       when {
         expression {
           params.PROMOTE

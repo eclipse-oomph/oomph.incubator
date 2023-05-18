@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.eclipse.oomph.maven-bnd</groupId>
@@ -25,35 +28,41 @@
 					<skipArchive>true</skipArchive>
 					<xzCompress>false</xzCompress>
 				</configuration>
+				<executions>
+					<execution>
+						<id>fix</id>
+						<goals>
+							<goal>fix-artifacts-metadata</goal>
+						</goals>
+						<phase>integration-test</phase>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
 
 	<profiles>
 		<profile>
-			<id>gpg-sign</id>
+			<id>sign</id>
 			<activation>
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.eclipse.tycho</groupId>
-						<artifactId>tycho-gpg-plugin</artifactId>
-						<version>${tycho-version}</version>
+						<groupId>org.eclipse.cbi.maven.plugins</groupId>
+						<artifactId>eclipse-jarsigner-plugin</artifactId>
+						<version>1.3.0</version>
 						<configuration>
-							<keyname>${gpg-keyname}</keyname>
-							<skipIfJarsigned>true</skipIfJarsigned>
-							<forceSignature>
-								<bundle>bcpg</bundle>
-								<bundle>bcprov</bundle>
-							</forceSignature>
+							<includes>plugins/*.jar,features/*.jar</includes>
+							<archiveDirectory>
+								${project.build.directory}/repository</archiveDirectory>
 						</configuration>
 						<executions>
 							<execution>
-								<phase>package</phase>
+								<id>sign</id>
 								<goals>
-									<goal>sign-p2-artifacts</goal>
+									<goal>sign</goal>
 								</goals>
 							</execution>
 						</executions>

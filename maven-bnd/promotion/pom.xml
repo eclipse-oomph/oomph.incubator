@@ -78,7 +78,7 @@ SPDX-License-Identifier: EPL-2.0
                 -build-url ${org.eclipse.justj.p2.manager.build.url}
                 -root ${project.build.directory}/simrel-maven-bnd-sync
                 -relative ${org.eclipse.justj.p2.manager.relative}
-                -version-iu org.eclipse.oomph.maven.bnd.all.
+                -version-iu org.eclipse.oomph.maven.
                 -commit https://git.eclipse.org/c/oomph/org.eclipse.oomph.incubator.git/commit/?id=${git.commit}
                 -target-url https://download.eclipse.org/oomph
                 -promote ${project.basedir}/../site/target/repository

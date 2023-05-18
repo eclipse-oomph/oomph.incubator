@@ -3,10 +3,10 @@
 <target name="MavenBND" sequenceNumber="1">
   <locations>
     <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="generate" type="Maven">
-      <feature id="org.eclipse.oomph.maven.bnd.all" label="Oomph Maven BND All" provider-name="Eclipse Oomph Project" version="4.28.0">
+      <feature id="org.eclipse.oomph.maven.lucene" label="Oomph Maven BND Lucene" provider-name="Eclipse Oomph" version="4.28.0">
         <description>This feature's dependencies are pulled directly from Maven central and wrapped via BND recipe as OSGi artifacts.</description>
         <copyright>
-Copyright (c) 2023 Eclipse contributors and others.
+Copyright (c) 2023!!!! Eclipse contributors and others.
 
 This program and the accompanying materials
 are made available under the terms of the Eclipse Public License 2.0
@@ -26,7 +26,19 @@ SPDX-License-Identifier: EPL-2.0
         </dependency>
         <dependency>
           <groupId>org.apache.lucene</groupId>
+          <artifactId>lucene-analysis-smartcn</artifactId>
+          <version>9.5.0</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.lucene</groupId>
           <artifactId>lucene-core</artifactId>
+          <version>9.5.0</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.lucene</groupId>
+          <artifactId>lucene-misc</artifactId>
           <version>9.5.0</version>
           <type>jar</type>
         </dependency>
@@ -48,22 +60,19 @@ SPDX-License-Identifier: EPL-2.0
           <version>9.5.0</version>
           <type>jar</type>
         </dependency>
-        <dependency>
-          <groupId>org.mockito</groupId>
-          <artifactId>mockito-inline</artifactId>
-          <version>4.11.0</version>
-          <type>jar</type>
-        </dependency>
       </dependencies>
-      <instructions><![CDATA[
-Bundle-Name:           Bundle ${mvnGroupId} : ${mvnArtifactId}
-version:               ${version_cleanup;${mvnVersion}}
-Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
-Bundle-Version:        ${version}
-Import-Package:        *
-Export-Package:        *;version="${version}";-noimport:=true
-DynamicImport-Package: *
--noextraheaders:       true
+      <instructions>
+<!-- SHA1 ecf27462f8dcbde9863aa6f8ce759e00b061b8df -->
+<![CDATA[
+Bundle-Name:            Bundle ${mvnGroupId} : ${mvnArtifactId}
+version:                ${versionmask;===;${version_cleanup;${mvnVersion}}}
+Bundle-SymbolicName:    ${mvnGroupId}.${replacestring;${mvnArtifactId};lucene-}
+Bundle-Version:         ${version}.v20230518-0524
+Eclipse-Wrapped-Bundle: ${mvnGroupId}.${mvnArtifactId}:${version}
+Import-Package:         *
+Export-Package:         *;version="${version}";-noimport:=true
+-noextraheaders:        true
+-removeheaders:         Private-Package
 ]]></instructions>
     </location>
   </locations>
