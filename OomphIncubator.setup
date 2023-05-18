@@ -325,7 +325,7 @@
           <operand
               xsi:type="predicates:RepositoryPredicate"
               project="org.eclipse.oomph.incubator"
-              relativePathPattern="maven/.*"/>
+              relativePathPattern="maven(-bnd)?/.*"/>
         </predicate>
       </workingSet>
       <workingSet
