@@ -67,7 +67,7 @@ public class DependencyAnalyzer {
 
 		var dependencies = new TreeSet<Dependency>();
 		var reporter = new Reporter(getArgument(arguments, "-report"));
-		var targets = getArguments(arguments, "-targets").stream().map(it -> it.split("="))
+		var targets = getArguments(arguments, "-targets").stream().filter(it -> !it.startsWith("//")).map(it -> it.split("="))
 				.collect(Collectors.toMap(it -> it[0], it -> it[1]));
 		for (var target : targets.entrySet()) {
 			var uri = createURI(target.getValue());
