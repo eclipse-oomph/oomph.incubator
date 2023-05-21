@@ -27,30 +27,6 @@
     </detail>
   </annotation>
   <setupTask
-      xsi:type="setup.p2:P2Task"
-      label="Oomph">
-    <requirement
-        name="org.eclipse.emf.sdk.feature.group"/>
-    <requirement
-        name="org.eclipse.egit.feature.group"/>
-    <repository
-        url="https://download.eclipse.org/modeling/emf/emf/builds/nightly/latest"/>
-    <repository
-        url="https://download.eclipse.org/egit/updates-stable-nightly"/>
-    <repository
-        url="${oomph.update.url}"/>
-  </setupTask>
-  <setupTask
-      xsi:type="setup.p2:P2Task"
-      label="CBI p2 Aggregator">
-    <requirement
-        name="org.eclipse.cbi.p2repo.aggregator.editor.feature.feature.group"/>
-    <requirement
-        name="org.eclipse.cbi.p2repo.aggregator.analyzer.editor.feature.feature.group"/>
-    <repository
-        url="https://download.eclipse.org/cbi/updates/p2-aggregator/tools/nightly/latest"/>
-  </setupTask>
-  <setupTask
       xsi:type="setup:CompoundTask"
       name="User Preferences">
     <annotation
@@ -75,6 +51,10 @@
           xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.core.resources/missingNatureMarkerSeverity"
           value="-1"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.core.resources/description.disableLinking"
+          value="false"/>
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
@@ -134,6 +114,66 @@
     </setupTask>
   </setupTask>
   <setupTask
+      xsi:type="workbench:FileAssociationsTask">
+    <mapping
+        filePattern="*.launch"
+        defaultEditorID="org.eclipse.ui.genericeditor.GenericEditor"/>
+    <mapping
+        filePattern="*.sh"
+        defaultEditorID="org.eclipse.ui.genericeditor.GenericEditor"/>
+    <description>Bindings for JET templates</description>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
+      label="Oomph">
+    <requirement
+        name="org.eclipse.emf.sdk.feature.group"/>
+    <requirement
+        name="org.eclipse.egit.feature.group"/>
+    <repository
+        url="https://download.eclipse.org/modeling/emf/emf/builds/nightly/latest"/>
+    <repository
+        url="https://download.eclipse.org/egit/updates-stable-nightly"/>
+    <repository
+        url="${oomph.update.url}"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
+      label="CBI p2 Aggregator">
+    <requirement
+        name="org.eclipse.cbi.p2repo.aggregator.editor.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.cbi.p2repo.aggregator.analyzer.editor.feature.feature.group"/>
+    <repository
+        url="https://download.eclipse.org/cbi/updates/p2-aggregator/tools/nightly/latest"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup:VariableTask"
+      type="BOOLEAN"
+      name="install.bnd"
+      defaultValue="false"
+      storageURI="scope://Installation"
+      label="Install BND Tools (read hover text)">
+    <description>Installing BND Tools requires installing unsigned jars.  The tools are very helpful for reviewing the generated resutls.</description>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
+      filter="(install.bnd=true)"
+      label="BND">
+    <requirement
+        name="bndtools.main.feature.feature.group"/>
+    <requirement
+        name="bndtools.m2e.feature.feature.group"/>
+    <requirement
+        name="bndtools.pde.feature.feature.group"/>
+    <repository
+        url="https://bndtools.jfrog.io/bndtools/update-latest"/>
+  </setupTask>
+  <setupTask
+      xsi:type="jdt:JRETask"
+      version="JavaSE-17"
+      location="${jre.location-17}"/>
+  <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Doomph.redirection.incubation.setup"
       value="=https://git.eclipse.org/c/oomph/org.eclipse.oomph.incubator.git/plain/OomphIncubator.setup->${git.clone.oomph.incubator.location|uri}/OomphIncubator.setup"
@@ -180,14 +220,90 @@
     <description>Choose the compatibility level of the target platform</description>
   </setupTask>
   <setupTask
-      xsi:type="workbench:FileAssociationsTask">
-    <mapping
-        filePattern="*.launch"
-        defaultEditorID="org.eclipse.ui.genericeditor.GenericEditor"/>
-    <mapping
-        filePattern="*.sh"
-        defaultEditorID="org.eclipse.ui.genericeditor.GenericEditor"/>
-    <description>Bindings for JET templates</description>
+      xsi:type="git:GitCloneTask"
+      id="git.clone.oomph.incubator"
+      remoteURI="oomph/org.eclipse.oomph.incubator"
+      checkoutBranch="master">
+    <annotation
+        source="http://www.eclipse.org/oomph/setup/InducedChoices">
+      <detail
+          key="inherit">
+        <value>eclipse.git.gerrit.remoteURIs</value>
+      </detail>
+      <detail
+          key="label">
+        <value>Oomph Git or Gerrit Repository</value>
+      </detail>
+      <detail
+          key="target">
+        <value>remoteURI</value>
+      </detail>
+    </annotation>
+    <description>Oomph</description>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.targlets:TargletTask">
+    <targlet
+        name="Oomph Incubator"
+        includeAllPlatforms="true">
+      <requirement
+          name="*"/>
+      <requirement
+          name="com.ibm.icu"
+          versionRange="[72.1.0.v20221115-2007,72.1.0.v20221115-2007]"/>
+      <sourceLocator
+          rootFolder="${git.clone.oomph.incubator.location}"
+          locateNestedProjects="true"/>
+      <repositoryList>
+        <annotation
+            source="WARNING!">
+          <detail
+              key="description">
+            <value>Update  /org.eclipse.oomph.simrel.extra.parent/pom.xml with any URLs used here.</value>
+          </detail>
+        </annotation>
+        <repository
+            url="https://download.eclipse.org/tools/orbit/downloads/drops/R20221123021534/repository"/>
+      </repositoryList>
+    </targlet>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.workingsets:WorkingSetTask"
+      id="workingsets.oomph.incubator">
+    <workingSet
+        name="Oomph Incubator Root">
+      <predicate
+          xsi:type="predicates:AndPredicate">
+        <operand
+            xsi:type="predicates:RepositoryPredicate"
+            project="org.eclipse.oomph.incubator"/>
+        <operand
+            xsi:type="workingsets:ExclusionPredicate"
+            excludedWorkingSet="//'workingsets.oomph.incubator'/@workingSets[name='Oomph%20Incubator%20SimRel%20Extra'] //'workingsets.oomph.incubator'/@workingSets[name='Oomph%20Incubator%20Maven']"/>
+      </predicate>
+    </workingSet>
+    <workingSet
+        name="Oomph Incubator Maven">
+      <predicate
+          xsi:type="predicates:AndPredicate">
+        <operand
+            xsi:type="predicates:RepositoryPredicate"
+            project="org.eclipse.oomph.incubator"
+            relativePathPattern="maven(-bnd)?/.*"/>
+      </predicate>
+    </workingSet>
+    <workingSet
+        name="Oomph Incubator SimRel Extra">
+      <predicate
+          xsi:type="predicates:AndPredicate">
+        <operand
+            xsi:type="predicates:RepositoryPredicate"
+            project="org.eclipse.oomph.incubator"/>
+        <operand
+            xsi:type="predicates:NamePredicate"
+            pattern=".*simrel.extra.*"/>
+      </predicate>
+    </workingSet>
   </setupTask>
   <setupTask
       xsi:type="setup:StringSubstitutionTask"
@@ -250,98 +366,7 @@
     <description>The location of the mvn command that will execute mvn on your operating system; it is used in the External Tools Configurations.</description>
   </setupTask>
   <stream name="master"
-      label="Master">
-    <setupTask
-        xsi:type="jdt:JRETask"
-        version="JavaSE-17"
-        location="${jre.location-17}"/>
-    <setupTask
-        xsi:type="git:GitCloneTask"
-        id="git.clone.oomph.incubator"
-        remoteURI="oomph/org.eclipse.oomph.incubator"
-        checkoutBranch="master">
-      <annotation
-          source="http://www.eclipse.org/oomph/setup/InducedChoices">
-        <detail
-            key="inherit">
-          <value>eclipse.git.gerrit.remoteURIs</value>
-        </detail>
-        <detail
-            key="label">
-          <value>Oomph Git or Gerrit Repository</value>
-        </detail>
-        <detail
-            key="target">
-          <value>remoteURI</value>
-        </detail>
-      </annotation>
-      <description>Oomph</description>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.targlets:TargletTask">
-      <targlet
-          name="Oomph Incubator"
-          includeAllPlatforms="true">
-        <requirement
-            name="*"/>
-        <requirement
-            name="com.ibm.icu"
-            versionRange="[72.1.0.v20221115-2007,72.1.0.v20221115-2007]"/>
-        <sourceLocator
-            rootFolder="${git.clone.oomph.incubator.location}"
-            locateNestedProjects="true"/>
-        <repositoryList>
-          <annotation
-              source="WARNING!">
-            <detail
-                key="description">
-              <value>Update  /org.eclipse.oomph.simrel.extra.parent/pom.xml with any URLs used here.</value>
-            </detail>
-          </annotation>
-          <repository
-              url="https://download.eclipse.org/tools/orbit/downloads/drops/R20221123021534/repository"/>
-        </repositoryList>
-      </targlet>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.workingsets:WorkingSetTask"
-        id="workingsets.oomph.incubator">
-      <workingSet
-          name="Oomph Incubator Root">
-        <predicate
-            xsi:type="predicates:AndPredicate">
-          <operand
-              xsi:type="predicates:RepositoryPredicate"
-              project="org.eclipse.oomph.incubator"/>
-          <operand
-              xsi:type="workingsets:ExclusionPredicate"
-              excludedWorkingSet="//'workingsets.oomph.incubator'/@workingSets[name='Oomph%20Incubator%20SimRel%20Extra'] //'workingsets.oomph.incubator'/@workingSets[name='Oomph%20Incubator%20Maven']"/>
-        </predicate>
-      </workingSet>
-      <workingSet
-          name="Oomph Incubator Maven">
-        <predicate
-            xsi:type="predicates:AndPredicate">
-          <operand
-              xsi:type="predicates:RepositoryPredicate"
-              project="org.eclipse.oomph.incubator"
-              relativePathPattern="maven(-bnd)?/.*"/>
-        </predicate>
-      </workingSet>
-      <workingSet
-          name="Oomph Incubator SimRel Extra">
-        <predicate
-            xsi:type="predicates:AndPredicate">
-          <operand
-              xsi:type="predicates:RepositoryPredicate"
-              project="org.eclipse.oomph.incubator"/>
-          <operand
-              xsi:type="predicates:NamePredicate"
-              pattern=".*simrel.extra.*"/>
-        </predicate>
-      </workingSet>
-    </setupTask>
-  </stream>
+      label="Master"/>
   <logicalProjectContainer
       xsi:type="setup:ProjectCatalog"
       href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>

@@ -3,7 +3,7 @@
 <target name="MavenBND" sequenceNumber="1">
   <locations>
     <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="generate" type="Maven">
-      <feature id="org.eclipse.oomph.maven.lucene" label="Oomph Maven BND Lucene" provider-name="Eclipse Oomph" version="4.28.0">
+      <feature id="org.eclipse.oomph.maven.lucene" label="Oomph Maven BND Lucene" provider-name="Eclipse Oomph" version="4.28.0.v20230521-0510">
         <description>This feature's dependencies are pulled directly from Maven central and wrapped via BND recipe as OSGi artifacts.</description>
         <copyright>
 Copyright (c) 2023 Eclipse contributors and others.
@@ -62,18 +62,21 @@ SPDX-License-Identifier: EPL-2.0
         </dependency>
       </dependencies>
       <instructions>
-<!-- SHA1 6ae0526a30bb45734e4a3ec84084da8ed1e039a2 -->
+<!-- SHA1 f471b19c433f3c7ed7b21cd74d4614cc7e0793ed -->
 <![CDATA[
 Bundle-Name:            Bundle ${mvnGroupId} : ${mvnArtifactId}
 version:                ${versionmask;===;${version_cleanup;${mvnVersion}}}
+version-range:          [${versionmask;==0;${version}},${versionmask;+;${version}})
 Bundle-SymbolicName:    ${mvnGroupId}.${replacestring;${mvnArtifactId};lucene-}
-Bundle-Version:         ${version}.v20230518-0538
+Bundle-Version:         ${version}.v20230521-0510
 Eclipse-Wrapped-Bundle: ${mvnGroupId}:${mvnArtifactId}:${version}
-Import-Package:         *
+Import-Package:         org.apache.lucene.*;version="${version-range}",\
+                        *
 Export-Package:         *;version="${version}";-noimport:=true
 -noextraheaders:        true
 -removeheaders:         Private-Package
-]]></instructions>
+]]>
+      </instructions>
     </location>
   </locations>
 </target>
