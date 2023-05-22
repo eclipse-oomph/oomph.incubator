@@ -88,6 +88,41 @@
           <type>jar</type>
         </dependency>
 
+        <dependency>
+          <groupId>org.mortbay.jasper</groupId>
+          <artifactId>apache-jsp</artifactId>
+          <version>9.0.52</version>
+          <type>jar</type>
+        </dependency>
+
+        <dependency>
+          <groupId>org.mortbay.jasper</groupId>
+          <artifactId>jasper-jsp</artifactId>
+          <version>9.0.52</version>
+          <type>jar</type>
+        </dependency>
+
+        <dependency>
+          <groupId>org.mortbay.jasper</groupId>
+          <artifactId>apache-el</artifactId>
+          <version>9.0.52</version>
+          <type>jar</type>
+        </dependency>
+
+        <dependency>
+          <groupId>org.eclipse.jetty.toolchain</groupId>
+          <artifactId>jetty-servlet-api</artifactId>
+          <version>4.0.6</version>
+          <type>jar</type>
+        </dependency>
+
+        <dependency>
+          <groupId>com.github.librepdf</groupId>
+          <artifactId>openpdf</artifactId>
+          <version>1.3.26</version>
+          <type>jar</type>
+        </dependency>
+
       </dependencies>
     </location>
   </locations>
