@@ -1,9 +1,5 @@
 # Target Platform: [supplement](file:///D:/Users/merks/oomph-incubator-1.0/git/org.eclipse.oomph.incubator/maven/tp/other/MavenSupplement.target)
 
-## Minor Updates
- - [com.github.librepdf](https://repo1.maven.org/maven2/com/github/librepdf/)
-    - [openpdf](https://repo1.maven.org/maven2/com/github/librepdf/openpdf/) **[1.3.26](https://repo1.maven.org/maven2/com/github/librepdf/openpdf/1.3.26)** < [1.3.30](https://repo1.maven.org/maven2/com/github/librepdf/openpdf/1.3.30/)
-
 ## Major Updates
  - [javax.servlet](https://repo1.maven.org/maven2/javax/servlet/)
     - [javax.servlet-api](https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/) **[3.1.0](https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0)** < [4.0.1](https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/4.0.1/)
@@ -14,14 +10,11 @@
     - [apache-jsp](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-jsp/) **[9.0.52](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-jsp/9.0.52)** < [10.1.7](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-jsp/10.1.7/)
     - [jasper-jsp](https://repo1.maven.org/maven2/org/mortbay/jasper/jasper-jsp/) **[9.0.52](https://repo1.maven.org/maven2/org/mortbay/jasper/jasper-jsp/9.0.52)** < [10.1.7](https://repo1.maven.org/maven2/org/mortbay/jasper/jasper-jsp/10.1.7/)
 
-## Updates Applied
-[updated.target](updated.target)
-
 ## Content
  - [ch.qos.logback](https://repo1.maven.org/maven2/ch/qos/logback/)
     - [logback-core](https://repo1.maven.org/maven2/ch/qos/logback/logback-core/) **[1.4.7](https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.7)**
  - [com.github.librepdf](https://repo1.maven.org/maven2/com/github/librepdf/)
-    - [openpdf](https://repo1.maven.org/maven2/com/github/librepdf/openpdf/) **[1.3.26](https://repo1.maven.org/maven2/com/github/librepdf/openpdf/1.3.26)**
+    - [openpdf](https://repo1.maven.org/maven2/com/github/librepdf/openpdf/) **[1.3.30](https://repo1.maven.org/maven2/com/github/librepdf/openpdf/1.3.30)**
  - [javax.servlet](https://repo1.maven.org/maven2/javax/servlet/)
     - [javax.servlet-api](https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/) **[3.1.0](https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0)**
  - [org.apache.aries.spifly](https://repo1.maven.org/maven2/org/apache/aries/spifly/)
