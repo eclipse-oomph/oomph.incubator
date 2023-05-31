@@ -29,6 +29,8 @@
     - [snakeyaml](https://repo1.maven.org/maven2/org/yaml/snakeyaml/) **[1.33](https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.33)** < [2.0](https://repo1.maven.org/maven2/org/yaml/snakeyaml/2.0/)
 
 ## Content
+ - [args4j](https://repo1.maven.org/maven2/args4j/)
+    - [args4j](https://repo1.maven.org/maven2/args4j/args4j/) **[2.33](https://repo1.maven.org/maven2/args4j/args4j/2.33)**
  - [biz.aQute.bnd](https://repo1.maven.org/maven2/biz/aQute/bnd/)
     - [biz.aQute.bnd.annotation](https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bnd.annotation/) **[6.4.0](https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bnd.annotation/6.4.0)**
     - [biz.aQute.bnd.embedded-repo](https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bnd.embedded-repo/) **[6.4.0](https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bnd.embedded-repo/6.4.0)**
@@ -39,9 +41,9 @@
     - [logback-classic](https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/) **[1.4.6](https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.4.6)**
     - [logback-core](https://repo1.maven.org/maven2/ch/qos/logback/logback-core/) **[1.4.7](https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.7)**
  - [com.fasterxml.jackson.core](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/)
-    - [jackson-annotations](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/) **[2.15.1](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.1)**
-    - [jackson-core](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/) **[2.15.1](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.1)**
-    - [jackson-databind](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/) **[2.15.1](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.1)**
+    - [jackson-annotations](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/) **[2.15.2](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.2)**
+    - [jackson-core](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/) **[2.15.2](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.2)**
+    - [jackson-databind](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/) **[2.15.2](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.2)**
  - [com.github.librepdf](https://repo1.maven.org/maven2/com/github/librepdf/)
     - [openpdf](https://repo1.maven.org/maven2/com/github/librepdf/openpdf/) **[1.3.30](https://repo1.maven.org/maven2/com/github/librepdf/openpdf/1.3.30)**
  - [com.google.code.gson](https://repo1.maven.org/maven2/com/google/code/gson/)
@@ -97,6 +99,7 @@
     - [org.apache.aries.spifly.dynamic.bundle](https://repo1.maven.org/maven2/org/apache/aries/spifly/org.apache.aries.spifly.dynamic.bundle/) **[1.3.6](https://repo1.maven.org/maven2/org/apache/aries/spifly/org.apache.aries.spifly.dynamic.bundle/1.3.6)**
  - [org.apache.commons](https://repo1.maven.org/maven2/org/apache/commons/)
     - [commons-compress](https://repo1.maven.org/maven2/org/apache/commons/commons-compress/) **[1.23.0](https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.23.0)**
+    - [commons-digester3](https://repo1.maven.org/maven2/org/apache/commons/commons-digester3/) **[3.2](https://repo1.maven.org/maven2/org/apache/commons/commons-digester3/3.2)**
  - [org.apache.felix](https://repo1.maven.org/maven2/org/apache/felix/)
     - [org.apache.felix.gogo.command](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.command/) **[1.1.2](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.command/1.1.2)**
     - [org.apache.felix.gogo.runtime](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.runtime/) **[1.1.6](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.runtime/1.1.6)**

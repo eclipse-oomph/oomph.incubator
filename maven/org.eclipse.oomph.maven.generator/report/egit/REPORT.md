@@ -1,8 +1,9 @@
 # Target Platform: [egit](https://git.eclipse.org/c/egit/egit.git/plain/org.eclipse.egit.target/egit-4.28.target)
 
 ## Minor Updates
- - [org.osgi](https://repo1.maven.org/maven2/org/osgi/)
-    - [org.osgi.service.component.annotations](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.component.annotations/) **[1.5.0](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.component.annotations/1.5.0)** < [1.5.1](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.component.annotations/1.5.1/)
+ - [net.bytebuddy](https://repo1.maven.org/maven2/net/bytebuddy/)
+    - [byte-buddy](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/) **[1.12.18](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.12.18)** < [1.14.4](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.14.4/)
+    - [byte-buddy-agent](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/) **[1.12.18](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.18)** < [1.14.4](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.14.4/)
 
 ## Major Updates
  - [jakarta.servlet](https://repo1.maven.org/maven2/jakarta/servlet/)
@@ -23,12 +24,22 @@
 [updated.target](updated.target)
 
 ## Content
+ - [args4j](https://repo1.maven.org/maven2/args4j/)
+    - [args4j](https://repo1.maven.org/maven2/args4j/args4j/) **[2.33](https://repo1.maven.org/maven2/args4j/args4j/2.33)**
+ - [com.google.code.gson](https://repo1.maven.org/maven2/com/google/code/gson/)
+    - [gson](https://repo1.maven.org/maven2/com/google/code/gson/gson/) **[2.10.1](https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1)**
  - [com.googlecode.javaewah](https://repo1.maven.org/maven2/com/googlecode/javaewah/)
     - [JavaEWAH](https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/) **[1.2.3](https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/1.2.3)**
  - [commons-codec](https://repo1.maven.org/maven2/commons-codec/)
     - [commons-codec](https://repo1.maven.org/maven2/commons-codec/commons-codec/) **[1.15](https://repo1.maven.org/maven2/commons-codec/commons-codec/1.15)**
  - [jakarta.servlet](https://repo1.maven.org/maven2/jakarta/servlet/)
     - [jakarta.servlet-api](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/) **[4.0.4](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/4.0.4)**
+ - [net.bytebuddy](https://repo1.maven.org/maven2/net/bytebuddy/)
+    - [byte-buddy](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/) **[1.12.18](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.12.18)**
+    - [byte-buddy-agent](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/) **[1.12.18](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.18)**
+ - [net.java.dev.jna](https://repo1.maven.org/maven2/net/java/dev/jna/)
+    - [jna](https://repo1.maven.org/maven2/net/java/dev/jna/jna/) **[5.13.0](https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.13.0)**
+    - [jna-platform](https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/) **[5.13.0](https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.13.0)**
  - [org.apache.commons](https://repo1.maven.org/maven2/org/apache/commons/)
     - [commons-compress](https://repo1.maven.org/maven2/org/apache/commons/commons-compress/) **[1.23.0](https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.23.0)**
  - [org.apache.sshd](https://repo1.maven.org/maven2/org/apache/sshd/)
@@ -52,8 +63,10 @@
  - [org.osgi](https://repo1.maven.org/maven2/org/osgi/)
     - [org.osgi.annotation.bundle](https://repo1.maven.org/maven2/org/osgi/org.osgi.annotation.bundle/) **[2.0.0](https://repo1.maven.org/maven2/org/osgi/org.osgi.annotation.bundle/2.0.0)**
     - [org.osgi.annotation.versioning](https://repo1.maven.org/maven2/org/osgi/org.osgi.annotation.versioning/) **[1.1.2](https://repo1.maven.org/maven2/org/osgi/org.osgi.annotation.versioning/1.1.2)**
-    - [org.osgi.service.component.annotations](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.component.annotations/) **[1.5.0](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.component.annotations/1.5.0)**
+    - [org.osgi.service.component.annotations](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.component.annotations/) **[1.5.1](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.component.annotations/1.5.1)**
     - [org.osgi.service.metatype.annotations](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.metatype.annotations/) **[1.4.1](https://repo1.maven.org/maven2/org/osgi/org.osgi.service.metatype.annotations/1.4.1)**
  - [org.slf4j](https://repo1.maven.org/maven2/org/slf4j/)
     - [slf4j-api](https://repo1.maven.org/maven2/org/slf4j/slf4j-api/) **[1.7.36](https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36)**
     - [slf4j-simple](https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/) **[1.7.36](https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.36)**
+ - [org.tukaani](https://repo1.maven.org/maven2/org/tukaani/)
+    - [xz](https://repo1.maven.org/maven2/org/tukaani/xz/) **[1.9](https://repo1.maven.org/maven2/org/tukaani/xz/1.9)**
