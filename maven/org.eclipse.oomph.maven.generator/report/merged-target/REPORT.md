@@ -22,7 +22,6 @@
  - [org.mortbay.jasper](https://repo1.maven.org/maven2/org/mortbay/jasper/)
     - [apache-el](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-el/) **[9.0.52](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-el/9.0.52)** < [10.1.7](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-el/10.1.7/)
     - [apache-jsp](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-jsp/) **[9.0.52](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-jsp/9.0.52)** < [10.1.7](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-jsp/10.1.7/)
-    - [jasper-jsp](https://repo1.maven.org/maven2/org/mortbay/jasper/jasper-jsp/) **[9.0.52](https://repo1.maven.org/maven2/org/mortbay/jasper/jasper-jsp/9.0.52)** < [10.1.7](https://repo1.maven.org/maven2/org/mortbay/jasper/jasper-jsp/10.1.7/)
  - [org.slf4j](https://repo1.maven.org/maven2/org/slf4j/)
     - [slf4j-simple](https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/) **[1.7.36](https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.36)** < [2.0.7](https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/2.0.7/)
  - [org.yaml](https://repo1.maven.org/maven2/org/yaml/)
@@ -99,7 +98,6 @@
     - [org.apache.aries.spifly.dynamic.bundle](https://repo1.maven.org/maven2/org/apache/aries/spifly/org.apache.aries.spifly.dynamic.bundle/) **[1.3.6](https://repo1.maven.org/maven2/org/apache/aries/spifly/org.apache.aries.spifly.dynamic.bundle/1.3.6)**
  - [org.apache.commons](https://repo1.maven.org/maven2/org/apache/commons/)
     - [commons-compress](https://repo1.maven.org/maven2/org/apache/commons/commons-compress/) **[1.23.0](https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.23.0)**
-    - [commons-digester3](https://repo1.maven.org/maven2/org/apache/commons/commons-digester3/) **[3.2](https://repo1.maven.org/maven2/org/apache/commons/commons-digester3/3.2)**
  - [org.apache.felix](https://repo1.maven.org/maven2/org/apache/felix/)
     - [org.apache.felix.gogo.command](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.command/) **[1.1.2](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.command/1.1.2)**
     - [org.apache.felix.gogo.runtime](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.runtime/) **[1.1.6](https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.gogo.runtime/1.1.6)**
@@ -152,7 +150,6 @@
  - [org.mortbay.jasper](https://repo1.maven.org/maven2/org/mortbay/jasper/)
     - [apache-el](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-el/) **[9.0.52](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-el/9.0.52)**
     - [apache-jsp](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-jsp/) **[9.0.52](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-jsp/9.0.52)**
-    - [jasper-jsp](https://repo1.maven.org/maven2/org/mortbay/jasper/jasper-jsp/) **[9.0.52](https://repo1.maven.org/maven2/org/mortbay/jasper/jasper-jsp/9.0.52)**
  - [org.mvel](https://repo1.maven.org/maven2/org/mvel/)
     - [mvel2](https://repo1.maven.org/maven2/org/mvel/mvel2/) **[2.4.15.Final](https://repo1.maven.org/maven2/org/mvel/mvel2/2.4.15.Final)**
  - [org.objenesis](https://repo1.maven.org/maven2/org/objenesis/)

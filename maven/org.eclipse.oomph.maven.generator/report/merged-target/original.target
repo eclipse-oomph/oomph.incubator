@@ -259,12 +259,6 @@ SPDX-License-Identifier: EPL-2.0
           <type>jar</type>
         </dependency>
         <dependency>
-          <groupId>org.apache.commons</groupId>
-          <artifactId>commons-digester3</artifactId>
-          <version>3.2</version>
-          <type>jar</type>
-        </dependency>
-        <dependency>
           <groupId>org.apache.felix</groupId>
           <artifactId>org.apache.felix.gogo.command</artifactId>
           <version>1.1.2</version>
@@ -477,12 +471,6 @@ SPDX-License-Identifier: EPL-2.0
         <dependency>
           <groupId>org.mortbay.jasper</groupId>
           <artifactId>apache-jsp</artifactId>
-          <version>9.0.52</version>
-          <type>jar</type>
-        </dependency>
-        <dependency>
-          <groupId>org.mortbay.jasper</groupId>
-          <artifactId>jasper-jsp</artifactId>
           <version>9.0.52</version>
           <type>jar</type>
         </dependency>

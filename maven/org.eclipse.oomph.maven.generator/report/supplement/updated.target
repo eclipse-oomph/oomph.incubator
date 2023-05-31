@@ -97,13 +97,6 @@
 
         <dependency>
           <groupId>org.mortbay.jasper</groupId>
-          <artifactId>jasper-jsp</artifactId>
-          <version>9.0.52</version>
-          <type>jar</type>
-        </dependency>
-
-        <dependency>
-          <groupId>org.mortbay.jasper</groupId>
           <artifactId>apache-el</artifactId>
           <version>9.0.52</version>
           <type>jar</type>

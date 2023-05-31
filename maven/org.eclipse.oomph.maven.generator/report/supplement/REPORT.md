@@ -8,7 +8,6 @@
  - [org.mortbay.jasper](https://repo1.maven.org/maven2/org/mortbay/jasper/)
     - [apache-el](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-el/) **[9.0.52](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-el/9.0.52)** < [10.1.7](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-el/10.1.7/)
     - [apache-jsp](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-jsp/) **[9.0.52](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-jsp/9.0.52)** < [10.1.7](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-jsp/10.1.7/)
-    - [jasper-jsp](https://repo1.maven.org/maven2/org/mortbay/jasper/jasper-jsp/) **[9.0.52](https://repo1.maven.org/maven2/org/mortbay/jasper/jasper-jsp/9.0.52)** < [10.1.7](https://repo1.maven.org/maven2/org/mortbay/jasper/jasper-jsp/10.1.7/)
 
 ## Content
  - [ch.qos.logback](https://repo1.maven.org/maven2/ch/qos/logback/)
@@ -30,7 +29,6 @@
  - [org.mortbay.jasper](https://repo1.maven.org/maven2/org/mortbay/jasper/)
     - [apache-el](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-el/) **[9.0.52](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-el/9.0.52)**
     - [apache-jsp](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-jsp/) **[9.0.52](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-jsp/9.0.52)**
-    - [jasper-jsp](https://repo1.maven.org/maven2/org/mortbay/jasper/jasper-jsp/) **[9.0.52](https://repo1.maven.org/maven2/org/mortbay/jasper/jasper-jsp/9.0.52)**
  - [org.osgi](https://repo1.maven.org/maven2/org/osgi/)
     - [org.osgi.dto](https://repo1.maven.org/maven2/org/osgi/org.osgi.dto/) **[1.1.1](https://repo1.maven.org/maven2/org/osgi/org.osgi.dto/1.1.1)**
     - [org.osgi.framework](https://repo1.maven.org/maven2/org/osgi/org.osgi.framework/) **[1.10.0](https://repo1.maven.org/maven2/org/osgi/org.osgi.framework/1.10.0)**
