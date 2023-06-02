@@ -2,8 +2,8 @@
 
 ## Minor Updates
  - [net.bytebuddy](https://repo1.maven.org/maven2/net/bytebuddy/)
-    - [byte-buddy](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/) **[1.12.18](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.12.18)** < [1.14.4](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.14.4/)
-    - [byte-buddy-agent](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/) **[1.12.18](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.18)** < [1.14.4](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.14.4/)
+    - [byte-buddy](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/) **[1.12.18](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.12.18)** < [1.14.5](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.14.5/)
+    - [byte-buddy-agent](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/) **[1.12.18](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.18)** < [1.14.5](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.14.5/)
 
 ## Major Updates
  - [jakarta.servlet](https://repo1.maven.org/maven2/jakarta/servlet/)
