@@ -63,15 +63,19 @@ public class DependencyAnalyzer {
 		var ignorePatterns = ignores.stream().filter(it -> !it.startsWith("/")).map(Pattern::compile)
 				.collect(Collectors.toList());
 
-		var analyzer = new Analyzer(contentHandler, ignorePatterns);
+		var majorInclusions = getArguments(arguments, "-include-major");
+		var majorInclusionPatterns = majorInclusions.stream().filter(it -> !it.startsWith("/")).map(Pattern::compile)
+				.collect(Collectors.toList());
+
+		var analyzer = new Analyzer(contentHandler, ignorePatterns, majorInclusionPatterns);
 
 		var dependencies = new TreeSet<Dependency>();
 		var reporter = new Reporter(getArgument(arguments, "-report"));
-		var targets = getArguments(arguments, "-targets").stream().filter(it -> !it.startsWith("//")).map(it -> it.split("="))
-				.collect(Collectors.toMap(it -> it[0], it -> it[1]));
+		var targets = getArguments(arguments, "-targets").stream().filter(it -> !it.startsWith("//"))
+				.map(it -> it.split("=")).collect(Collectors.toMap(it -> it[0], it -> it[1]));
 		for (var target : targets.entrySet()) {
 			var uri = createURI(target.getValue());
-			reporter.generateReport(contentHandler, analyzer, target.getKey(), uri);
+			reporter.generateReport(contentHandler, analyzer, target.getKey(), uri, majorInclusionPatterns);
 			dependencies.addAll(analyzer.getTargetDependencies(uri));
 		}
 
@@ -85,7 +89,8 @@ public class DependencyAnalyzer {
 		// Remove any dependency for which there is a minor update version.
 		dependencies.removeIf(it -> {
 			return dependencies.stream().anyMatch(it2 -> {
-				return it != it2 && it2.isSameArtfiact(it) && it2.version.compareTo(it.version.nextMajor()) < 0
+				return it != it2 && it2.isSameArtfiact(it)
+						&& it2.version.compareTo(it.nextMajorVersion(majorInclusionPatterns)) < 0
 						&& it.version.compareTo(it2.version) < 0;
 			});
 		});
@@ -107,17 +112,18 @@ public class DependencyAnalyzer {
 
 			var allUpdateVersions = analyzer.getAllUpdateVersions(dependencies);
 			allUpdateVersions.entrySet().removeIf(it -> {
-				var nextMajor = it.getKey().version.nextMajor();
+				var nextMajor = it.getKey().nextMajorVersion(majorInclusionPatterns);
 				var versions = it.getValue();
 				versions.removeIf(version -> version.compareTo(nextMajor) >= 0);
 				return versions.isEmpty();
 			});
 			dependencyUpdates.putAll(allUpdateVersions);
 
-			var newMavenContent = replace(reducedMavenTarget, dependencyUpdates, true, true);
+			var newMavenContent = replace(reducedMavenTarget, dependencyUpdates, true, true, majorInclusionPatterns);
 			writeString(mavenTarget, newMavenContent);
 
-			reporter.generateReport(contentHandler, analyzer, "merged-target", mavenTarget.toUri());
+			reporter.generateReport(contentHandler, analyzer, "merged-target", mavenTarget.toUri(),
+					majorInclusionPatterns);
 		}
 	}
 
@@ -160,7 +166,7 @@ public class DependencyAnalyzer {
 	private static final Pattern INDENTATION_PATTERN = Pattern.compile(".*>\r?\n(\\s+)<locations>.*", Pattern.DOTALL);
 
 	private static String replace(String content, Map<Dependency, List<Version>> dependencies, boolean ignoreMajor,
-			boolean addMissing) {
+			boolean addMissing, List<Pattern> majorInclusions) {
 		var indentation = INDENTATION_PATTERN.matcher(content).replaceAll("$1");
 		for (var entry : dependencies.entrySet()) {
 			var dependency = entry.getKey();
@@ -168,10 +174,11 @@ public class DependencyAnalyzer {
 			var artifactId = dependency.artifactId;
 			var type = dependency.type;
 			var actualVersion = dependency.version;
+			var nextMajor = dependency.nextMajorVersion(majorInclusions);
 
 			var versions = entry.getValue();
 			var version = versions.get(0);
-			if (!ignoreMajor || version.compareTo(actualVersion.nextMajor()) < 0) {
+			if (!ignoreMajor || version.compareTo(nextMajor) < 0) {
 				Pattern pattern = Pattern.compile("(<dependency>[^<]*" + //
 						"<groupId>" + Pattern.quote(groupId) + "</groupId>[^<]*" + //
 						"<artifactId>" + Pattern.quote(artifactId) + "</artifactId>[^<]*" + //
@@ -282,8 +289,8 @@ public class DependencyAnalyzer {
 			}
 		}
 
-		public void generateReport(ContentHandler contentHandler, Analyzer analyzer, String name, URI uri)
-				throws IOException {
+		public void generateReport(ContentHandler contentHandler, Analyzer analyzer, String name, URI uri,
+				List<Pattern> majorInclusions) throws IOException {
 			if (reportRoot == null) {
 				return;
 			}
@@ -297,7 +304,7 @@ public class DependencyAnalyzer {
 
 			var targetDependencies = analyzer.getTargetDependencies(uri);
 			var targetDependencyVersions = analyzer.getAllUpdateVersions(targetDependencies);
-			var newContent = replace(content, targetDependencyVersions, true, false);
+			var newContent = replace(content, targetDependencyVersions, true, false, majorInclusions);
 			writeString(report.resolve("updated.target"), newContent);
 
 			try (var out = new PrintStream(Files.newOutputStream(report.resolve("REPORT.md")), false,
@@ -313,7 +320,7 @@ public class DependencyAnalyzer {
 					for (var entry : targetDependencyVersions.entrySet()) {
 						var dependency = entry.getKey();
 						var versions = new ArrayList<Version>(entry.getValue());
-						var nextMajor = dependency.version.nextMajor();
+						var nextMajor = dependency.nextMajorVersion(majorInclusions);
 						versions.removeIf(it -> minor ? it.compareTo(nextMajor) >= 0 : it.compareTo(nextMajor) < 0);
 						if (!versions.isEmpty()) {
 							if (!started) {
@@ -384,9 +391,12 @@ public class DependencyAnalyzer {
 
 		private final List<Pattern> ignorePatterns;
 
-		public Analyzer(ContentHandler contentHandler, List<Pattern> ignorePatterns) {
+		private final List<Pattern> majorInclusions;
+
+		public Analyzer(ContentHandler contentHandler, List<Pattern> ignorePatterns, List<Pattern> majorInclusions) {
 			this.contentHandler = contentHandler;
 			this.ignorePatterns = ignorePatterns;
+			this.majorInclusions = majorInclusions;
 		}
 
 		public List<Dependency> getTargetDependencies(URI location) throws IOException {
@@ -420,8 +430,7 @@ public class DependencyAnalyzer {
 		}
 
 		public List<Version> getUpdateVersions(Dependency dependency) throws IOException {
-
-			var nextMajor = dependency.version.nextMajor();
+			var nextMajor = dependency.nextMajorVersion(majorInclusions);
 			var nextAvailableVersion = dependency.version;
 			var maxAvailableVersion = dependency.version;
 
@@ -464,14 +473,17 @@ public class DependencyAnalyzer {
 					.collect(Collectors.toList());
 		}
 
+		private static Pattern INCLUDED_QUALIFIER = Pattern.compile("[-.][0-9]+|[.]v20[0-9]+|-ga|-GA|-jre");
+
 		private boolean isIncludedQualifier(String qualifier) {
 			if (qualifier == null) {
 				return true;
 			}
-			String lowerCaseQualifier = qualifier.toLowerCase();
-			if ("-ga".equals(lowerCaseQualifier)) {
+
+			if (INCLUDED_QUALIFIER.matcher(qualifier).matches()) {
 				return true;
 			}
+
 			return false;
 		}
 	}
@@ -559,6 +571,8 @@ public class DependencyAnalyzer {
 	}
 
 	private static final class Dependency implements Comparable<Dependency> {
+		private static final Version MAX_VERSION = new Version(Short.MAX_VALUE, 0, -1, null);
+
 		private final String groupId;
 		private final String artifactId;
 		private final String type;
@@ -570,6 +584,13 @@ public class DependencyAnalyzer {
 			this.artifactId = artifactId;
 			this.type = type;
 			this.version = version;
+		}
+
+		public Version nextMajorVersion(List<Pattern> majorInclusions) {
+			if (majorInclusions.stream().anyMatch(it -> it.matcher(groupId + ":" + artifactId).matches())) {
+				return MAX_VERSION;
+			}
+			return version.nextMajor();
 		}
 
 		public URI getGroupURI() {

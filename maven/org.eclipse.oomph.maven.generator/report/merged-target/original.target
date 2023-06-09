@@ -3,7 +3,7 @@
 <target name="Maven" sequenceNumber="1">
   <locations>
     <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven">
-      <feature id="org.eclipse.oomph.maven.all" label="Oomph Maven All" provider-name="Eclipse Oomph Project" version="4.28.0">
+      <feature id="org.eclipse.oomph.maven.all" label="Oomph Maven All" provider-name="Eclipse Oomph Project" version="4.29.0">
         <description>This feature's dependencies are pulled directly from Maven central.</description>
         <copyright>
 Copyright (c) 2023 Eclipse contributors and others.
@@ -27,31 +27,31 @@ SPDX-License-Identifier: EPL-2.0
         <dependency>
           <groupId>biz.aQute.bnd</groupId>
           <artifactId>biz.aQute.bnd.annotation</artifactId>
-          <version>6.4.0</version>
+          <version>6.4.1</version>
           <type>jar</type>
         </dependency>
         <dependency>
           <groupId>biz.aQute.bnd</groupId>
           <artifactId>biz.aQute.bnd.embedded-repo</artifactId>
-          <version>6.4.0</version>
+          <version>6.4.1</version>
           <type>jar</type>
         </dependency>
         <dependency>
           <groupId>biz.aQute.bnd</groupId>
           <artifactId>biz.aQute.bnd.util</artifactId>
-          <version>6.4.0</version>
+          <version>6.4.1</version>
           <type>jar</type>
         </dependency>
         <dependency>
           <groupId>biz.aQute.bnd</groupId>
           <artifactId>biz.aQute.bndlib</artifactId>
-          <version>6.4.0</version>
+          <version>6.4.1</version>
           <type>jar</type>
         </dependency>
         <dependency>
           <groupId>biz.aQute.bnd</groupId>
           <artifactId>biz.aQute.repository</artifactId>
-          <version>6.4.0</version>
+          <version>6.4.1</version>
           <type>jar</type>
         </dependency>
         <dependency>
@@ -105,7 +105,7 @@ SPDX-License-Identifier: EPL-2.0
         <dependency>
           <groupId>com.google.guava</groupId>
           <artifactId>guava</artifactId>
-          <version>31.1-jre</version>
+          <version>32.0.1-jre</version>
           <type>jar</type>
         </dependency>
         <dependency>
@@ -153,7 +153,7 @@ SPDX-License-Identifier: EPL-2.0
         <dependency>
           <groupId>commons-io</groupId>
           <artifactId>commons-io</artifactId>
-          <version>2.12.0</version>
+          <version>2.13.0</version>
           <type>jar</type>
         </dependency>
         <dependency>
@@ -256,6 +256,12 @@ SPDX-License-Identifier: EPL-2.0
           <groupId>org.apache.commons</groupId>
           <artifactId>commons-compress</artifactId>
           <version>1.23.0</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.derby</groupId>
+          <artifactId>derby</artifactId>
+          <version>10.16.1.1</version>
           <type>jar</type>
         </dependency>
         <dependency>
