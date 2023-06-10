@@ -13,7 +13,7 @@ pipeline {
   }
 
   environment {
-    PUBLISH_LOCATION = 'orbit-legacy'
+    PUBLISH_LOCATION = 'simrel-orbit-legacy'
   }
 
   parameters {

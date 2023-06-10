@@ -66,6 +66,22 @@
       </plugin>
 
       <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-p2-repository-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>fix-artifacts-metadata</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <xzCompress>false</xzCompress>
+        </configuration>
+      </plugin>
+
+      <plugin>
         <groupId>org.eclipse.tycho.extras</groupId>
         <artifactId>tycho-p2-extras-plugin</artifactId>
         <version>${tycho-version}</version>
@@ -171,7 +187,7 @@
             <version>${tycho-version}</version>
             <configuration>
               <keyname>${gpg-keyname}</keyname>
-              <skipIfJarsigned>true</skipIfJarsigned>
+              <skipIfJarsigned>false</skipIfJarsigned>
             </configuration>
             <executions>
               <execution>
