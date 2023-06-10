@@ -2,28 +2,40 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.eclipse.oomph.jetty.mirror</groupId>
-  <artifactId>org.eclipse.oomph.jetty.mirror</artifactId>
+  <groupId>org.eclipse.oomph.orbit.legacy.mirror</groupId>
+  <artifactId>org.eclipse.oomph.orbit.legacy.mirror</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tycho-version>2.7.5</tycho-version>
-    <jetty-version>10.0.12</jetty-version>
+    <tycho-version>4.0.0-SNAPSHOT</tycho-version>
     <gpg-keyname>2E8E9CF8</gpg-keyname>
-    <eclipse.repo>https://download.eclipse.org/releases/2022-09</eclipse.repo>
+    <eclipse.repo>https://download.eclipse.org/releases/2023-03</eclipse.repo>
     <justj.tools.repo>https://download.eclipse.org/justj/tools/updates/nightly/latest</justj.tools.repo>
     <org.eclipse.storage.user>genie.oomph</org.eclipse.storage.user>
     <org.eclipse.justj.p2.manager.args>-remote ${org.eclipse.storage.user}@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/oomph</org.eclipse.justj.p2.manager.args>
     <org.eclipse.justj.p2.manager.extra.args></org.eclipse.justj.p2.manager.extra.args>
-    <org.eclipse.justj.p2.manager.relative>jetty-test</org.eclipse.justj.p2.manager.relative>
+    <org.eclipse.justj.p2.manager.relative>simrel-orbit-legacy</org.eclipse.justj.p2.manager.relative>
     <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
     <org.eclipse.justj.p2.manager.build.url>http://www.example.com/</org.eclipse.justj.p2.manager.build.url>
     <build.type>nightly</build.type>
   </properties>
-
+  
   <pluginRepositories>
+    <pluginRepository>
+      <id>tycho-snapshots</id>
+      <url>https://repo.eclipse.org/content/repositories/tycho-snapshots</url>
+    </pluginRepository>
+
+	<pluginRepository>
+      <id>dash-licenses-snapshots</id>
+      <url>https://repo.eclipse.org/content/repositories/dash-licenses-snapshots/</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </pluginRepository>
+
     <pluginRepository>
       <id>eclipse-maven-releases</id>
       <url>https://repo.eclipse.org/content/repositories/releases</url>
@@ -68,9 +80,9 @@
         <configuration>
           <source>
             <repository>
-              <id>jetty</id>
+              <id>orbit-legacy</id>
               <layout>p2</layout>
-              <url>mvn:org.eclipse.jetty:jetty-p2:${jetty-version}:zip:p2site</url>
+              <url>https://download.eclipse.org/tools/orbit/downloads/drops/R20201118194144/repository</url>
             </repository>
           </source>
           <compress>true</compress>
@@ -125,19 +137,17 @@
                 -nosplash
                 ${org.eclipse.justj.p2.manager.args}
                 -retain 5
-                -label "Jetty Updates"
+                -label "Orbit Legacy Updates"
                 -build-url ${org.eclipse.justj.p2.manager.build.url}
-                -root ${project.build.directory}/jetty-sync
+                -root ${project.build.directory}/orbit-legacy-sync
                 -relative ${org.eclipse.justj.p2.manager.relative}
-                -version-iu org.eclipse.jetty.
+                -version-iu org.eclipse.orbit.build.feature.
                 -target-url https://download.eclipse.org/oomph
                 -promote ${project.build.directory}/repository
                 -timestamp ${build.timestamp}
                 -type ${build.type}
-                -breadcrumb "Jetty https://www.eclipse.org/jetty"
-                -favicon https://raw.githubusercontent.com/eclipse-jetty/eclipse-jetty.github.io/master/favicon.ico
-                -title-image https://www.eclipse.org/jetty/common/images/jetty-logo.svg
-                -body-image https://raw.githubusercontent.com/eclipse-jetty/eclipse-jetty.github.io/master/favicon.ico
+                -breadcrumb "Orbit https://download.eclipse.org/tools/orbit/downloads"
+                -mapping simrel-orbit-legacy->SimRel-Orbit-Legacy
                 ${org.eclipse.justj.p2.manager.extra.args}
               </appArgLine>
             </configuration>

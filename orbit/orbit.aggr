@@ -12,7 +12,7 @@
         <bundles name="org.apache.commons.httpclient"/>
       </repositories>
     </contributions>
-    <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.27/R-4.27-202303020300"/>
+    <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.28/R-4.28-202306050440"/>
   </validationSets>
   <configurations operatingSystem="linux" windowSystem="gtk" architecture="aarch64"/>
   <configurations operatingSystem="linux" windowSystem="gtk" architecture="ppc64le"/>

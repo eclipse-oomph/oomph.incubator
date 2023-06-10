@@ -3,7 +3,7 @@
 <target name="MavenBND" sequenceNumber="1">
   <locations>
     <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="generate" type="Maven">
-      <feature id="org.eclipse.oomph.maven.lucene" label="Oomph Maven BND Lucene" provider-name="Eclipse Oomph" version="4.28.0.v20230521-0510">
+      <feature id="org.eclipse.oomph.maven.lucene" label="Oomph Maven BND Lucene" provider-name="Eclipse Oomph" version="4.29.0">
         <description>This feature's dependencies are pulled directly from Maven central and wrapped via BND recipe as OSGi artifacts.</description>
         <copyright>
 Copyright (c) 2023 Eclipse contributors and others.
