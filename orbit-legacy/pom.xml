@@ -188,6 +188,7 @@
             <configuration>
               <keyname>${gpg-keyname}</keyname>
               <skipIfJarsigned>false</skipIfJarsigned>
+              <skipIfJarsignedAndAnchored>false<skipIfJarsignedAndAnchored>
             </configuration>
             <executions>
               <execution>
