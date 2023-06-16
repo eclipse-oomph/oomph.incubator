@@ -140,7 +140,7 @@
 			  <dependency>
 				  <groupId>com.ibm.icu</groupId>
 				  <artifactId>icu4j</artifactId>
-				  <version>73.1</version>
+				  <version>73.2</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
@@ -235,12 +235,12 @@
 				<dependency>
 					<groupId>org.bouncycastle</groupId>
 					<artifactId>bcpg-jdk18on</artifactId>
-					<version>1.73</version>
+					<version>1.74</version>
 				</dependency>
 				<dependency>
 					<groupId>org.bouncycastle</groupId>
 					<artifactId>bcprov-jdk18on</artifactId>
-					<version>1.73</version>
+					<version>1.74</version>
 				</dependency>
 				<dependency>
 					<groupId>commons-io</groupId>

@@ -1,4 +1,8 @@
-# Target Platform: [supplement](file:///D:/Users/merks/oomph-incubator-1.0/git/org.eclipse.oomph.incubator/maven/tp/other/MavenSupplement.target)
+# Target Platform: [supplement](file:///Users/cdietrich/xtext-main/git/oomph.incubator/maven/tp/other/MavenSupplement.target)
+
+## Minor Updates
+ - [ch.qos.logback](https://repo1.maven.org/maven2/ch/qos/logback/)
+    - [logback-core](https://repo1.maven.org/maven2/ch/qos/logback/logback-core/) **[1.4.7](https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.7)** < [1.4.8](https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.8/)
 
 ## Major Updates
  - [javax.servlet](https://repo1.maven.org/maven2/javax/servlet/)
@@ -9,11 +13,18 @@
     - [apache-el](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-el/) **[9.0.52](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-el/9.0.52)** < [10.1.7](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-el/10.1.7/)
     - [apache-jsp](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-jsp/) **[9.0.52](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-jsp/9.0.52)** < [10.1.7](https://repo1.maven.org/maven2/org/mortbay/jasper/apache-jsp/10.1.7/)
 
+## Updates Applied
+[updated.target](updated.target)
+
 ## Content
  - [ch.qos.logback](https://repo1.maven.org/maven2/ch/qos/logback/)
     - [logback-core](https://repo1.maven.org/maven2/ch/qos/logback/logback-core/) **[1.4.7](https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.7)**
  - [com.github.librepdf](https://repo1.maven.org/maven2/com/github/librepdf/)
     - [openpdf](https://repo1.maven.org/maven2/com/github/librepdf/openpdf/) **[1.3.30](https://repo1.maven.org/maven2/com/github/librepdf/openpdf/1.3.30)**
+ - [com.google.inject](https://repo1.maven.org/maven2/com/google/inject/)
+    - [guice](https://repo1.maven.org/maven2/com/google/inject/guice/) **[7.0.0](https://repo1.maven.org/maven2/com/google/inject/guice/7.0.0)**
+ - [jakarta.inject](https://repo1.maven.org/maven2/jakarta/inject/)
+    - [jakarta.inject-api](https://repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/) **[2.0.1](https://repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1)**
  - [javax.servlet](https://repo1.maven.org/maven2/javax/servlet/)
     - [javax.servlet-api](https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/) **[3.1.0](https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0)**
  - [org.apache.aries.spifly](https://repo1.maven.org/maven2/org/apache/aries/spifly/)
