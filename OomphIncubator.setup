@@ -176,7 +176,7 @@
   <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Doomph.redirection.incubation.setup"
-      value="=https://git.eclipse.org/c/oomph/org.eclipse.oomph.incubator.git/plain/OomphIncubator.setup->${git.clone.oomph.incubator.location|uri}/OomphIncubator.setup"
+      value="=https://raw.githubusercontent.com/eclipse-oomph/oomph.incubator/master/OomphIncubator.setup->${git.clone.oomph.incubator.location|uri}/OomphIncubator.setup"
       vm="true">
     <description>Redirect to the development version of the releng setup model.</description>
   </setupTask>
