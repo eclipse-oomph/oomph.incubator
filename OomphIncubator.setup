@@ -12,7 +12,7 @@
     xmlns:setup.workingsets="http://www.eclipse.org/oomph/setup/workingsets/1.0"
     xmlns:workbench="http://www.eclipse.org/oomph/setup/workbench/1.0"
     xmlns:workingsets="http://www.eclipse.org/oomph/workingsets/1.0"
-    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/git/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Git.ecore http://www.eclipse.org/oomph/setup/jdt/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/JDT.ecore http://www.eclipse.org/oomph/predicates/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Predicates.ecore http://www.eclipse.org/oomph/setup/targlets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupTarglets.ecore http://www.eclipse.org/oomph/setup/workingsets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupWorkingSets.ecore http://www.eclipse.org/oomph/setup/workbench/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Workbench.ecore http://www.eclipse.org/oomph/workingsets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/WorkingSets.ecore"
+    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/git/1.0 https://raw.githubusercontent.com/eclipse-oomph/oomph/master/setups/models/Git.ecore http://www.eclipse.org/oomph/setup/jdt/1.0 https://raw.githubusercontent.com/eclipse-oomph/oomph/master/setups/models/JDT.ecore http://www.eclipse.org/oomph/predicates/1.0 https://raw.githubusercontent.com/eclipse-oomph/oomph/master/setups/models/Predicates.ecore http://www.eclipse.org/oomph/setup/targlets/1.0 https://raw.githubusercontent.com/eclipse-oomph/oomph/master/setups/models/SetupTarglets.ecore http://www.eclipse.org/oomph/setup/workingsets/1.0 https://raw.githubusercontent.com/eclipse-oomph/oomph/master/setups/models/SetupWorkingSets.ecore http://www.eclipse.org/oomph/setup/workbench/1.0 https://raw.githubusercontent.com/eclipse-oomph/oomph/master/setups/models/Workbench.ecore http://www.eclipse.org/oomph/workingsets/1.0 https://raw.githubusercontent.com/eclipse-oomph/oomph/master/setups/models/WorkingSets.ecore"
     name="oomph.incubator"
     label="Oomph Incubator">
   <annotation
@@ -176,7 +176,7 @@
   <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Doomph.redirection.incubation.setup"
-      value="=https://raw.githubusercontent.com/eclipse-oomph/oomph.incubator/master/OomphIncubator.setup->${git.clone.oomph.incubator.location|uri}/OomphIncubator.setup"
+      value="=https://raw.githubusercontent.com/eclipse-oomph/oomph.incubator/master/OomphIncubator.setup->${github.clone.oomph.incubator.location|uri}/OomphIncubator.setup"
       vm="true">
     <description>Redirect to the development version of the releng setup model.</description>
   </setupTask>
@@ -208,21 +208,21 @@
   <setupTask
       xsi:type="setup:StringSubstitutionTask"
       name="git.clone.oomph.incubator"
-      value="${git.clone.oomph.incubator.location}">
+      value="${github.clone.oomph.incubator.location}">
     <description>The location of Oomph's Incubator Git clone.</description>
   </setupTask>
   <setupTask
       xsi:type="setup:VariableTask"
       name="eclipse.target.platform"
-      defaultValue="${eclipse.target.platform.latest}"
+      value="${eclipse.target.platform.latest}"
       storageURI="scope://Workspace"
       label="Target Platform">
     <description>Choose the compatibility level of the target platform</description>
   </setupTask>
   <setupTask
       xsi:type="git:GitCloneTask"
-      id="git.clone.oomph.incubator"
-      remoteURI="oomph/org.eclipse.oomph.incubator"
+      id="github.clone.oomph.incubator"
+      remoteURI="eclipse-oomph/oomph.incubator"
       checkoutBranch="master">
     <annotation
         source="http://www.eclipse.org/oomph/setup/InducedChoices">
@@ -252,7 +252,7 @@
           name="com.ibm.icu"
           versionRange="[72.1.0.v20221115-2007,72.1.0.v20221115-2007]"/>
       <sourceLocator
-          rootFolder="${git.clone.oomph.incubator.location}"
+          rootFolder="${github.clone.oomph.incubator.location}"
           locateNestedProjects="true"/>
       <repositoryList>
         <annotation
