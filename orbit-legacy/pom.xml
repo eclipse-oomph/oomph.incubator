@@ -105,6 +105,7 @@
           <xzCompress>true</xzCompress>
           <keepNonXzIndexFiles>false</keepNonXzIndexFiles>
           <followStrictOnly>true</followStrictOnly>
+          <ignoreErrors>true</ignoreErrors>
         </configuration>
       </plugin>
 
