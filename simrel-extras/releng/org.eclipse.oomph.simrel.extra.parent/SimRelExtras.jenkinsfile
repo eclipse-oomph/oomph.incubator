@@ -59,7 +59,7 @@ pipeline {
                 [$class: 'CloneOption', shallow: true],
                 [$class: 'SparseCheckoutPaths', sparseCheckoutPaths:[[$class:'SparseCheckoutPath', path:'simrel-extras/']]]
               ],
-              userRemoteConfigs: [[url: 'https://git.eclipse.org/r/oomph/org.eclipse.oomph.incubator.git' ]]
+              userRemoteConfigs: [[url: 'https://github.com/eclipse-oomph/oomph.incubator.git' ]]
             ]
           )
 

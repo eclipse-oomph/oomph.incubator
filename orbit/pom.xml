@@ -208,7 +208,7 @@
                     ${org.eclipse.justj.p2.manager.relative}
                     -version-iu org.eclipse.oomph.maven.all.
                     -commit
-                    https://git.eclipse.org/c/oomph/org.eclipse.oomph.incubator.git/commit/?id=${git.commit}
+                    https://github.com/eclipse-oomph/oomph.incubator/commit/${git.commit}
                     -target-url
                     https://download.eclipse.org/oomph
                     -promote
