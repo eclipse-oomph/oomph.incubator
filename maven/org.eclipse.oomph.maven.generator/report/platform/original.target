@@ -110,7 +110,7 @@
     </location>
 
     <location includeAllPlatforms="true" includeMode="slicer" type="InstallableUnit">
-      <repository location="https://download.eclipse.org/reddeer/releases/4.5.0/"/>
+      <repository location="https://download.eclipse.org/reddeer/releases/4.6.0/"/>
       <unit id="org.eclipse.reddeer.workbench" version="0.0.0"/>
       <unit id="org.eclipse.reddeer.jface" version="0.0.0"/>
       <unit id="org.eclipse.reddeer.swt" version="0.0.0"/>
@@ -333,13 +333,13 @@
 			  <dependency>
 				  <groupId>net.bytebuddy</groupId>
 				  <artifactId>byte-buddy-agent</artifactId>
-				  <version>1.14.4</version>
+				  <version>1.14.5</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
 				  <groupId>net.bytebuddy</groupId>
 				  <artifactId>byte-buddy</artifactId>
-				  <version>1.14.4</version>
+				  <version>1.14.5</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
@@ -351,7 +351,7 @@
 			  <dependency>
 				  <groupId>org.mockito</groupId>
 				  <artifactId>mockito-core</artifactId>
-				  <version>5.3.1</version>
+				  <version>5.4.0</version>
 				  <type>jar</type>
 			  </dependency>
 			  <dependency>
@@ -555,29 +555,29 @@
 			  <dependency>
 					<groupId>biz.aQute.bnd</groupId>
 					<artifactId>biz.aQute.bnd.util</artifactId>
-					<version>6.4.0</version>
+					<version>6.4.1</version>
 					<type>jar</type>
 			  </dependency>
 			  <dependency>
 					<groupId>biz.aQute.bnd</groupId>
 					<artifactId>biz.aQute.bndlib</artifactId>
-					<version>6.4.0</version>
+					<version>6.4.1</version>
 					<type>jar</type>
 			  </dependency>
 			  <dependency>
 				  <groupId>biz.aQute.bnd</groupId>
 				  <artifactId>biz.aQute.bnd.annotation</artifactId>
-				  <version>6.4.0</version>
+				  <version>6.4.1</version>
   			  </dependency>
   			  <dependency>
 				  <groupId>biz.aQute.bnd</groupId>
 				  <artifactId>biz.aQute.repository</artifactId>
-				  <version>6.4.0</version>
+				  <version>6.4.1</version>
   			  </dependency>
   			  <dependency>
 				  <groupId>biz.aQute.bnd</groupId>
 				  <artifactId>biz.aQute.bnd.embedded-repo</artifactId>
-				  <version>6.4.0</version>
+				  <version>6.4.1</version>
   			  </dependency>
 		  </dependencies>
 	  </location>
