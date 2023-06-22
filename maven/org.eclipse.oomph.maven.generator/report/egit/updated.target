@@ -261,25 +261,25 @@
     	<dependency>
     		<groupId>org.bouncycastle</groupId>
     		<artifactId>bcpg-jdk18on</artifactId>
-    		<version>1.74</version>
+    		<version>1.75</version>
     		<type>jar</type>
     	</dependency>
     	<dependency>
     		<groupId>org.bouncycastle</groupId>
     		<artifactId>bcprov-jdk18on</artifactId>
-    		<version>1.74</version>
+    		<version>1.75</version>
     		<type>jar</type>
     	</dependency>
     	<dependency>
     		<groupId>org.bouncycastle</groupId>
     		<artifactId>bcpkix-jdk18on</artifactId>
-    		<version>1.74</version>
+    		<version>1.75</version>
     		<type>jar</type>
     	</dependency>
     	<dependency>
     		<groupId>org.bouncycastle</groupId>
     		<artifactId>bcutil-jdk18on</artifactId>
-    		<version>1.74</version>
+    		<version>1.75</version>
     		<type>jar</type>
     	</dependency>
     </dependencies>
@@ -309,7 +309,7 @@
     	<dependency>
     		<groupId>commons-codec</groupId>
     		<artifactId>commons-codec</artifactId>
-    		<version>1.15</version>
+    		<version>1.16.0</version>
     		<type>jar</type>
     	</dependency>
     	<dependency>

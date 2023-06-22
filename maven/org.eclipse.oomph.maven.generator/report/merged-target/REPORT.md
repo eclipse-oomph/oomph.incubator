@@ -43,11 +43,15 @@
     - [openpdf](https://repo1.maven.org/maven2/com/github/librepdf/openpdf/) **[1.3.30](https://repo1.maven.org/maven2/com/github/librepdf/openpdf/1.3.30)**
  - [com.google.code.gson](https://repo1.maven.org/maven2/com/google/code/gson/)
     - [gson](https://repo1.maven.org/maven2/com/google/code/gson/gson/) **[2.10.1](https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1)**
+ - [com.google.errorprone](https://repo1.maven.org/maven2/com/google/errorprone/)
+    - [error_prone_annotations](https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/) **[2.20.0](https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.20.0)**
  - [com.google.guava](https://repo1.maven.org/maven2/com/google/guava/)
     - [failureaccess](https://repo1.maven.org/maven2/com/google/guava/failureaccess/) **[1.0.1](https://repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1)**
     - [guava](https://repo1.maven.org/maven2/com/google/guava/guava/) **[32.0.1-jre](https://repo1.maven.org/maven2/com/google/guava/guava/32.0.1-jre)**
  - [com.google.inject](https://repo1.maven.org/maven2/com/google/inject/)
     - [guice](https://repo1.maven.org/maven2/com/google/inject/guice/) **[7.0.0](https://repo1.maven.org/maven2/com/google/inject/guice/7.0.0)**
+ - [com.google.inject.extensions](https://repo1.maven.org/maven2/com/google/inject/extensions/)
+    - [guice-assistedinject](https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/) **[7.0.0](https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/7.0.0)**
  - [com.googlecode.javaewah](https://repo1.maven.org/maven2/com/googlecode/javaewah/)
     - [JavaEWAH](https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/) **[1.2.3](https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/1.2.3)**
  - [com.ibm.icu](https://repo1.maven.org/maven2/com/ibm/icu/)
@@ -57,7 +61,7 @@
  - [commons-cli](https://repo1.maven.org/maven2/commons-cli/)
     - [commons-cli](https://repo1.maven.org/maven2/commons-cli/commons-cli/) **[1.5.0](https://repo1.maven.org/maven2/commons-cli/commons-cli/1.5.0)**
  - [commons-codec](https://repo1.maven.org/maven2/commons-codec/)
-    - [commons-codec](https://repo1.maven.org/maven2/commons-codec/commons-codec/) **[1.15](https://repo1.maven.org/maven2/commons-codec/commons-codec/1.15)**
+    - [commons-codec](https://repo1.maven.org/maven2/commons-codec/commons-codec/) **[1.16.0](https://repo1.maven.org/maven2/commons-codec/commons-codec/1.16.0)**
  - [commons-collections](https://repo1.maven.org/maven2/commons-collections/)
     - [commons-collections](https://repo1.maven.org/maven2/commons-collections/commons-collections/) **[3.2.2](https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2)**
  - [commons-fileupload](https://repo1.maven.org/maven2/commons-fileupload/)
@@ -113,10 +117,10 @@
  - [org.assertj](https://repo1.maven.org/maven2/org/assertj/)
     - [assertj-core](https://repo1.maven.org/maven2/org/assertj/assertj-core/) **[3.24.2](https://repo1.maven.org/maven2/org/assertj/assertj-core/3.24.2)**
  - [org.bouncycastle](https://repo1.maven.org/maven2/org/bouncycastle/)
-    - [bcpg-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/) **[1.74](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.74)**
-    - [bcpkix-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/) **[1.74](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/1.74)**
-    - [bcprov-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/) **[1.74](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.74)**
-    - [bcutil-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/) **[1.74](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/1.74)**
+    - [bcpg-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/) **[1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.75)**
+    - [bcpkix-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/) **[1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/1.75)**
+    - [bcprov-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/) **[1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.75)**
+    - [bcutil-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/) **[1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/1.75)**
  - [org.eclipse.jetty.toolchain](https://repo1.maven.org/maven2/org/eclipse/jetty/toolchain/)
     - [jetty-servlet-api](https://repo1.maven.org/maven2/org/eclipse/jetty/toolchain/jetty-servlet-api/) **[4.0.6](https://repo1.maven.org/maven2/org/eclipse/jetty/toolchain/jetty-servlet-api/4.0.6)**
  - [org.glassfish](https://repo1.maven.org/maven2/org/glassfish/)

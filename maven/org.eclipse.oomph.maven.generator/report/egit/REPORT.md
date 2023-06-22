@@ -1,14 +1,16 @@
 # Target Platform: [egit](https://git.eclipse.org/c/egit/egit.git/plain/org.eclipse.egit.target/egit-4.28.target)
 
 ## Minor Updates
+ - [commons-codec](https://repo1.maven.org/maven2/commons-codec/)
+    - [commons-codec](https://repo1.maven.org/maven2/commons-codec/commons-codec/) **[1.15](https://repo1.maven.org/maven2/commons-codec/commons-codec/1.15)** < [1.16.0](https://repo1.maven.org/maven2/commons-codec/commons-codec/1.16.0/)
  - [net.bytebuddy](https://repo1.maven.org/maven2/net/bytebuddy/)
     - [byte-buddy](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/) **[1.12.18](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.12.18)** < [1.14.5](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.14.5/)
     - [byte-buddy-agent](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/) **[1.12.18](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.18)** < [1.14.5](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.14.5/)
  - [org.bouncycastle](https://repo1.maven.org/maven2/org/bouncycastle/)
-    - [bcpg-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.73)** < [1.74](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.74/)
-    - [bcpkix-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/1.73)** < [1.74](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/1.74/)
-    - [bcprov-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.73)** < [1.74](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.74/)
-    - [bcutil-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/1.73)** < [1.74](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/1.74/)
+    - [bcpg-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.73)** < [1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.75/)
+    - [bcpkix-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/1.73)** < [1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/1.75/)
+    - [bcprov-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.73)** < [1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.75/)
+    - [bcutil-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/1.73)** < [1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/1.75/)
 
 ## Major Updates
  - [jakarta.servlet](https://repo1.maven.org/maven2/jakarta/servlet/)
