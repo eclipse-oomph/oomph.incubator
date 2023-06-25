@@ -11,6 +11,7 @@
     - [jakarta.interceptor-api](https://repo1.maven.org/maven2/jakarta/interceptor/jakarta.interceptor-api/) **[1.2.5](https://repo1.maven.org/maven2/jakarta/interceptor/jakarta.interceptor-api/1.2.5)** < [2.1.0](https://repo1.maven.org/maven2/jakarta/interceptor/jakarta.interceptor-api/2.1.0/)
  - [jakarta.servlet](https://repo1.maven.org/maven2/jakarta/servlet/)
     - [jakarta.servlet-api](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/) **[4.0.4](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/4.0.4)** < [6.0.0](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/6.0.0/)
+    - [jakarta.servlet-api](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/) **[5.0.0](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/5.0.0)** < [6.0.0](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/6.0.0/)
  - [jakarta.transaction](https://repo1.maven.org/maven2/jakarta/transaction/)
     - [jakarta.transaction-api](https://repo1.maven.org/maven2/jakarta/transaction/jakarta.transaction-api/) **[1.3.3](https://repo1.maven.org/maven2/jakarta/transaction/jakarta.transaction-api/1.3.3)** < [2.0.1](https://repo1.maven.org/maven2/jakarta/transaction/jakarta.transaction-api/2.0.1/)
  - [javax.servlet](https://repo1.maven.org/maven2/javax/servlet/)
@@ -85,6 +86,7 @@
     - [jakarta.interceptor-api](https://repo1.maven.org/maven2/jakarta/interceptor/jakarta.interceptor-api/) **[1.2.5](https://repo1.maven.org/maven2/jakarta/interceptor/jakarta.interceptor-api/1.2.5)**
  - [jakarta.servlet](https://repo1.maven.org/maven2/jakarta/servlet/)
     - [jakarta.servlet-api](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/) **[4.0.4](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/4.0.4)**
+    - [jakarta.servlet-api](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/) **[5.0.0](https://repo1.maven.org/maven2/jakarta/servlet/jakarta.servlet-api/5.0.0)**
  - [jakarta.transaction](https://repo1.maven.org/maven2/jakarta/transaction/)
     - [jakarta.transaction-api](https://repo1.maven.org/maven2/jakarta/transaction/jakarta.transaction-api/) **[1.3.3](https://repo1.maven.org/maven2/jakarta/transaction/jakarta.transaction-api/1.3.3)**
  - [javax.servlet](https://repo1.maven.org/maven2/javax/servlet/)
