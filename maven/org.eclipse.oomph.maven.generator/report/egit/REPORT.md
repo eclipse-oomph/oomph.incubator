@@ -6,11 +6,6 @@
  - [net.bytebuddy](https://repo1.maven.org/maven2/net/bytebuddy/)
     - [byte-buddy](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/) **[1.12.18](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.12.18)** < [1.14.5](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.14.5/)
     - [byte-buddy-agent](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/) **[1.12.18](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.18)** < [1.14.5](https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.14.5/)
- - [org.bouncycastle](https://repo1.maven.org/maven2/org/bouncycastle/)
-    - [bcpg-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.73)** < [1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.75/)
-    - [bcpkix-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/1.73)** < [1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/1.75/)
-    - [bcprov-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.73)** < [1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.75/)
-    - [bcutil-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/1.73)** < [1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/1.75/)
 
 ## Major Updates
  - [jakarta.servlet](https://repo1.maven.org/maven2/jakarta/servlet/)
@@ -55,10 +50,10 @@
  - [org.assertj](https://repo1.maven.org/maven2/org/assertj/)
     - [assertj-core](https://repo1.maven.org/maven2/org/assertj/assertj-core/) **[3.24.2](https://repo1.maven.org/maven2/org/assertj/assertj-core/3.24.2)**
  - [org.bouncycastle](https://repo1.maven.org/maven2/org/bouncycastle/)
-    - [bcpg-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.73)**
-    - [bcpkix-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/1.73)**
-    - [bcprov-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.73)**
-    - [bcutil-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/1.73)**
+    - [bcpg-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/) **[1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.75)**
+    - [bcpkix-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/) **[1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk18on/1.75)**
+    - [bcprov-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/) **[1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.75)**
+    - [bcutil-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/) **[1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/1.75)**
  - [org.eclipse.jetty](https://repo1.maven.org/maven2/org/eclipse/jetty/)
     - [jetty-http](https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/) **[10.0.15](https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/10.0.15)**
     - [jetty-io](https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/) **[10.0.15](https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/10.0.15)**

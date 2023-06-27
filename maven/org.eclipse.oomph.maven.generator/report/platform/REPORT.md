@@ -7,9 +7,6 @@
     - [jackson-databind](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/) **[2.15.1](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.1)** < [2.15.2](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.2/)
  - [com.ibm.icu](https://repo1.maven.org/maven2/com/ibm/icu/)
     - [icu4j](https://repo1.maven.org/maven2/com/ibm/icu/icu4j/) **[73.1](https://repo1.maven.org/maven2/com/ibm/icu/icu4j/73.1)** < [73.2](https://repo1.maven.org/maven2/com/ibm/icu/icu4j/73.2/)
- - [org.bouncycastle](https://repo1.maven.org/maven2/org/bouncycastle/)
-    - [bcpg-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.73)** < [1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.75/)
-    - [bcprov-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.73)** < [1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.75/)
 
 ## Major Updates
  - [jakarta.annotation](https://repo1.maven.org/maven2/jakarta/annotation/)
@@ -92,8 +89,8 @@
  - [org.assertj](https://repo1.maven.org/maven2/org/assertj/)
     - [assertj-core](https://repo1.maven.org/maven2/org/assertj/assertj-core/) **[3.24.2](https://repo1.maven.org/maven2/org/assertj/assertj-core/3.24.2)**
  - [org.bouncycastle](https://repo1.maven.org/maven2/org/bouncycastle/)
-    - [bcpg-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.73)**
-    - [bcprov-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/) **[1.73](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.73)**
+    - [bcpg-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/) **[1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.75)**
+    - [bcprov-jdk18on](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/) **[1.75](https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.75)**
  - [org.eclipse.jetty](https://repo1.maven.org/maven2/org/eclipse/jetty/)
     - [apache-jsp](https://repo1.maven.org/maven2/org/eclipse/jetty/apache-jsp/) **[10.0.15](https://repo1.maven.org/maven2/org/eclipse/jetty/apache-jsp/10.0.15)**
     - [jetty-http](https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/) **[10.0.15](https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/10.0.15)**
