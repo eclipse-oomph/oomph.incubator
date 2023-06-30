@@ -1,6 +1,8 @@
 # Target Platform: [m2e](https://raw.githubusercontent.com/eclipse-m2e/m2e-core/master/target-platform/target-platform.target)
 
 ## Minor Updates
+ - [com.google.guava](https://repo1.maven.org/maven2/com/google/guava/)
+    - [guava](https://repo1.maven.org/maven2/com/google/guava/guava/) **[32.0.1-jre](https://repo1.maven.org/maven2/com/google/guava/guava/32.0.1-jre)** < [32.1.0-jre](https://repo1.maven.org/maven2/com/google/guava/guava/32.1.0-jre/)
  - [org.jdom](https://repo1.maven.org/maven2/org/jdom/)
     - [jdom2](https://repo1.maven.org/maven2/org/jdom/jdom2/) **[2.0.6](https://repo1.maven.org/maven2/org/jdom/jdom2/2.0.6)** < [2.0.6.1](https://repo1.maven.org/maven2/org/jdom/jdom2/2.0.6.1/)
 
