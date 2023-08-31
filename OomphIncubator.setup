@@ -183,7 +183,7 @@
   <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Xmx"
-      value="2048m"
+      value="4096m"
       vm="true"/>
   <setupTask
       xsi:type="setup:ResourceCreationTask"
@@ -279,17 +279,7 @@
             project="org.eclipse.oomph.incubator"/>
         <operand
             xsi:type="workingsets:ExclusionPredicate"
-            excludedWorkingSet="//'workingsets.oomph.incubator'/@workingSets[name='Oomph%20Incubator%20SimRel%20Extra'] //'workingsets.oomph.incubator'/@workingSets[name='Oomph%20Incubator%20Maven']"/>
-      </predicate>
-    </workingSet>
-    <workingSet
-        name="Oomph Incubator Maven">
-      <predicate
-          xsi:type="predicates:AndPredicate">
-        <operand
-            xsi:type="predicates:RepositoryPredicate"
-            project="org.eclipse.oomph.incubator"
-            relativePathPattern="maven(-bnd)?/.*"/>
+            excludedWorkingSet="//'workingsets.oomph.incubator'/@workingSets[name='Oomph%20Incubator%20SimRel%20Extra']"/>
       </predicate>
     </workingSet>
     <workingSet
