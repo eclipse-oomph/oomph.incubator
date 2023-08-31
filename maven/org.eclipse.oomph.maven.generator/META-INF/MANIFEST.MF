@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Automatic-Module-Name: org.eclipse.maven.generator
-Bundle-Name: org.eclipse.maven.generator
-Bundle-RequiredExecutionEnvironment: JavaSE-17
-Bundle-SymbolicName: org.eclipse.oomph.maven.generator;singleton:=true
-Bundle-Version: 0.1.0.qualifier
