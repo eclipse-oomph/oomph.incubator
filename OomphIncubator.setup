@@ -249,8 +249,13 @@
       <requirement
           name="*"/>
       <requirement
-          name="com.ibm.icu"
-          versionRange="[72.1.0.v20221115-2007,72.1.0.v20221115-2007]"/>
+          name="org.w3c.css.sac"/>
+      <requirement
+          name="org.w3c.dom.events"/>
+      <requirement
+          name="org.w3c.dom.smil"/>
+      <requirement
+          name="org.w3c.dom.svg"/>
       <sourceLocator
           rootFolder="${github.clone.oomph.incubator.location}"
           locateNestedProjects="true"/>
@@ -263,7 +268,7 @@
           </detail>
         </annotation>
         <repository
-            url="https://download.eclipse.org/tools/orbit/downloads/drops/R20221123021534/repository"/>
+            url="https://download.eclipse.org/tools/orbit/downloads/drops/R20201118194144/repository"/>
       </repositoryList>
     </targlet>
   </setupTask>
