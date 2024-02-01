@@ -44,10 +44,14 @@ pipeline {
   stages {
     stage('Display Parameters') {
       steps {
-        echo "BUILD_TYPE=${params.BUILD_TYPE}"
-        echo "PROMOTE=${params.PROMOTE}"
-        echo "JETTY_VERSION=${params.JETTY_VERSION}"
         script {
+          def description = """
+BUILD_TYPE=${params.BUILD_TYPE}
+PROMOTE=${params.PROMOTE}
+JETTY_VERSION=${params.JETTY_VERSION}
+""".trim()
+          echo description
+          currentBuild.description = description.replace("\n", "<br/>")
           env.PROMOTE = params.PROMOTE
           env.BUILD_TYPE = params.BUILD_TYPE
           env.JETTY_VERSION = params.JETTY_VERSION
