@@ -10,7 +10,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tycho-version>4.0.5</tycho-version>
-    <jetty-version>10.0.20</jetty-version>
+    <jetty-version>10.0.21</jetty-version>
     <gpg-keyname>2E8E9CF8</gpg-keyname>
     <eclipse.repo>https://download.eclipse.org/releases/2023-12</eclipse.repo>
     <justj.tools.repo>https://download.eclipse.org/justj/tools/updates/nightly/latest</justj.tools.repo>
