@@ -9,10 +9,10 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tycho-version>4.0.5</tycho-version>
-    <jetty-version>10.0.21</jetty-version>
+    <tycho-version>4.0.8</tycho-version>
+    <jetty-version>10.0.23</jetty-version>
     <gpg-keyname>2E8E9CF8</gpg-keyname>
-    <eclipse.repo>https://download.eclipse.org/releases/2023-12</eclipse.repo>
+    <eclipse.repo>https://download.eclipse.org/releases/latest</eclipse.repo>
     <justj.tools.repo>https://download.eclipse.org/justj/tools/updates/nightly/latest</justj.tools.repo>
     <org.eclipse.storage.user>genie.oomph</org.eclipse.storage.user>
     <org.eclipse.justj.p2.manager.args>-remote ${org.eclipse.storage.user}@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/oomph</org.eclipse.justj.p2.manager.args>
