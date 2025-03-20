@@ -130,6 +130,8 @@
         name="org.eclipse.emf.sdk.feature.group"/>
     <requirement
         name="org.eclipse.egit.feature.group"/>
+    <requirement
+        name="org.eclipse.emf.codegen.ui.feature.group"/>
     <repository
         url="https://download.eclipse.org/modeling/emf/emf/builds/nightly/latest"/>
     <repository
@@ -171,8 +173,8 @@
   </setupTask>
   <setupTask
       xsi:type="jdt:JRETask"
-      version="JavaSE-17"
-      location="${jre.location-17}"/>
+      version="JavaSE-21"
+      location="${jre.location-21}"/>
   <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Doomph.redirection.incubation.setup"
@@ -183,7 +185,7 @@
   <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Xmx"
-      value="4096m"
+      value="8000m"
       vm="true"/>
   <setupTask
       xsi:type="setup:ResourceCreationTask"
@@ -259,6 +261,8 @@
       <sourceLocator
           rootFolder="${github.clone.oomph.incubator.location}"
           locateNestedProjects="true"/>
+      <sourceLocator
+          rootFolder="D:\Users\merks\oomph-incubator\ws\org.eclipse.oomph.cbi.sponsorship"/>
       <repositoryList>
         <annotation
             source="WARNING!">
@@ -269,6 +273,8 @@
         </annotation>
         <repository
             url="https://download.eclipse.org/tools/orbit/downloads/drops/R20201118194144/repository"/>
+        <repository
+            url="https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/milestone/latest"/>
       </repositoryList>
     </targlet>
   </setupTask>
