@@ -28,7 +28,7 @@ pipeline {
 
     string(
       name: 'COPILOT_URL',
-      defaultValue: 'https://azuredownloads-g3ahgwb5b8bkbxhd.b01.azurefd.net/eclipse-copilot-repository/staging/0.10.1'
+      defaultValue: 'https://azuredownloads-g3ahgwb5b8bkbxhd.b01.azurefd.net/eclipse-copilot-repository/staging/0.10.1',
       description: '''
         Specify the Copilot URL to mirror.
         '''
