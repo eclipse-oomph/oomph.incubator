@@ -6,8 +6,8 @@
         <mapEntry key="JAVA_HOME" value="${maven.build.java.home}"/>
         <mapEntry key="PATH" value="${maven.bash.home}/../usr/bin${system_property:path.separator}${env_var:PATH}"/>
     </mapAttribute>
-    <stringAttribute key="org.eclipse.debug.ui.ATTR_CAPTURE_IN_FILE" value="${workspace_loc:/org.eclipse.jetty.mirror}/build.log"/>
+    <stringAttribute key="org.eclipse.debug.ui.ATTR_CAPTURE_IN_FILE" value="${workspace_loc:/org.eclipse.oomph.incubator/jetty}/build.log"/>
     <stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="${maven.build.command}"/>
-    <stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="-DX&#13;&#10;-DDtycho.debug.resolver=true&#13;&#10;-Dmaven.artifact.threads=16&#13;&#10;-Duser.home=${system_property:user.home}&#13;&#10;-Dorg.eclipse.justj.p2.manager.args=&quot;-remote localhost:${project_loc:/org.eclipse.oomph.incubator}/jetty/updates&quot;&#13;&#10;-Djetty-version=10.0.21&#13;&#10;-Dbuild.type=nightly&#13;&#10;clean&#13;&#10;verify"/>
+    <stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="-DU&#13;&#10;-DX&#13;&#10;-DDtycho.debug.resolver=true&#13;&#10;-Dmaven.artifact.threads=16&#13;&#10;-Duser.home=${system_property:user.home}&#13;&#10;-Dorg.eclipse.justj.p2.manager.args=&quot;-remote localhost:${project_loc:/org.eclipse.oomph.incubator}/jetty/updates&quot;&#13;&#10;-Djetty-version=10.0.26&#13;&#10;-Dbuild.type=nightly&#13;&#10;clean&#13;&#10;verify"/>
     <stringAttribute key="org.eclipse.ui.externaltools.ATTR_WORKING_DIRECTORY" value="${project_loc:/org.eclipse.oomph.incubator}/jetty"/>
 </launchConfiguration>

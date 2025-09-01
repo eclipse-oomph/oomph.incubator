@@ -9,8 +9,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tycho-version>4.0.8</tycho-version>
-    <jetty-version>10.0.23</jetty-version>
+    <tycho-version>4.0.13</tycho-version>
+    <jetty-version>10.0.26</jetty-version>
     <gpg-keyname>2E8E9CF8</gpg-keyname>
     <eclipse.repo>https://download.eclipse.org/releases/latest</eclipse.repo>
     <justj.tools.repo>https://download.eclipse.org/justj/tools/updates/nightly/latest</justj.tools.repo>
@@ -75,8 +75,8 @@
       </plugin>
 
       <plugin>
-        <groupId>org.eclipse.tycho.extras</groupId>
-        <artifactId>tycho-eclipserun-plugin</artifactId>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-eclipse-plugin</artifactId>
         <version>${tycho-version}</version>
         <configuration>
           <executionEnvironment>JavaSE-17</executionEnvironment>

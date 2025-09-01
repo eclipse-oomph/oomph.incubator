@@ -9,7 +9,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tycho-version>4.0.13</tycho-version>
+    <tycho-version>5.0.0</tycho-version>
     <copilot-url>https://azuredownloads-g3ahgwb5b8bkbxhd.b01.azurefd.net/eclipse-copilot-repository/staging/0.10.1</copilot-url>
     <gpg-keyname>2E8E9CF8</gpg-keyname>
     <eclipse.repo>https://download.eclipse.org/releases/latest</eclipse.repo>
@@ -75,8 +75,8 @@
       </plugin>
 
       <plugin>
-        <groupId>org.eclipse.tycho.extras</groupId>
-        <artifactId>tycho-eclipserun-plugin</artifactId>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-eclipse-plugin</artifactId>
         <version>${tycho-version}</version>
         <configuration>
           <executionEnvironment>JavaSE-21</executionEnvironment>
