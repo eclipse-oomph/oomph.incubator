@@ -5,6 +5,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:git="http://www.eclipse.org/oomph/setup/git/1.0"
     xmlns:jdt="http://www.eclipse.org/oomph/setup/jdt/1.0"
+    xmlns:p2="http://www.eclipse.org/oomph/p2/1.0"
     xmlns:predicates="http://www.eclipse.org/oomph/predicates/1.0"
     xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
     xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
@@ -248,16 +249,22 @@
     <targlet
         name="Oomph Incubator"
         includeAllPlatforms="true">
+      <annotation>
+        <content
+            xsi:type="p2:Requirement"
+            name="org.w3c.css.sac"/>
+        <content
+            xsi:type="p2:Requirement"
+            name="org.w3c.dom.events"/>
+        <content
+            xsi:type="p2:Requirement"
+            name="org.w3c.dom.smil"/>
+        <content
+            xsi:type="p2:Requirement"
+            name="org.w3c.dom.svg"/>
+      </annotation>
       <requirement
           name="*"/>
-      <requirement
-          name="org.w3c.css.sac"/>
-      <requirement
-          name="org.w3c.dom.events"/>
-      <requirement
-          name="org.w3c.dom.smil"/>
-      <requirement
-          name="org.w3c.dom.svg"/>
       <sourceLocator
           rootFolder="${github.clone.oomph.incubator.location}"
           locateNestedProjects="true"/>
@@ -270,9 +277,12 @@
               key="description">
             <value>Update  /org.eclipse.oomph.simrel.extra.parent/pom.xml with any URLs used here.</value>
           </detail>
+          <content
+              xsi:type="p2:Repository"
+              url="https://download.eclipse.org/tools/orbit/downloads/drops/R20201118194144/repository"/>
         </annotation>
         <repository
-            url="https://download.eclipse.org/tools/orbit/downloads/drops/R20201118194144/repository"/>
+            url="https://ci.eclipse.org/orbit/job/orbit-simrel-maven-bnd/355/artifact/promotion/target/maven-bnd-sync/simrel/maven-bnd/nightly/N202603040642/"/>
         <repository
             url="https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/milestone/latest"/>
       </repositoryList>

@@ -23,8 +23,8 @@ SPDX-License-Identifier: EPL-2.0
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tycho.scmUrl>scm:git:https://github.com/eclipse-oomph/oomph.incubator.git</tycho.scmUrl>
-    <tycho-version>5.0.0</tycho-version>
-    <jarsigner-version>1.5.2</jarsigner-version>
+    <tycho-version>5.0.2</tycho-version>
+    <jarsigner-version>1.5.4</jarsigner-version>
     <os-jvm-flags/>
   </properties>
 
@@ -47,7 +47,12 @@ SPDX-License-Identifier: EPL-2.0
     </repository>
     <repository>
       <id>orbit-drop-1</id>
-      <url>https://download.eclipse.org/tools/orbit/simrel/maven-bnd/release/4.37.0</url>
+      <url>https://ci.eclipse.org/orbit/job/orbit-simrel-maven-bnd/355/artifact/promotion/target/maven-bnd-sync/simrel/maven-bnd/nightly/N202603040642/</url>
+      <layout>p2</layout>
+    </repository>
+    <repository>
+      <id>orbit-drop-2</id>
+      <url>https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/nightly/latest/</url>
       <layout>p2</layout>
     </repository>
   </repositories>
